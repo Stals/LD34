@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: db86fadfe7ac24417bba2acb8d03dcdb
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - deleteLinePrefab: {fileID: 100000, guid: 6e5c257e3e041cd45b2d2ad7e34d3d6f, type: 2}
+  executionOrder: -10
+  icon: {instanceID: 0}
+  userData: 
