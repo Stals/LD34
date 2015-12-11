@@ -1,0 +1,49 @@
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Library/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ours
+Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity*
+Assets/UnityVS/Editor/UnityVS.VersionSpecific*
+Assets/Plugins/PigeonCoopToolkit/__SharedDemoAssets/Low Poly Tank/LowPolyTankMesh.fbx.meta
+Assets/Plugins/PigeonCoopToolkit/__SharedDemoAssets/LowPolyRocket/LowPolyRocket.fbx.meta
+Assets/Plugins/PigeonCoopToolkit/__SharedDemoAssets/Sword/sword.obj.meta
+Assets/Plugins/Standard Assets/Effects/TessellationShaders/Models/LowPolySphere.fbx.meta
+Assets/Plugins/VectrosityDemos/Materials/Level.meta
+Assets/Plugins/VectrosityDemos/Meshes/LetterGrid.obj.meta
+Assets/Plugins/VectrosityDemos/Meshes/LowresSphere.obj.meta
+Assets/Plugins/VectrosityDemos/Meshes/Plane.obj.meta
+Assets/Plugins/VectrosityDemos/Meshes/Room.obj.meta
+Assets/Plugins/PigeonCoopToolkit/__SharedDemoAssets/Low Poly Jet/LowPolyJet.fbx.meta
+Assets/Plugins/PigeonCoopToolkit/__SharedDemoAssets/Low Poly Tank 2/LowPolyTank2MeshBlend.fbx.meta
+Assets/Plugins/PigeonCoopToolkit/__SharedDemoAssets/a-104 Rifle/a-104_rifle.fbx.meta
+ProjectSettings/UnityAdsSettings.asset
+ProjectSettings/UnityAnalyticsManager.asset
