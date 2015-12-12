@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using CraftCore;
 
 public class BoardViewController : MonoBehaviour {
 
@@ -17,6 +18,32 @@ public class BoardViewController : MonoBehaviour {
     // Use this for initialization
     void Start() {
         Game.Instance.getManager().setBoardViewController(this);
+
+
+        Card card1 = new Card();
+        card1.Type = EnergyType.Black;
+        card1.setLevelEnergy(1, 2, 3);
+
+
+        Card card2 = new Card();
+        card2.Type = EnergyType.Black;
+        card2.setLevelEnergy(1, 2, 3);
+
+        EnergyType[,] arr = {   {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                {EnergyType.Blue,  EnergyType.Green, EnergyType.Black, EnergyType.Red},
+                                {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
+        Motherboard board = new Motherboard(arr);
+
+
+
+
+        List<Card> cards = new List<Card>();
+        cards.Add(card1);
+        cards.Add(card2);
+
+        GameSession session = new GameSession(cards, board);
+
 
         currentChoiceCards = new List<GameObject>();
         drawNewCards();
