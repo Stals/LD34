@@ -58,11 +58,11 @@ MonoBehaviour:
     Modificated:
     - Object: {fileID: 438782}
       ObjeckLink: -639707849
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 438782}
-      ObjeckLink: -639707849
       PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 11420824}
+      ObjeckLink: 1828929868
+      PropertyPath: mDepth
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -102,7 +102,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 100
   mHeight: 100
-  mDepth: 2
+  mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0

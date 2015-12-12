@@ -41,6 +41,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 464204}
   - 114: {fileID: 11422558}
+  - 114: {fileID: 11401844}
+  - 65: {fileID: 6595658}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -107,7 +109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43, y: 697, z: 0}
+  m_LocalPosition: {x: 43, y: 697.000061, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462478}
@@ -115,6 +117,33 @@ Transform:
   - {fileID: 454384}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!65 &6595658
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 120, y: 120, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11401844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9ee9adcf574fc42857acfaad9fb89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restriction: 0
+  cloneOnDrag: 0
+  pressAndHoldDelay: 1
+  interactable: 1
 --- !u!114 &11422558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,11 +185,19 @@ MonoBehaviour:
       InstanceTarget: {fileID: 462478}
     - LIIF: -1477188381
       InstanceTarget: {fileID: 11472760}
+    - LIIF: 345504166
+      InstanceTarget: {fileID: 6595658}
+    - LIIF: 767377760
+      InstanceTarget: {fileID: 11401844}
   Modifications:
     Modificated:
     - Object: {fileID: 464204}
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 11401844}
+      ObjeckLink: 767377760
+      PropertyPath: restriction
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
