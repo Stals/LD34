@@ -392,7 +392,7 @@ GameObject:
   - 4: {fileID: 594011622}
   - 114: {fileID: 594011623}
   m_Layer: 5
-  m_Name: Grid (1)
+  m_Name: row 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,7 +627,7 @@ GameObject:
   - 4: {fileID: 967292433}
   - 114: {fileID: 967292434}
   m_Layer: 5
-  m_Name: Grid
+  m_Name: row 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1631,7 +1631,7 @@ GameObject:
   - 4: {fileID: 1891127314}
   - 114: {fileID: 1891127315}
   m_Layer: 5
-  m_Name: Grid (3)
+  m_Name: row 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,6 +1729,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 162428, guid: 7ade3a9e19e20604fbb63e9085f84a64, type: 2}
   cardSelectionGrid: {fileID: 1549337933}
+  slots:
+  - {fileID: 967292434}
+  - {fileID: 594011623}
+  - {fileID: 1949007650}
+  - {fileID: 1891127315}
 --- !u!1 &1949007648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1744,7 @@ GameObject:
   - 4: {fileID: 1949007649}
   - 114: {fileID: 1949007650}
   m_Layer: 5
-  m_Name: Grid (2)
+  m_Name: row 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

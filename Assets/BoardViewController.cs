@@ -11,39 +11,52 @@ public class BoardViewController : MonoBehaviour {
     [SerializeField]
     UIGrid cardSelectionGrid;
 
+	[SerializeField]
+	List<UIGrid> slots;
+
     const int cardsPerDraft = 2;
+	Motherboard board;
+	GameSession session;
 
     List<GameObject> currentChoiceCards;
+
+	EnergyType[,] getRandomMotherboardSetup()
+	{
+		EnergyType[,] arr =  {    	{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+									{EnergyType.Blue,  EnergyType.Green, EnergyType.Black, EnergyType.Red},
+									{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+									{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
+		return arr;
+	}
+
+	List<Card> getDeck()
+	{
+		Card card1 = new Card();
+		card1.Type = EnergyType.Black;
+		card1.setLevelEnergy(0, 0, 0);
+		
+		Card card2 = new Card();
+		card2.Type = EnergyType.Black;
+		card2.setLevelEnergy(0, 0, 0);
+		
+		List<Card> cards = new List<Card>();
+        cards.Add(card1);
+        cards.Add(card2);
+
+		return cards;
+	}
+
+	void setupBackend()
+	{
+
+		board = new Motherboard(getRandomMotherboardSetup());
+		session = new GameSession (getDeck (), board);
+	}
 
     // Use this for initialization
     void Start() {
         Game.Instance.getManager().setBoardViewController(this);
-
-
-        Card card1 = new Card();
-        card1.Type = EnergyType.Black;
-        card1.setLevelEnergy(1, 2, 3);
-
-
-        Card card2 = new Card();
-        card2.Type = EnergyType.Black;
-        card2.setLevelEnergy(1, 2, 3);
-
-        EnergyType[,] arr = {   {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
-                                {EnergyType.Blue,  EnergyType.Green, EnergyType.Black, EnergyType.Red},
-                                {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
-                                {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
-        Motherboard board = new Motherboard(arr);
-
-
-
-
-        List<Card> cards = new List<Card>();
-        cards.Add(card1);
-        cards.Add(card2);
-
-        GameSession session = new GameSession(cards, board);
-
+		setupBackend ();
 
         currentChoiceCards = new List<GameObject>();
         drawNewCards();
