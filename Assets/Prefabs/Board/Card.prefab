@@ -43,6 +43,7 @@ GameObject:
   - 114: {fileID: 11422558}
   - 114: {fileID: 11401844}
   - 65: {fileID: 6595658}
+  - 114: {fileID: 11415844}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -127,7 +128,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 120, y: 120, z: 1}
+  m_Size: {x: 100, y: 100, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11401844
 MonoBehaviour:
@@ -144,6 +145,43 @@ MonoBehaviour:
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
+--- !u!114 &11415844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858a20c1b21a3f94bb5b2d3b901c9aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 100
+  mHeight: 100
+  mDepth: 7
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 1
 --- !u!114 &11422558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,18 +227,18 @@ MonoBehaviour:
       InstanceTarget: {fileID: 6595658}
     - LIIF: 767377760
       InstanceTarget: {fileID: 11401844}
+    - LIIF: -1823423239
+      InstanceTarget: {fileID: 11415844}
   Modifications:
     Modificated:
     - Object: {fileID: 464204}
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11401844}
-      ObjeckLink: 767377760
-      PropertyPath: restriction
-      Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents: []
+    NonPrefabComponents:
+    - child: {fileID: 11415844}
+      parent: {fileID: 162428}
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 

@@ -10,6 +10,9 @@ GameObject:
   - 4: {fileID: 438782}
   - 114: {fileID: 11420824}
   - 114: {fileID: 11407932}
+  - 65: {fileID: 6511714}
+  - 114: {fileID: 11400264}
+  - 114: {fileID: 11487296}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -29,6 +32,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!65 &6511714
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 90, y: 90, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11400264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33bc83ab81ec0c44976c6fb1d44e55a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reparentTarget: {fileID: 438782}
 --- !u!114 &11407932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,15 +81,21 @@ MonoBehaviour:
       InstanceTarget: {fileID: 438782}
     - LIIF: 1828929868
       InstanceTarget: {fileID: 11420824}
+    - LIIF: 1983575885
+      InstanceTarget: {fileID: 11400264}
+    - LIIF: 528715260
+      InstanceTarget: {fileID: 6511714}
+    - LIIF: 1037949900
+      InstanceTarget: {fileID: 11487296}
   Modifications:
     Modificated:
     - Object: {fileID: 438782}
       ObjeckLink: -639707849
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11420824}
-      ObjeckLink: 1828929868
-      PropertyPath: mDepth
+    - Object: {fileID: 11400264}
+      ObjeckLink: 1983575885
+      PropertyPath: reparentTarget
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -120,6 +153,27 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Highlight - Shadowed
   mFillCenter: 1
+--- !u!114 &11487296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c4de3b4b6fe9045b059ee627c100df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrangement: 1
+  sorting: 0
+  pivot: 4
+  maxPerLine: 0
+  cellWidth: 90
+  cellHeight: 90
+  animateSmoothly: 1
+  hideInactive: 0
+  keepWithinPanel: 0
+  sorted: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
