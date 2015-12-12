@@ -241,6 +241,14 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
+    - Object: {fileID: 11447704}
+      ObjeckLink: -1552561943
+      PropertyPath: partImage
+      Mode: 0
+    - Object: {fileID: 11447704}
+      ObjeckLink: -1552561943
+      PropertyPath: descrptionLabel
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -258,6 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c85309636a9f71459194547b39a055e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partImage: {fileID: 11478352}
+  descrptionLabel: {fileID: 11472760}
 --- !u!114 &11468292
 MonoBehaviour:
   m_ObjectHideFlags: 1

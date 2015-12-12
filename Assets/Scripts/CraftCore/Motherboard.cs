@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 namespace CraftCore
 {
     [Serializable]
-    class Motherboard
+    public class Motherboard
     {
         const int xSize = 4;
         const int ySize = 4;

@@ -36,8 +36,8 @@ public class BoardViewController : MonoBehaviour {
 		card1.setLevelEnergy(0, 0, 0);
 		
 		Card card2 = new Card();
-		card2.Type = EnergyType.Black;
-		card2.setLevelEnergy(0, 0, 0);
+		card2.Type = EnergyType.Red;
+		card2.setLevelEnergy(1, 1, 1);
 		
 		List<Card> cards = new List<Card>();
         cards.Add(card1);
@@ -48,7 +48,6 @@ public class BoardViewController : MonoBehaviour {
 
 	void setupBackend()
 	{
-
 		board = new Motherboard(getRandomMotherboardSetup());
 		session = new GameSession (getDeck (), board);
 	}
@@ -69,9 +68,11 @@ public class BoardViewController : MonoBehaviour {
 
     void drawNewCards()
     {
-        for (int i = 0; i < cardsPerDraft; ++i)
-        {
-            currentChoiceCards.Add(NGUITools.AddChild(cardSelectionGrid.gameObject, cardPrefab));
+		foreach(Card card in session.AvaliableCards){
+			GameObject cardGO = NGUITools.AddChild(cardSelectionGrid.gameObject, cardPrefab);
+			currentChoiceCards.Add(cardGO);
+
+			cardGO.GetComponent<CardViewController>().setup(card);
         }
         cardSelectionGrid.Reposition();
     }

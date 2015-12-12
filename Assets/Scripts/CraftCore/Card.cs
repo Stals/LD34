@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 namespace CraftCore
 {
     [Serializable]
-    enum EnergyType
+    public enum EnergyType
     {
         Empty,
         Black,
@@ -17,7 +17,7 @@ namespace CraftCore
     }
 
     [Serializable]
-    class Card
+    public class Card
     {
         int upgradeLevel = 0;
         public int ModifierValue { get; set; }
