@@ -9,8 +9,8 @@ namespace CraftCore
     [Serializable]
     public class Motherboard
     {
-        const int xSize = 4;
-        const int ySize = 4;
+        public const int xSize = 4;
+        public const int ySize = 4;
 
         [JsonProperty("TyleMatrix")]
         EnergyType[,] tyleMatrix = new EnergyType[xSize, ySize];

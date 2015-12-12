@@ -24,7 +24,7 @@ public class BoardViewController : MonoBehaviour {
 	{
 		EnergyType[,] arr =  {    	{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
 									{EnergyType.Blue,  EnergyType.Green, EnergyType.Black, EnergyType.Red},
-									{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+									{EnergyType.Blue, EnergyType.Green, EnergyType.Black, EnergyType.Red},
 									{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
 		return arr;
 	}
@@ -57,6 +57,8 @@ public class BoardViewController : MonoBehaviour {
         Game.Instance.getManager().setBoardViewController(this);
 		setupBackend ();
 
+		setupBoard ();
+
         currentChoiceCards = new List<GameObject>();
         drawNewCards();
     }
@@ -65,6 +67,17 @@ public class BoardViewController : MonoBehaviour {
     void Update() {
 
     }
+
+	void setupBoard()
+	{
+		for(int x = 0; x < Motherboard.xSize; ++x){
+			for(int y = 0; y < Motherboard.ySize; ++y){
+				EnergyType energyType = board.GetTyle(x, y);
+
+				slots[y].GetChild(x).gameObject.GetComponent<SlotViewController>().setup(energyType);
+			}
+		}
+	}
 
     void drawNewCards()
     {
