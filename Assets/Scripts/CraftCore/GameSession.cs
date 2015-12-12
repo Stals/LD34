@@ -16,6 +16,14 @@ namespace CraftCore
         List<Card> waste = new List<Card>();
         List<Card> avaliableCards = new List<Card>();
 
+        public GameSession(GameSession session)
+        {
+            deck = new List<Card>(session.deck);
+            board = new Motherboard(session.board);
+            waste = new List<Card>(session.waste);
+            avaliableCards = new List<Card>(session.avaliableCards);
+        }
+
         public GameSession(List<Card> deck, Motherboard board)
         {
             this.deck = new List<Card>(deck);
