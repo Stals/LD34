@@ -44,6 +44,7 @@ GameObject:
   - 114: {fileID: 11401844}
   - 65: {fileID: 6595658}
   - 114: {fileID: 11415844}
+  - 114: {fileID: 11447704}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -229,30 +230,33 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11401844}
     - LIIF: -1823423239
       InstanceTarget: {fileID: 11415844}
+    - LIIF: -1552561943
+      InstanceTarget: {fileID: 11447704}
   Modifications:
     Modificated:
-    - Object: {fileID: 11468292}
-      ObjeckLink: 1178832001
-      PropertyPath: mDepth
-      Mode: 0
     - Object: {fileID: 464204}
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11478352}
-      ObjeckLink: -1646318217
-      PropertyPath: mDepth
-      Mode: 0
-    - Object: {fileID: 11472760}
-      ObjeckLink: -1477188381
-      PropertyPath: mDepth
-      Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents: []
+    NonPrefabComponents:
+    - child: {fileID: 11447704}
+      parent: {fileID: 162428}
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 7ade3a9e19e20604fbb63e9085f84a64
+--- !u!114 &11447704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c85309636a9f71459194547b39a055e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11468292
 MonoBehaviour:
   m_ObjectHideFlags: 1
