@@ -28,9 +28,11 @@ namespace CraftCore
         {
             this.deck = new List<Card>(deck);
             this.board = new Motherboard(board);
+
+            ReadyMove();
         }
 
-        List<Card> AvaliableCards
+        public List<Card> AvaliableCards
         {
             get
             {
@@ -56,15 +58,21 @@ namespace CraftCore
 
                 if ((deck.Count == 0) && (OnEndGame != null)) OnEndGame(ResultScore());
 
-                avaliableCards.Clear();
-                avaliableCards.Add(deck[0]);
-                avaliableCards.Add(deck[1]);
-                deck.RemoveAt(0);
-                deck.RemoveAt(0);
-            } else
+                ReadyMove();
+            }
+            else
             {
                 Debug.Log("Not a valid card!");
             }
+        }
+
+        private void ReadyMove()
+        {
+            avaliableCards.Clear();
+            avaliableCards.Add(deck[0]);
+            avaliableCards.Add(deck[1]);
+            deck.RemoveAt(0);
+            deck.RemoveAt(0);
         }
 
         public float ResultScore()

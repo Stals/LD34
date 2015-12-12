@@ -2,28 +2,80 @@
 using System.Collections;
 using Newtonsoft.Json;
 using CraftCore;
+using System.Collections.Generic;
 
-public class TestingSaver : MonoBehaviour {
+public class TestingSaver : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
+    [SerializeField]
+    int x;
+    [SerializeField]
+    int y;
+
+    [SerializeField]
+    bool pickFirst;
+    [SerializeField]
+    bool pickSecond;
+
+    GameSession game;
+
+    // Use this for initialization
+    void Start()
+    {
+        List<Card> cards = new List<Card>();
+
         Card card = new Card();
         card.Type = EnergyType.Black;
         card.setLevelEnergy(1, 2, 3);
-        string json = JsonConvert.SerializeObject(card);
-        Debug.Log(json);
+        cards.Add(card);
 
-        EnergyType[,] arr = { {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
-        {EnergyType.Blue, EnergyType.Green, EnergyType.Black, EnergyType.Red},
-        {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
-        {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
-        Motherboard board = new Motherboard(arr);
-        json = JsonConvert.SerializeObject(board);
-        Debug.Log(json);
+        for (int i = 0; i < 10; ++i)
+        {
+            card = new Card();
+            card.Type = EnergyType.Blue;
+            card.setLevelEnergy(1, 2, 3);
+            cards.Add(card);
+            card = new Card();
+            card.Type = EnergyType.Green;
+            card.setLevelEnergy(1, 2, 3);
+            cards.Add(card);
+            card = new Card();
+            card.Type = EnergyType.Red;
+            card.setLevelEnergy(1, 2, 3);
+            cards.Add(card);
+        }
+
+
+        EnergyType[,] arr = {   {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                {EnergyType.Blue, EnergyType.Green, EnergyType.Black, EnergyType.Red},
+                                {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
+
+        Motherboard b = new Motherboard(arr);
+
+        game = new GameSession(cards, b);
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (pickFirst || pickSecond)
+        {
+            if (pickFirst) game.pickCard(game.AvaliableCards[0], x, y);
+            if (pickSecond) game.pickCard(game.AvaliableCards[1], x, y);
+
+            string json;
+
+            json = JsonConvert.SerializeObject(game.Board);
+            Debug.Log(json);
+            json = JsonConvert.SerializeObject(game.AvaliableCards[0]);
+            Debug.Log(json);
+            json = JsonConvert.SerializeObject(game.AvaliableCards[1]);
+            Debug.Log(json);
+
+            pickFirst = false;
+            pickSecond = false;       
+        }
+    }
 }
