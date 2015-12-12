@@ -45,6 +45,7 @@ GameObject:
   - 65: {fileID: 6595658}
   - 114: {fileID: 11415844}
   - 114: {fileID: 11447704}
+  - 114: {fileID: 11497820}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -232,6 +233,8 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11415844}
     - LIIF: -1552561943
       InstanceTarget: {fileID: 11447704}
+    - LIIF: -807863025
+      InstanceTarget: {fileID: 11497820}
   Modifications:
     Modificated:
     - Object: {fileID: 464204}
@@ -239,9 +242,7 @@ MonoBehaviour:
       PropertyPath: m_RootOrder
       Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents:
-    - child: {fileID: 11447704}
-      parent: {fileID: 162428}
+    NonPrefabComponents: []
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
@@ -425,6 +426,34 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Wooden Background
   mFillCenter: 1
+--- !u!114 &11497820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e862f287df53bb64db191162f851a296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHoverOver: []
+  onHoverOut: []
+  onPress:
+  - mTarget: {fileID: 11447704}
+    mMethodName: onPress
+    mParameters: []
+    oneShot: 0
+  onRelease: []
+  onSelect: []
+  onDeselect: []
+  onClick: []
+  onDoubleClick: []
+  onDragStart: []
+  onDragEnd: []
+  onDragOver: []
+  onDragOut: []
+  onDrag: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
