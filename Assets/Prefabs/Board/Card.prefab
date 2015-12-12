@@ -231,14 +231,24 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11415844}
   Modifications:
     Modificated:
+    - Object: {fileID: 11468292}
+      ObjeckLink: 1178832001
+      PropertyPath: mDepth
+      Mode: 0
     - Object: {fileID: 464204}
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
+    - Object: {fileID: 11478352}
+      ObjeckLink: -1646318217
+      PropertyPath: mDepth
+      Mode: 0
+    - Object: {fileID: 11472760}
+      ObjeckLink: -1477188381
+      PropertyPath: mDepth
+      Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents:
-    - child: {fileID: 11415844}
-      parent: {fileID: 162428}
+    NonPrefabComponents: []
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
@@ -275,7 +285,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 104
   mHeight: 94
-  mDepth: 0
+  mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -325,7 +335,7 @@ MonoBehaviour:
   mPivot: 1
   mWidth: 104
   mHeight: 38
-  mDepth: 2
+  mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -393,7 +403,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 104
   mHeight: 52
-  mDepth: 1
+  mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
