@@ -101,8 +101,8 @@
         "UpgradeLevel": 0,
         "Description": "+1 "
       },
-      "doubles": 2
-    }
+      "doubles": 3
+    },
     
     /*ram*/
     {
@@ -125,7 +125,7 @@
           ],
           "description": "RAM if in RAM slot"
         },
-        "HeatPrice": 1,
+        "HeatPrice": 2,
         "UpgradeLevel": 0,
         "Description": "+ 1 GPU+0 "
       },
