@@ -7,8 +7,9 @@ namespace CraftCore
 {
     public interface IModifier
     {
-        void Modify(Motherboard board, int x, int y, Card card);
+        void Modify(Motherboard board, CardOnBoard card);
     }
+
 
 
 }
