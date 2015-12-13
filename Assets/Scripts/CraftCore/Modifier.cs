@@ -63,7 +63,7 @@ namespace CraftCore
 
         protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
         {
-            return Motherboard.TypeCond(card.card.Type);
+            return Motherboard.TypeCond(Color);
         }
     }
     
