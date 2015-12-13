@@ -96,6 +96,17 @@ public class BoardViewController : MonoBehaviour {
         }
     }
 
+    public void setup(Motherboard motherboard)
+    {
+        board = motherboard;
+        session = new GameSession (getDeck (), motherboard);
+
+        setupBoard();
+
+        currentChoiceCards = new List<GameObject>();
+        drawNewCards();
+    }
+
     private void moveCardToDiscard(GameObject cardGO)
     {
         // Todo implamant animation and some discard pile
@@ -113,12 +124,6 @@ public class BoardViewController : MonoBehaviour {
     // Use this for initialization
     void Start() {
         Game.Instance.getManager().setBoardViewController(this);
-		setupBackend ();
-
-		setupBoard ();
-
-        currentChoiceCards = new List<GameObject>();
-        drawNewCards();
     }
 
     // Update is called once per frame

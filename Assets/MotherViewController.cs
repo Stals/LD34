@@ -14,6 +14,8 @@ public class MotherViewController : MonoBehaviour {
     [SerializeField]
     GameObject tilePrefab;
 
+    Motherboard motherboard;
+
     public void setSelected(bool selected) {
         onSelect.alpha = selected ? 255f : 0f;
     }
@@ -30,6 +32,8 @@ public class MotherViewController : MonoBehaviour {
 
     public void setup(Motherboard board)
     {
+        motherboard = board;
+
         for (int x = 0; x < Motherboard.xSize; ++x)
         {
             for (int y = 0; y < Motherboard.ySize; ++y)
@@ -62,5 +66,10 @@ public class MotherViewController : MonoBehaviour {
                 newTIle.GetComponent<UISprite>().color = tileColor;
             }
         }
+    }
+
+    public Motherboard getMotherboard()
+    {
+        return motherboard;
     }
 }
