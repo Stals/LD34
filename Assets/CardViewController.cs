@@ -46,18 +46,8 @@ public class CardViewController : MonoBehaviour {
         }
 
         heatCost.text = card.HeatPrice.ToString();
-        descrptionLabel.text = getColorDescription(card.DescriptionPerk);
-        descriptionSmallLabel.text = getColorDescription(card.DescriptionMain);
-    }
-
-    string getColorDescription(string description)
-    {
-		description = description.Replace("GPU", "[FF0000][b]●[/b][-]");
-		description = description.Replace("RAM", "[00FF00][b]●[/b][-]");
-		description = description.Replace("CPU", "[19C6FF][b]●[/b][-]");
-		description = description.Replace("UTI", "[888888][b]●[/b][-]");
-
-        return description;
+        descrptionLabel.text = Utils.getColorDescription(card.DescriptionPerk);
+		descriptionSmallLabel.text = Utils.getColorDescription(card.DescriptionMain);
     }
 
     // Use this for initialization

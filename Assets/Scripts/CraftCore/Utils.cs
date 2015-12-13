@@ -23,5 +23,15 @@ namespace CraftCore
             }
             return "error";
         }
+
+		public static string getColorDescription(string description)
+		{
+			description = description.Replace("GPU", "[FF0000][c][b]●[/b][/c][-]");
+			description = description.Replace("RAM", "[00FF00][c][b]●[/b][/c][-]");
+			description = description.Replace("CPU", "[19C6FF][c][b]●[/b][/c][-]");
+			description = description.Replace("UTI", "[888888][c][b]●[/b][/c][-]");
+			
+			return description;
+		}
     }
 }
