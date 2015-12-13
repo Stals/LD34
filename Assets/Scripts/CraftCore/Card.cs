@@ -70,7 +70,7 @@ namespace CraftCore
                 string main = "";
                 if (Type != EnergyType.Black)
                 {
-                    main = "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type) + "\n";
+                    main = "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
                 }
 
                 string additional = "";
