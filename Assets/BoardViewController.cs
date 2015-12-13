@@ -142,4 +142,15 @@ public class BoardViewController : MonoBehaviour {
         victoryPanel.setup(session);
     }
 
+    public void onReDrawPressed()
+    {
+        session.Discard();
+
+        foreach (GameObject cardGO in currentChoiceCards)
+        {
+            moveCardToDiscard(cardGO);    
+        }
+
+        drawNewCards();
+    }
 }
