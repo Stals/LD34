@@ -65,7 +65,9 @@ public class MotherSelectionController : MonoBehaviour {
 
     Motherboard getRandomMotherboard()
     {
-        return new Motherboard(getRandomMotherboardSetup());
+        Motherboard board = new Motherboard(getRandomMotherboardSetup());
+        board.Heat = 8;
+        return board;
     }
 
 
