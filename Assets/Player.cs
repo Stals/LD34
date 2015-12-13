@@ -50,8 +50,8 @@ public class Player {
 		// TODO sort by cost?
 		statUpgrades = new List<StatUpgrade> ();
 
-		statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated audio codec chip", 50));
-		statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated graphics controller", 150));
+		statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated audio chip", 50));
+		statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated graphics", 150));
 		statUpgrades.Add(new StatUpgrade(EnergyType.Red, 2, "Power connectors", 430));
 
 		statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 1, "CMOS back up battery", 50));
