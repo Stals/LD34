@@ -11,17 +11,19 @@
           3
         ],
         "ModifierValue": 0,
-        "LevelsInfo": 1,
+        "EnergyType": 1,
         "Modifier": {
           "$type": "CraftCore.AdjacentBonus, Assembly-CSharp",
           "BonusForLevel": [
             1,
             2,
             3
-          ]
+          ],
+          "description": null
         },
         "HeatPrice": 1,
-        "UpgradeLevel": 0
+        "UpgradeLevel": 0,
+        "Description": "+1 "
       },
       "doubles": 2
     },
@@ -35,60 +37,75 @@
           3
         ],
         "ModifierValue": 0,
-        "LevelsInfo": 4,
+        "EnergyType": 2,
+        "Modifier": {
+          "$type": "CraftCore.ColorNumberEquals, Assembly-CSharp",
+          "BonusForLevel": [
+            0,
+            0,
+            0
+          ],
+          "description": null,
+          "AimColor": 3,
+          "AimNumber": 0
+        },
+        "HeatPrice": 1,
+        "UpgradeLevel": 0,
+        "Description": "+ 1 GPU+0 "
+      },
+      "doubles": 3
+    },
+    {
+      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
+      "card": {
+        "$type": "CraftCore.Card, Assembly-CSharp",
+        "OutputForLevel": [
+          1,
+          2,
+          3
+        ],
+        "ModifierValue": 0,
+        "EnergyType": 3,
+        "Modifier": {
+          "$type": "CraftCore.AdjacentColorBonus, Assembly-CSharp",
+          "BonusForLevel": [
+            0,
+            0,
+            0
+          ],
+          "description": "to all adjacent",
+          "AimColor": 0
+        },
+        "HeatPrice": 1,
+        "UpgradeLevel": 0,
+        "Description": "+ 1 RAM+0 to all adjacent"
+      },
+      "doubles": 3
+    },
+    {
+      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
+      "card": {
+        "$type": "CraftCore.Card, Assembly-CSharp",
+        "OutputForLevel": [
+          1,
+          2,
+          3
+        ],
+        "ModifierValue": 0,
+        "EnergyType": 4,
         "Modifier": {
           "$type": "CraftCore.ColorBonus, Assembly-CSharp",
-          "AimColor": 3,
           "BonusForLevel": [
             1,
             2,
             3
           ],
-          "Color": 3
+          "description": null,
+          "AimColor": 3
         },
         "HeatPrice": 1,
-        "UpgradeLevel": 0
-      },
-      "doubles": 3
-    },
-    {
-      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
-      "card": {
-        "$type": "CraftCore.Card, Assembly-CSharp",
-        "OutputForLevel": [
-          1,
-          2,
-          3
-        ],
-        "ModifierValue": 0,
-        "LevelsInfo": 3,
-        "Modifier": null,
-        "HeatPrice": 1,
-        "UpgradeLevel": 0
-      },
-      "doubles": 3
-    },
-    {
-      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
-      "card": {
-        "$type": "CraftCore.Card, Assembly-CSharp",
-        "OutputForLevel": [
-          1,
-          2,
-          3
-        ],
-        "ModifierValue": 0,
-        "LevelsInfo": 2,
-        "Modifier": {
-          "$type": "CraftCore.AdjacentBonus, Assembly-CSharp",
-          "BonusForLevel": [
-            1,
-            2,
-            3
-          ]
-        },
-        "HeatPrice": 1,
-        "UpgradeLevel": 0
+        "UpgradeLevel": 0,
+        "Description": "+ 1 CPU+1 "
       },
       "doubles": 3
     }

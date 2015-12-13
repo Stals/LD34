@@ -48,25 +48,31 @@ public class TestingSaver : MonoBehaviour
         deck.Cards.Add(new DeckCombiner.CardDublicating(card, 2));
 
         card = new Card();
+        card.Type = EnergyType.Red;
+        card.setLevelEnergy(1, 2, 3);
+        var c4bonus = new ColorNumberEquals();
+        c4bonus.Color = EnergyType.Green;
+        c4bonus.AimNumber = 0;
+        card.Modifier = c4bonus;
+        bonus.setLevelBonus(1, 2, 3);
+        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
+
+        card = new Card();
+        card.Type = EnergyType.Green;
+        var c3bonus = new AdjacentColorBonus();
+        c3bonus.BaseDescription = "to all adjacent";
+        card.Modifier = c3bonus;
+        card.setLevelEnergy(1, 2, 3);
+        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
+        
+
+        card = new Card();
         card.Type = EnergyType.Blue;
         card.setLevelEnergy(1, 2, 3);
         var cbonus = new ColorBonus();
         cbonus.Color = EnergyType.Green;
         cbonus.setLevelBonus(1, 2, 3);
         card.Modifier = cbonus;
-        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
-
-        card = new Card();
-        card.Type = EnergyType.Green;
-        card.setLevelEnergy(1, 2, 3);
-        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
-
-        card = new Card();
-        card.Type = EnergyType.Red;
-        card.setLevelEnergy(1, 2, 3);
-        bonus = new AdjacentBonus();
-        bonus.setLevelBonus(1, 2, 3);
-        card.Modifier = bonus;
         deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
 
         var settings = new JsonSerializerSettings();

@@ -15,8 +15,7 @@ namespace CraftCore
         Green,
         Blue
     }
-
-    [Serializable]
+    
     public class Card
     {
         public Card()
@@ -27,7 +26,7 @@ namespace CraftCore
         int upgradeLevel = 0;
         public int ModifierValue { get; set; }
 
-        [JsonProperty("LevelsInfo")]
+        [JsonProperty("EnergyType")]
         public EnergyType Type { get; set; }
         
         [JsonProperty("Modifier")]
@@ -68,7 +67,16 @@ namespace CraftCore
         {
             get
             {
-                return "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
+                string main = "";
+                if (Type != EnergyType.Black)
+                {
+                    main = "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
+                }
+
+                string additional = "/n";
+                if (Modifier != null) additional = Modifier.Description(this);
+
+                return main + additional;
             }
         }
     }
