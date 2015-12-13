@@ -54,6 +54,7 @@ namespace CraftCore
             int result = 0;
             foreach (var card in cardMatrix)
             {
+                if (card == null) continue;
                 if (card.Type == type)
                 {
                     result += card.ProducedEnergy();
@@ -132,7 +133,7 @@ namespace CraftCore
             return result;
         }
 
-        public CardAndPlaceCondition typeCond(EnergyType type)
+        public static CardAndPlaceCondition TypeCond(EnergyType type)
         {
             return (CardOnBoard card) =>
             {
@@ -140,7 +141,7 @@ namespace CraftCore
             };
         }
         
-        public CardAndPlaceCondition adjacentCond(int myX, int myY)
+        public static CardAndPlaceCondition AdjacentCond(int myX, int myY)
         {
             return (CardOnBoard card) =>
             {
