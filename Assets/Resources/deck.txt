@@ -69,9 +69,9 @@
         "Modifier": {
           "$type": "CraftCore.ColorNumberEquals, Assembly-CSharp",
           "BonusForLevel": [
-            1,
             2,
-            3
+            4,
+            6
           ],
           "AimColor": 4,
           "AimNumber": 0,
