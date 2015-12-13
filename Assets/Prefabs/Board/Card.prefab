@@ -92,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 20, z: 0}
+  m_LocalPosition: {x: -1, y: 24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 464204}
@@ -144,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -9, z: 0}
+  m_LocalPosition: {x: -1, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 464204}
@@ -276,10 +276,6 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 462478}
-      ObjeckLink: 1697578520
-      PropertyPath: m_LocalPosition
-      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -316,20 +312,20 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 104
-  mHeight: 38
+  mWidth: 106
+  mHeight: 49
   mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.73684216
+  aspectRatio: 2.16326523
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
   mText: '+2 GPU
 
     if near green'
-  mFontSize: 10
+  mFontSize: 15
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -515,12 +511,12 @@ MonoBehaviour:
   mColor: {r: 1, g: .309000015, b: .309000015, a: 1}
   mPivot: 4
   mWidth: 104
-  mHeight: 52
+  mHeight: 44
   mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2
+  aspectRatio: 2.36363626
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
