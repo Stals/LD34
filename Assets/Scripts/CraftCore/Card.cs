@@ -19,6 +19,11 @@ namespace CraftCore
     [Serializable]
     public class Card
     {
+        public Card()
+        {
+            HeatPrice = 1;
+        }
+
         int upgradeLevel = 0;
         public int ModifierValue { get; set; }
 
@@ -28,6 +33,8 @@ namespace CraftCore
         [JsonProperty("Modifier")]
         public IModifier Modifier { get; set; }
 
+        [JsonProperty("HeatPrice")]
+        public int HeatPrice { get; set; }
 
         [JsonProperty("OutputForLevel")]
         int[] outputForLevel = new int[3];

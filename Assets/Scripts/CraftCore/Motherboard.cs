@@ -28,6 +28,9 @@ namespace CraftCore
 
         [JsonProperty("TyleMatrix")]
         EnergyType[,] tyleMatrix = new EnergyType[xSize, ySize];
+        [JsonProperty("Heat")]
+        public int Heat { get; set; }
+
         Card[,] cardMatrix = new Card[xSize, ySize];
 
         internal EnergyType[,] TyleMatrix
@@ -66,7 +69,9 @@ namespace CraftCore
         public bool addCard(Card card, int x, int y)
         {
             if (tyleMatrix[x, y] == EnergyType.Empty) return false;
+            if (Heat < card.HeatPrice) return false;
 
+            Heat -= card.HeatPrice;
             cardMatrix[x, y] = card;
             RecalculateModifiers();
             return true;
