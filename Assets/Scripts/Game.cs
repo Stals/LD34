@@ -4,37 +4,39 @@ using System.Collections.Generic;
 using CraftCore;
 
 
-public class Game  {
+public class Game {
 
     public struct Settings
     {
         public static readonly float DT_UNIT = 1.0f / 60.0f;
     }
 
-	private static Game instance;
-	private Game() {
+    private static Game instance;
+    private Game() {
         //player =s Player.load();
         deckCombiner = DeckCombiner.load();
+        player = new Player();
     }
 
     public static Game Instance
-	{
-		get 
-		{
-			if (instance == null)
-			{
-				instance = new Game();
-			}
-			return instance;
-		}
-	}
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new Game();
+            }
+            return instance;
+        }
+    }
 
     //Player player;
     //public Player Player { get { return player; } }
 
 
-	GameManager manager;
+    GameManager manager;
     DeckCombiner deckCombiner;
+    Player player;
 
     /*
     public float SoundVolume
@@ -112,18 +114,23 @@ public class Game  {
 
 
     public void init(GameManager _manager)
-	{
-		manager = _manager;
-	}
+    {
+        manager = _manager;
+    }
 
-	public GameManager getManager()
-	{
-		return manager;
-	}
+    public GameManager getManager()
+    {
+        return manager;
+    }
 
     public DeckCombiner getDeckCombiner()
     {
         return deckCombiner;
+    }
+
+    public Player getPlayer()
+    {
+        return player;
     }
 
 
