@@ -9,7 +9,7 @@ namespace CraftCore
 {
     public class DeckCombiner
     {
-        DeckCombiner load()
+        static DeckCombiner load()
         {
             var settings = new JsonSerializerSettings();
             settings.TypeNameHandling = TypeNameHandling.Objects;
