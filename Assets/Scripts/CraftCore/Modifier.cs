@@ -121,5 +121,87 @@ namespace CraftCore
         }
     }
 
+    public class ForEachOfTypeAdjacent : BonusContaining
+    {
+        [JsonProperty("AimColor")]
+        public EnergyType Color { get; set; }
 
+        public override void Modify(Motherboard board, CardOnBoard card)
+        {
+            int size = board.CardsByCondition((CardOnBoard cardToChoose) =>
+            {
+                return Motherboard.AdjacentCond(card.x, card.y)(cardToChoose) &&
+                       Motherboard.TypeCond(Color)(cardToChoose);
+            }).Count; ;
+            card.card.ModifierValue += bonusForLevel[card.card.UpgradeLevel] * size;
+        }
+    }
+
+    public class IfAdjacent : BonusContaining
+    {
+        [JsonProperty("AimColor")]
+        public EnergyType Color { get; set; }
+
+        public override void Modify(Motherboard board, CardOnBoard card)
+        {
+            int size = board.CardsByCondition((CardOnBoard cardToChoose) =>
+            {
+                return Motherboard.AdjacentCond(card.x, card.y)(cardToChoose) &&
+                       Motherboard.TypeCond(Color)(cardToChoose);
+            }).Count;
+            if (size > 0)
+            {
+                card.card.ModifierValue += bonusForLevel[card.card.UpgradeLevel];
+            }
+        }
+    }
+
+    public class IfNotAdjacent : BonusContaining
+    {
+        [JsonProperty("AimColor")]
+        public EnergyType Color { get; set; }
+
+        public override void Modify(Motherboard board, CardOnBoard card)
+        {
+            int size = board.CardsByCondition((CardOnBoard cardToChoose) =>
+            {
+                return Motherboard.AdjacentCond(card.x, card.y)(cardToChoose) &&
+                       Motherboard.TypeCond(Color)(cardToChoose);
+            }).Count;
+            if (size == 0)
+            {
+                card.card.ModifierValue += bonusForLevel[card.card.UpgradeLevel];
+            }
+        }
+    }
+
+    public class Column: OtherChanging
+    {
+        protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
+        {
+            return (CardOnBoard cardToChoose) =>
+            {
+                return cardToChoose.x == card.x;
+            };
+        }
+    }
+
+    public class Row : OtherChanging
+    {
+        protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
+        {
+            return (CardOnBoard cardToChoose) =>
+            {
+                return cardToChoose.y == card.y;
+            };
+        }
+    }
+
+    public class Energy : BonusContaining
+    {
+        public override void Modify(Motherboard board, CardOnBoard card)
+        {
+            board.HeatModifier += bonusForLevel[card.card.UpgradeLevel];
+        }
+    }
 }
