@@ -10,6 +10,8 @@ public class CardViewController : MonoBehaviour {
 
     [SerializeField]
     UILabel descrptionLabel;
+    [SerializeField]
+    UILabel heatCost;
 
     Card card;
 
@@ -40,6 +42,7 @@ public class CardViewController : MonoBehaviour {
                 break;
         }
 
+        heatCost.text = card.HeatPrice.ToString();
     }
 
 
