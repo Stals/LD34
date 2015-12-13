@@ -52,9 +52,12 @@ public class SlotViewController : MonoBehaviour {
         CardViewController cardView = drag.GetComponent<CardViewController>();
         if (!cardView) return;
 
-        GetComponent<BoxCollider>().enabled = false;
 
-        cardView.disableTouch();
-        Game.Instance.getManager().getBoardViewController().onCardPlaced(x, y, cardView.getCard());
+        bool placed = Game.Instance.getManager().getBoardViewController().onCardPlaced(x, y, cardView.getCard(), cardView);
+
+        if (placed) {
+            GetComponent<BoxCollider>().enabled = false;
+            cardView.disableTouch();
+        }
     }
 }

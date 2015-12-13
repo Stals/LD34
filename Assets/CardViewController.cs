@@ -43,6 +43,7 @@ public class CardViewController : MonoBehaviour {
         }
 
         heatCost.text = card.HeatPrice.ToString();
+        //descrptionLabel.text = card.Description;
     }
 
 

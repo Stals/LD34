@@ -26,22 +26,28 @@ public class BoardViewController : MonoBehaviour {
         return Game.Instance.getDeckCombiner().combineDeck();
     }
 
-    public void onCardPlaced(int x, int y, Card card)
+    public bool onCardPlaced(int x, int y, Card card, CardViewController cardController)
     {
         bool success = session.pickCard(card, x, y);
 
         if (success)
         {
             // TODO place remaining card into discard pile
-
-            foreach (GameObject cardGO in currentChoiceCards) {
-                if (cardGO.GetComponent<CardViewController>().getCard() != card) {
+            foreach (GameObject cardGO in currentChoiceCards)
+            {
+                if (cardGO.GetComponent<CardViewController>().getCard() != card)
+                {
                     moveCardToDiscard(cardGO);
                 }
             }
 
             drawNewCards();
         }
+        else {
+            callCardBack(cardController.gameObject);
+        }
+
+        return success;
     }
 
     public void setup(Motherboard motherboard)
