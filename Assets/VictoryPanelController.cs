@@ -137,5 +137,6 @@ public class VictoryPanelController : MonoBehaviour {
         GetComponent<UITweener>().PlayReverse();
 
         boarSelectionController.GetComponent<UITweener>().PlayReverse();
+        boarSelectionController.setup();
     }
 }

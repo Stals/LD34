@@ -32,6 +32,8 @@ public class MotherViewController : MonoBehaviour {
 
     public void setup(Motherboard board)
     {
+        NGUITools.DestroyChildren(previewTiles.transform);
+
         motherboard = board;
 
         for (int x = 0; x < Motherboard.xSize; ++x)
