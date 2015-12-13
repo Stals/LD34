@@ -30,7 +30,9 @@ namespace CraftCore
         public MotherBoardsCombiner()
         {
             var file = Resources.Load("motherboards_layouts") as TextAsset;
-            var chars = file.text.Split(' ');
+
+            string[] separatingChars = { " ", "\r\n", "\n" };
+            var chars = file.text.Split(separatingChars, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < chars.Length / 16; ++i)
             {
                 EnergyType[,] types = new EnergyType[4, 4];
