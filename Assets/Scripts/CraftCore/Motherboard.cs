@@ -30,8 +30,12 @@ namespace CraftCore
         EnergyType[,] tyleMatrix = new EnergyType[xSize, ySize];
         [JsonProperty("Heat")]
         public int Heat { get; set; }
-
         public int HeatModifier { get; set; }
+
+        public int TotalHeat
+        {
+            get { return Heat + HeatModifier; }
+        }
 
         Card[,] cardMatrix = new Card[xSize, ySize];
 
@@ -77,13 +81,12 @@ namespace CraftCore
                 Debug.Log("not a valid place!");
                 return false;
             }
-            if (Heat + HeatModifier < card.HeatPrice)
+            if (TotalHeat < card.HeatPrice)
             {
                 Debug.Log("not enought energy!");
                 return false;
             }
 
-            Heat -= card.HeatPrice;
             cardMatrix[x, y] = card;
             RecalculateModifiers();
             return true;
@@ -106,6 +109,7 @@ namespace CraftCore
             {
                 int buff = (card.card.Type == tyleMatrix[card.x, card.y]) ? 1 : 0;
                 card.card.ModifierValue = buff;
+                Heat -= card.card.HeatPrice;
             }
 
             foreach (var card in CardsOnBoard)
