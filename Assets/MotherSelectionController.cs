@@ -78,7 +78,10 @@ public class MotherSelectionController : MonoBehaviour {
         foreach (var m in selectableMothers)
         {
             m.setup(getRandomMotherboard());
-        }       
+        }
+
+        contructButton.SetState(UIButtonColor.State.Disabled, true);
+        contructButton.isEnabled = false;
     }
 
 
@@ -86,8 +89,6 @@ public class MotherSelectionController : MonoBehaviour {
     void Start() {
         setup();
 
-        contructButton.SetState(UIButtonColor.State.Disabled, true);
-        contructButton.isEnabled = false;
     }
 
     // Update is called once per frame
