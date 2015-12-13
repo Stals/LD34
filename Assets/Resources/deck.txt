@@ -1,0 +1,98 @@
+{
+  "$type": "CraftCore.DeckCombiner, Assembly-CSharp",
+  "Cards": [
+    {
+      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
+      "card": {
+        "$type": "CraftCore.Card, Assembly-CSharp",
+        "OutputForLevel": [
+          1,
+          2,
+          3
+        ],
+        "ModifierValue": 0,
+        "LevelsInfo": 1,
+        "Modifier": {
+          "$type": "CraftCore.AdjacentBonus, Assembly-CSharp",
+          "BonusForLevel": [
+            1,
+            2,
+            3
+          ]
+        },
+        "HeatPrice": 1,
+        "UpgradeLevel": 0
+      },
+      "doubles": 2
+    },
+    {
+      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
+      "card": {
+        "$type": "CraftCore.Card, Assembly-CSharp",
+        "OutputForLevel": [
+          1,
+          2,
+          3
+        ],
+        "ModifierValue": 0,
+        "LevelsInfo": 4,
+        "Modifier": {
+          "$type": "CraftCore.ColorBonus, Assembly-CSharp",
+          "AimColor": 3,
+          "BonusForLevel": [
+            1,
+            2,
+            3
+          ],
+          "Color": 3
+        },
+        "HeatPrice": 1,
+        "UpgradeLevel": 0
+      },
+      "doubles": 3
+    },
+    {
+      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
+      "card": {
+        "$type": "CraftCore.Card, Assembly-CSharp",
+        "OutputForLevel": [
+          1,
+          2,
+          3
+        ],
+        "ModifierValue": 0,
+        "LevelsInfo": 3,
+        "Modifier": null,
+        "HeatPrice": 1,
+        "UpgradeLevel": 0
+      },
+      "doubles": 3
+    },
+    {
+      "$type": "CraftCore.DeckCombiner+CardDublicating, Assembly-CSharp",
+      "card": {
+        "$type": "CraftCore.Card, Assembly-CSharp",
+        "OutputForLevel": [
+          1,
+          2,
+          3
+        ],
+        "ModifierValue": 0,
+        "LevelsInfo": 2,
+        "Modifier": {
+          "$type": "CraftCore.AdjacentBonus, Assembly-CSharp",
+          "BonusForLevel": [
+            1,
+            2,
+            3
+          ]
+        },
+        "HeatPrice": 1,
+        "UpgradeLevel": 0
+      },
+      "doubles": 3
+    }
+  ]
+}
+UnityEngine.Debug:Log(Object)
+TestingSaver:Start() (at Assets/Scripts/CraftTesting/TestingSaver.cs:74)

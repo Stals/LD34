@@ -27,7 +27,7 @@ namespace CraftCore
         public GameSession(List<Card> deck, Motherboard board)
         {
             this.deck = new List<Card>(deck);
-            this.board = new Motherboard(board);
+            this.board = board;
 
             ReadyMove();
         }
@@ -51,8 +51,12 @@ namespace CraftCore
         public bool pickCard(Card card, int x, int y)
         {
             if (avaliableCards.Contains(card))
-            {
-                board.addCard(card, x, y);
+            {                
+                if (!board.addCard(card, x, y))
+                {
+                    Debug.Log("Not a valid card choice!");
+                    return false;
+                }
                 avaliableCards.Remove(card);
                 foreach (var c in avaliableCards) waste.Add(c);
 
