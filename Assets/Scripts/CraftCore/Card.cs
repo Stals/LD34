@@ -68,7 +68,7 @@ namespace CraftCore
         {
             get
             {
-                return "Gives " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
+                return "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
             }
         }
     }

@@ -13,11 +13,11 @@ namespace CraftCore
             {
                 return "CPU";
             }
-            if (type == EnergyType.Green)
+            if (type == EnergyType.Red)
             {
                 return "GPU";
             }
-            if (type == EnergyType.Blue)
+            if (type == EnergyType.Green)
             {
                 return "RAM";
             }
