@@ -22,8 +22,8 @@ public class TestingSaver : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        List<Card> cards = new List<Card>();
-
+        
+        //List<Card> cards = new List<Card>();
         //string cardstr = "{  \"$type\": \"CraftCore.Card, Assembly-CSharp\",  \"OutputForLevel\": [1, 2,    3  ],  \"ModifierValue\": 0,  \"LevelsInfo\": 1,  \"Modifier\": {    \"$type\": \"CraftCore.AdjacentBonus, Assembly-CSharp\"  },  \"UpgradeLevel\": 0}";
         //var settings = new JsonSerializerSettings();
         //settings.TypeNameHandling = TypeNameHandling.Objects;
@@ -36,38 +36,42 @@ public class TestingSaver : MonoBehaviour
         //card = JsonConvert.DeserializeObject<Card>(cardstr, settings);
         //cards.Add(card);
 
+
+        DeckCombiner deck = new DeckCombiner();
+
         Card card = new Card();
         card.Type = EnergyType.Black;
         card.setLevelEnergy(1, 2, 3);
         AdjacentBonus bonus = new AdjacentBonus();
         bonus.setLevelBonus(1, 2, 3);
         card.Modifier = bonus;
-        cards.Add(card);
+        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 2));
 
-        for (int i = 0; i < 10; ++i)
-        {
-            card = new Card();
-            card.Type = EnergyType.Blue;
-            card.setLevelEnergy(1, 2, 3);
-            var cbonus = new ColorBonus();
-            cbonus.Color = EnergyType.Green;
-            cbonus.setLevelBonus(1, 2, 3);
-            card.Modifier = cbonus;
-            cards.Add(card);
+        card = new Card();
+        card.Type = EnergyType.Blue;
+        card.setLevelEnergy(1, 2, 3);
+        var cbonus = new ColorBonus();
+        cbonus.Color = EnergyType.Green;
+        cbonus.setLevelBonus(1, 2, 3);
+        card.Modifier = cbonus;
+        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
 
-            card = new Card();
-            card.Type = EnergyType.Green;
-            card.setLevelEnergy(1, 2, 3);
-            cards.Add(card);
+        card = new Card();
+        card.Type = EnergyType.Green;
+        card.setLevelEnergy(1, 2, 3);
+        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
 
-            card = new Card();
-            card.Type = EnergyType.Red;
-            card.setLevelEnergy(1, 2, 3);
-            bonus = new AdjacentBonus();
-            bonus.setLevelBonus(1, 2, 3);
-            card.Modifier = bonus;
-            cards.Add(card);
-        }
+        card = new Card();
+        card.Type = EnergyType.Red;
+        card.setLevelEnergy(1, 2, 3);
+        bonus = new AdjacentBonus();
+        bonus.setLevelBonus(1, 2, 3);
+        card.Modifier = bonus;
+        deck.Cards.Add(new DeckCombiner.CardDublicating(card, 3));
+
+        var settings = new JsonSerializerSettings();
+        settings.TypeNameHandling = TypeNameHandling.Objects;
+        Debug.Log(JsonConvert.SerializeObject(deck, Formatting.Indented, settings));
 
 
         EnergyType[,] arr = {   {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
@@ -77,7 +81,7 @@ public class TestingSaver : MonoBehaviour
 
         Motherboard b = new Motherboard(arr);
 
-        game = new GameSession(cards, b);
+        game = new GameSession(deck.combineDeck(), b);
 
         PrintStats();
     }

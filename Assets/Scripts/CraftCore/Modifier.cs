@@ -9,12 +9,16 @@ namespace CraftCore
     public interface IModifier
     {
         void Modify(Motherboard board, CardOnBoard card);
+        string Description(Card card);
     }
 
-    public abstract class BonusContaining
+    public abstract class BonusContaining: IModifier
     {
         [JsonProperty("BonusForLevel")]
         protected int[] bonusForLevel = new int[3];
+
+        [JsonProperty("description")]
+        public string BaseDescription;
 
         public void setLevelBonus(int x, int y, int z)
         {
@@ -22,8 +26,18 @@ namespace CraftCore
             bonusForLevel[1] = y;
             bonusForLevel[2] = z;
         }
+        
+        virtual public string Description(Card card)
+        {
+            return "+" + bonusForLevel[card.UpgradeLevel] + " " + BaseDescription;
+        }
 
-        public void Modify(Motherboard board, CardOnBoard card)
+        public abstract void Modify(Motherboard board, CardOnBoard card);        
+    }
+
+    public abstract class OtherChanging: BonusContaining
+    {
+        public override void Modify(Motherboard board, CardOnBoard card)
         {
             foreach (var adjCard in board.CardsByCondition(Condition(card)))
             {
@@ -33,78 +47,79 @@ namespace CraftCore
 
         abstract protected Motherboard.CardAndPlaceCondition Condition(CardOnBoard card);
     }
-
-    [JsonObject("AdjacentBonus")]
-    public class AdjacentBonus : BonusContaining, IModifier
+    
+    public class AdjacentBonus : OtherChanging
     {
-        //public AdjacentBonus(int[] bonuses)
-        //{
-        //    bonusForLevel = bonuses;
-        //}
-
         protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
         {
             return Motherboard.AdjacentCond(card.x, card.y);
         }
     }
-
-    [JsonObject("ColorBonus")]
-    public class ColorBonus: BonusContaining, IModifier
+    
+    public class ColorBonus: OtherChanging
     {
         [JsonProperty("AimColor")]
-        EnergyType color;
-
-        public EnergyType Color
-        {
-            get
-            {
-                return color;
-            }
-
-            set
-            {
-                color = value;
-            }
-        }
-
-        //public ColorBonus(int[] bonuses, EnergyType color)
-        //{
-        //    bonusForLevel = bonuses;
-        //}
+        public EnergyType Color { get; set; }
 
         protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
         {
             return Motherboard.TypeCond(card.card.Type);
         }
     }
-
-    [JsonObject("AdjacentColorBonus")]
-    public class AdjacentColorBonus : BonusContaining, IModifier
+    
+    public class AdjacentColorBonus : ColorBonus
     {
-        [JsonProperty("AimColor")]
-        EnergyType color;
-
-        public EnergyType Color
-        {
-            get
-            {
-                return color;
-            }
-
-            set
-            {
-                color = value;
-            }
-        }
-
         protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
         {
             return (CardOnBoard cardToChoose) =>
             {
                 return Motherboard.AdjacentCond(card.x, card.y)(cardToChoose) &&
-                       Motherboard.TypeCond(color)(cardToChoose);
+                       Motherboard.TypeCond(Color)(cardToChoose);
             };
         }
     }
+
+    public class ColorNumberEquals: BonusContaining
+    {
+        [JsonProperty("AimColor")]
+        public EnergyType Color { get; set; }
+
+        [JsonProperty("AimNumber")]
+        public int AimNumber { get; set; }
+
+        public override void Modify(Motherboard board, CardOnBoard card)
+        {
+            int size = board.CardsByCondition(Motherboard.TypeCond(Color)).Count;
+            if (size == AimNumber)
+            {
+                card.card.ModifierValue += bonusForLevel[card.card.UpgradeLevel];
+            }
+        }
+    }
+
+    public class InMySlot : BonusContaining
+    {
+
+        public override void Modify(Motherboard board, CardOnBoard card)
+        {            
+            if (board.GetTyle(card.x, card.y) == card.card.Type)
+            { 
+                card.card.ModifierValue += bonusForLevel[card.card.UpgradeLevel];
+            }
+        }
+    }
+
+    public class ForEachOfType : BonusContaining
+    {
+        [JsonProperty("AimColor")]
+        public EnergyType Color { get; set; }
+        
+        public override void Modify(Motherboard board, CardOnBoard card)
+        {
+            int size = board.CardsByCondition(Motherboard.TypeCond(Color)).Count;
+            card.card.ModifierValue += bonusForLevel[card.card.UpgradeLevel] * size;
+        }
+    }
+
 
 }
