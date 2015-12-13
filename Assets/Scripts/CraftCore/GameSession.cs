@@ -74,6 +74,7 @@ namespace CraftCore
 
         public void Discard()
         {
+            if (Board.TotalHeat <= 0) return;
             foreach (var c in avaliableCards)
             {
                 waste.Add(c);
