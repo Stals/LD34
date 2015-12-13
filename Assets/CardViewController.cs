@@ -55,6 +55,7 @@ public class CardViewController : MonoBehaviour {
         description = description.Replace("GPU", "[FF0000][b]GPU[/b][-]");
         description = description.Replace("RAM", "[00FF00][b]RAM[/b][-]");
         description = description.Replace("CPU", "[0000FF][b]CPU[/b][-]");
+        description = description.Replace("UTI", "[888888][b]UTI[/b][-]");
 
         return description;
     }
