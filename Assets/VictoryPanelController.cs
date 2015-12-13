@@ -37,12 +37,12 @@ public class VictoryPanelController : MonoBehaviour {
         for (int i = 0; i < alpha.Count; i++)
         {
             DeckCombiner.CardDublicating temp = alpha[i];
-            int randomIndex = UnityEngine.Random.Range (i, alpha.Count);
+            int randomIndex = UnityEngine.Random.Range(i, alpha.Count);
             alpha[i] = alpha[randomIndex];
             alpha[randomIndex] = temp;
         }
         return alpha;
-     }
+    }
 
     public void setup(GameSession session)
     {
@@ -60,17 +60,65 @@ public class VictoryPanelController : MonoBehaviour {
 
             var cardController = NGUITools.AddChild(holder, cardPrefab).GetComponent<CardViewController>();
             cardController.setup(card);
+            cardController.disableTouch();
 
-            // TODO setup buttons text
+            ++i;
+        }
 
-            ++i;            
+        updateButtons();
+    }
+
+    void updateButtons()
+    {
+        foreach (var holder in cardHolders)
+        {
+            Card card = holder.GetComponentInChildren<CardViewController>().getCard();
+            UIButton buyButton = holder.GetComponentInChildren<UIButton>();
+
+            if (card.UpgradeLevel == 2) { // is max
+                buyButton.SetState(UIButtonColor.State.Disabled, true);
+                buyButton.GetComponentInChildren<UILabel>().text = "";
+                return;
+            }
+
+            int upgradeCost = getPriceForUpgrade(card.UpgradeLevel);
+            if (Game.Instance.getPlayer().getMoney() < upgradeCost)
+            {
+                buyButton.SetState(UIButtonColor.State.Disabled, true);
+            }
+
+            buyButton.GetComponentInChildren<UILabel>().text = upgradeCost + " $";
         }
     }
 
+
+    int getPriceForUpgrade(int level)
+    {
+        if (level == 0)
+        {
+            return 50;
+        }
+        else {
+            return 350;
+        }
+    }
+
+
     public void onPurchasePressed(GameObject cardHolder)
     {
-        cardHolder.GetComponentInChildren<UIButton>().gameObject.SetActive(false);
+        Card card = cardHolder.GetComponentInChildren<CardViewController>().getCard();
+        int upgradeCost = getPriceForUpgrade(card.UpgradeLevel);
+        if (Game.Instance.getPlayer().getMoney() >= upgradeCost)
+        {
+            cardHolder.GetComponentInChildren<UIButton>().SetState(UIButtonColor.State.Disabled, true);
+            cardHolder.GetComponentInChildren<CardViewController>().getCard().UpgradeLevel += 1;
 
-        // TODO find this card and upgrade
+            Game.Instance.getPlayer().addMoney(-upgradeCost);
+        }
+        else {
+            //TODO because buttons are disabled - impossible
+        }
+
+        updateButtons();
     }
 }

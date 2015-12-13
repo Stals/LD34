@@ -678,6 +678,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1627548821}
     m_Modifications:
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 480360, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -726,6 +734,18 @@ Prefab:
       propertyPath: m_Name
       value: Buy Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mTarget
+      value: 
+      objectReference: {fileID: 1060525632}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mMethodName
+      value: onPurchasePressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
+      value: 
+      objectReference: {fileID: 1627548820}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
   m_IsPrefabParent: 0
@@ -948,6 +968,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 761990649}
     m_Modifications:
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 480360, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -996,6 +1024,18 @@ Prefab:
       propertyPath: m_Name
       value: Buy Button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mTarget
+      value: 
+      objectReference: {fileID: 1060525632}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mMethodName
+      value: onPurchasePressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
+      value: 
+      objectReference: {fileID: 761990648}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
   m_IsPrefabParent: 0
@@ -2387,6 +2427,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1659836587}
     m_Modifications:
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 480360, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2419,6 +2467,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mTarget
+      value: 
+      objectReference: {fileID: 1060525632}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mMethodName
+      value: onPurchasePressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
+      value: 
+      objectReference: {fileID: 1659836586}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
   m_IsPrefabParent: 0
@@ -3048,6 +3108,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1170897835}
     m_Modifications:
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 480360, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3096,6 +3164,18 @@ Prefab:
       propertyPath: m_Name
       value: Buy Button (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mTarget
+      value: 
+      objectReference: {fileID: 1060525632}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mMethodName
+      value: onPurchasePressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
+      value: 
+      objectReference: {fileID: 1170897834}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
   m_IsPrefabParent: 0
