@@ -66,6 +66,7 @@ public class MotherViewController : MonoBehaviour {
                 newTIle.GetComponent<UISprite>().color = tileColor;
             }
         }
+        previewTiles.Reposition();
     }
 
     public Motherboard getMotherboard()
