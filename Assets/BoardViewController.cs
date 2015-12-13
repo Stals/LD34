@@ -17,7 +17,7 @@ public class BoardViewController : MonoBehaviour {
 
     const int cardsPerDraft = 2;
 	Motherboard board;
-	GameSession session;
+	public GameSession session;
 
     List<GameObject> currentChoiceCards;
 

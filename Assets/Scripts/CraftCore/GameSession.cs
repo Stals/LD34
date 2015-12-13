@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace CraftCore
 {
-    class GameSession
+    public class GameSession
     {
         public delegate void EndGame(float result);
         public event EndGame OnEndGame;
