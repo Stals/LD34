@@ -41,7 +41,7 @@ namespace CraftCore
             }
         }
 
-        List<Card> Shuffle(List<Card> input)
+        public List<Card> Shuffle(List<Card> input)
         {
             var copy = new List<Card>(input);
             List<Card> result = new List<Card>();
