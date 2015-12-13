@@ -13,7 +13,7 @@ namespace CraftCore
 
     public abstract class BonusContaining
     {
-        [JsonProperty("Bonus")]
+        [JsonProperty("BonusForLevel")]
         protected int[] bonusForLevel = new int[3];
 
         public void setLevelBonus(int x, int y, int z)
@@ -34,14 +34,21 @@ namespace CraftCore
         abstract protected Motherboard.CardAndPlaceCondition Condition(CardOnBoard card);
     }
 
+    [JsonObject("AdjacentBonus")]
     public class AdjacentBonus : BonusContaining, IModifier
     {
+        //public AdjacentBonus(int[] bonuses)
+        //{
+        //    bonusForLevel = bonuses;
+        //}
+
         protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
         {
             return Motherboard.AdjacentCond(card.x, card.y);
         }
     }
 
+    [JsonObject("ColorBonus")]
     public class ColorBonus: BonusContaining, IModifier
     {
         [JsonProperty("AimColor")]
@@ -60,12 +67,18 @@ namespace CraftCore
             }
         }
 
+        //public ColorBonus(int[] bonuses, EnergyType color)
+        //{
+        //    bonusForLevel = bonuses;
+        //}
+
         protected override Motherboard.CardAndPlaceCondition Condition(CardOnBoard card)
         {
             return Motherboard.TypeCond(card.card.Type);
         }
     }
 
+    [JsonObject("AdjacentColorBonus")]
     public class AdjacentColorBonus : BonusContaining, IModifier
     {
         [JsonProperty("AimColor")]

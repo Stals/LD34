@@ -24,6 +24,18 @@ public class TestingSaver : MonoBehaviour
     {
         List<Card> cards = new List<Card>();
 
+        //string cardstr = "{  \"$type\": \"CraftCore.Card, Assembly-CSharp\",  \"OutputForLevel\": [1, 2,    3  ],  \"ModifierValue\": 0,  \"LevelsInfo\": 1,  \"Modifier\": {    \"$type\": \"CraftCore.AdjacentBonus, Assembly-CSharp\"  },  \"UpgradeLevel\": 0}";
+        //var settings = new JsonSerializerSettings();
+        //settings.TypeNameHandling = TypeNameHandling.Objects;
+        //Card card = JsonConvert.DeserializeObject<Card>(cardstr, settings);
+        //cards.Add(card);
+        //card = JsonConvert.DeserializeObject<Card>(cardstr, settings);
+        //cards.Add(card);
+        //card = JsonConvert.DeserializeObject<Card>(cardstr, settings);
+        //cards.Add(card);
+        //card = JsonConvert.DeserializeObject<Card>(cardstr, settings);
+        //cards.Add(card);
+
         Card card = new Card();
         card.Type = EnergyType.Black;
         card.setLevelEnergy(1, 2, 3);
@@ -91,9 +103,13 @@ public class TestingSaver : MonoBehaviour
         string json = JsonConvert.SerializeObject(game.Board);
         Debug.Log(json);
 
-        json = JsonConvert.SerializeObject(game.AvaliableCards[0]);
+
+        var settings = new JsonSerializerSettings();
+        settings.TypeNameHandling = TypeNameHandling.Objects;
+        
+        json = JsonConvert.SerializeObject(game.AvaliableCards[0], Formatting.Indented, settings);
         Debug.Log(json);
-        json = JsonConvert.SerializeObject(game.AvaliableCards[1]);
+        json = JsonConvert.SerializeObject(game.AvaliableCards[1], Formatting.Indented, settings);
         Debug.Log(json);
 
         Debug.Log("Red energy = " + game.Board.Energy(EnergyType.Red));
