@@ -90,15 +90,20 @@ public class VictoryPanelController : MonoBehaviour {
     {
         foreach (var holder in cardHolders)
         {
+
             Card card = holder.GetComponentInChildren<CardViewController>().getCard();
             UIButton buyButton = holder.GetComponentInChildren<UIButton>();
-            if (!buyButton) return;
+            if (!buyButton) continue;
+
+            // reset buttons
+            buyButton.SetState(UIButtonColor.State.Normal, true);
+            buyButton.isEnabled = true;
 
             if (card.UpgradeLevel == 2) { // is max
                 buyButton.SetState(UIButtonColor.State.Disabled, true);
                 buyButton.isEnabled = false;
                 buyButton.GetComponentInChildren<UILabel>().text = "";
-                return;
+                continue;
             }
 
             int upgradeCost = getPriceForUpgrade(card.UpgradeLevel);
