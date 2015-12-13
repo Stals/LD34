@@ -63,7 +63,7 @@ namespace CraftCore
             return outputForLevel[upgradeLevel] + ModifierValue;
         }
 
-        public string Description
+        public string DescriptionMain
         {
             get
             {
@@ -72,12 +72,28 @@ namespace CraftCore
                 {
                     main = "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
                 }
+                return main;
+                
+            }
+        }
 
+        public string DescriptionPerk
+        {
+            get
+            {
                 string additional = "";
                 if (Modifier != null) additional = Modifier.Description(this);
 
-                return main + "\n" + additional;
+                return additional;
             }
         }
+
+        public string Description
+        { get
+            {
+                return DescriptionMain + "/n" + DescriptionPerk;
+            }
+        }
+        
     }
 }
