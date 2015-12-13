@@ -133,9 +133,16 @@ public class BoardViewController : MonoBehaviour {
 
     public void onShipPressed()
     {
+        // discard your last cards (for next session)
+        foreach (GameObject cardGO in currentChoiceCards)
+        {
+            moveCardToDiscard(cardGO);
+        }
+
         // TODO switch to victory screen and cards choosign 
         // + ability to select cards
 
+        victoryPanel = transform.parent.gameObject.GetComponentInChildren<VictoryPanelController>();
         victoryPanel.GetComponent<UITweener>().PlayForward();
         GetComponent<UITweener>().PlayReverse();
 

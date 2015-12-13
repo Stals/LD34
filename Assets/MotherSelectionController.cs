@@ -6,13 +6,10 @@ using CraftCore;
 public class MotherSelectionController : MonoBehaviour {
 
     [SerializeField]
-    GameObject boardPanel;
+    GameObject boardPrefab;
 
     [SerializeField]
     List<MotherViewController> selectableMothers;
-
-    [SerializeField]
-    BoardViewController boardController;
 
     [SerializeField]
     UIButton contructButton;
@@ -96,9 +93,13 @@ public class MotherSelectionController : MonoBehaviour {
 
     public void onConstructPress()
     {
+        GameObject boardPanel = NGUITools.AddChild(transform.parent.gameObject, boardPrefab);
+        boardPanel.transform.position = new Vector3(0, 768, 0);
+
         GetComponent<UITweener>().PlayForward();
         boardPanel.GetComponent<UITweener>().PlayForward();
 
+        BoardViewController boardController = boardPanel.GetComponent<BoardViewController>();
         // TODO call setup with the selected motherboard
         boardController.setup(currentSelected.getMotherboard());
     }

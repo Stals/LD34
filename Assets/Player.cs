@@ -8,7 +8,7 @@ public class Player {
 
     // Use this for initialization
     public Player() {
-        money = 5000;
+        money = 0;
     }
 
     // Update is called once per frame
