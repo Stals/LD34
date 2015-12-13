@@ -351,8 +351,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.16326523
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
+  mFont: {fileID: 0}
   mText: +1 GPU
   mFontSize: 15
   mFontStyle: 0
@@ -417,8 +417,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.16326523
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
+  mFont: {fileID: 0}
   mText: '+2 GPU
 
     if near green'
