@@ -13,6 +13,7 @@ public class SlotViewController : MonoBehaviour {
 
 		case EnergyType.Empty:
 			background.alpha = 0f;
+			GetComponent<BoxCollider>().enabled = false;
 			break;
 		case EnergyType.Black:
 			background.color = Color.black;

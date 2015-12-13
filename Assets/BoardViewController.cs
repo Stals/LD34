@@ -74,7 +74,7 @@ public class BoardViewController : MonoBehaviour {
 			for(int y = 0; y < Motherboard.ySize; ++y){
 				EnergyType energyType = board.GetTyle(x, y);
 
-				slots[y].GetChild(x).gameObject.GetComponent<SlotViewController>().setup(energyType);
+				slots[x].GetChild(y).gameObject.GetComponent<SlotViewController>().setup(energyType);
 			}
 		}
 	}
