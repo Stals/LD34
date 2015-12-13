@@ -16,6 +16,8 @@ public class MotherSelectionController : MonoBehaviour {
 
     MotherViewController currentSelected;
 
+    MotherBoardsCombiner boardCombiner;
+
     public void deselectAll()
     {
         foreach (var m in selectableMothers) {
@@ -62,7 +64,6 @@ public class MotherSelectionController : MonoBehaviour {
 
     Motherboard getRandomMotherboard()
     {
-        MotherBoardsCombiner boardCombiner = new MotherBoardsCombiner();
         Motherboard board = new Motherboard(boardCombiner.Matrices[Random.Range(0, boardCombiner.Matrices.Count)]);
         board.Heat = 8;
         return board;
@@ -84,7 +85,9 @@ public class MotherSelectionController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        boardCombiner = new MotherBoardsCombiner();
         setup();
+
     }
 
     // Update is called once per frame
