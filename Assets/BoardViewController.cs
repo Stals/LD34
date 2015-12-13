@@ -12,17 +12,17 @@ public class BoardViewController : MonoBehaviour {
     [SerializeField]
     UIGrid cardSelectionGrid;
 
-	[SerializeField]
-	List<UIGrid> slots;
+    [SerializeField]
+    List<UIGrid> slots;
 
     const int cardsPerDraft = 2;
-	Motherboard board;
-	public GameSession session;
+    Motherboard board;
+    public GameSession session;
 
     List<GameObject> currentChoiceCards;
 
-	List<Card> getDeck()
-	{
+    List<Card> getDeck()
+    {
         return Game.Instance.getDeckCombiner().combineDeck();
     }
 
@@ -53,7 +53,7 @@ public class BoardViewController : MonoBehaviour {
     public void setup(Motherboard motherboard)
     {
         board = motherboard;
-        session = new GameSession (getDeck (), motherboard);
+        session = new GameSession(getDeck(), motherboard);
 
         setupBoard();
 
@@ -70,10 +70,10 @@ public class BoardViewController : MonoBehaviour {
     }
 
     void setupBackend()
-	{
-		//board = new Motherboard(getRandomMotherboardSetup());
-		//session = new GameSession (getDeck (), board);
-	}
+    {
+        //board = new Motherboard(getRandomMotherboardSetup());
+        //session = new GameSession (getDeck (), board);
+    }
 
     // Use this for initialization
     void Start() {
@@ -85,26 +85,26 @@ public class BoardViewController : MonoBehaviour {
 
     }
 
-	void setupBoard()
-	{
-		for(int x = 0; x < Motherboard.xSize; ++x){
-			for(int y = 0; y < Motherboard.ySize; ++y){
-				EnergyType energyType = board.GetTyle(x, y);
+    void setupBoard()
+    {
+        for (int x = 0; x < Motherboard.xSize; ++x) {
+            for (int y = 0; y < Motherboard.ySize; ++y) {
+                EnergyType energyType = board.GetTyle(x, y);
 
-				slots[x].GetChild(y).gameObject.GetComponent<SlotViewController>().setup(energyType, x, y);
-			}
-		}
-	}
+                slots[x].GetChild(y).gameObject.GetComponent<SlotViewController>().setup(energyType, x, y);
+            }
+        }
+    }
 
     void drawNewCards()
     {
         currentChoiceCards.Clear();
 
-        foreach (Card card in session.AvaliableCards){
-			GameObject cardGO = NGUITools.AddChild(cardSelectionGrid.gameObject, cardPrefab);
-			currentChoiceCards.Add(cardGO);
+        foreach (Card card in session.AvaliableCards) {
+            GameObject cardGO = NGUITools.AddChild(cardSelectionGrid.gameObject, cardPrefab);
+            currentChoiceCards.Add(cardGO);
 
-			cardGO.GetComponent<CardViewController>().setup(card);
+            cardGO.GetComponent<CardViewController>().setup(card);
         }
         cardSelectionGrid.Reposition();
     }
@@ -127,4 +127,11 @@ public class BoardViewController : MonoBehaviour {
         NGUITools.MarkParentAsChanged(cardObject);
         cardSelectionGrid.Reposition();
     }
+
+    public void onShipPressed()
+    {
+        // TODO switch to victory screen and cards choosign 
+        // + ability to select cards
+    }
+
 }

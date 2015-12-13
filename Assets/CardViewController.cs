@@ -43,9 +43,18 @@ public class CardViewController : MonoBehaviour {
         }
 
         heatCost.text = card.HeatPrice.ToString();
-        descrptionLabel.text = card.Description;
+        descrptionLabel.text = getCardDescription(card);
     }
 
+    string getCardDescription(Card card)
+    {
+        string description = card.Description;
+        description = description.Replace("GPU", "[FF0000][b]GPU[/b][-]");
+        description = description.Replace("RAM", "[00FF00][b]RAM[/b][-]");
+        description = description.Replace("CPU", "[0000FF][b]CPU[/b][-]");
+
+        return description;
+    }
 
     // Use this for initialization
     void Start() {
