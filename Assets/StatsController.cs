@@ -12,6 +12,9 @@ public class StatsController : MonoBehaviour {
     [SerializeField]
     UILabel greenLabel;
 
+    [SerializeField]
+    UILabel energyLabel;
+
     // Use this for initialization
     void Start () {
 	
@@ -25,5 +28,7 @@ public class StatsController : MonoBehaviour {
         redLabel.text = session.Board.Energy(CraftCore.EnergyType.Red).ToString();
         blueLabel.text = session.Board.Energy(CraftCore.EnergyType.Blue).ToString();
         greenLabel.text = session.Board.Energy(CraftCore.EnergyType.Green).ToString();
+
+        energyLabel.text = session.Board.TotalHeat.ToString();
     }
 }
