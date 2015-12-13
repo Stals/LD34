@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &129608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 476586}
+  - 114: {fileID: 11434990}
+  m_Layer: 5
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &137530
 GameObject:
   m_ObjectHideFlags: 0
@@ -26,7 +42,7 @@ GameObject:
   - 4: {fileID: 454384}
   - 114: {fileID: 11468292}
   m_Layer: 5
-  m_Name: Sprite
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +79,7 @@ GameObject:
   - 4: {fileID: 462478}
   - 114: {fileID: 11472760}
   m_Layer: 5
-  m_Name: Label
+  m_Name: HearCost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,11 +116,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -9, z: 0}
+  m_LocalPosition: {x: 46.5, y: 44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 464204}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!4 &464204
 Transform:
   m_ObjectHideFlags: 1
@@ -112,13 +128,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43, y: 697.000061, z: 0}
+  m_LocalPosition: {x: 962, y: 697.000061, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 462478}
+  - {fileID: 476586}
   - {fileID: 404876}
   - {fileID: 454384}
+  - {fileID: 462478}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &476586
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 464204}
   m_RootOrder: 0
 --- !u!65 &6595658
 BoxCollider:
@@ -220,11 +249,11 @@ MonoBehaviour:
     - LIIF: -1646318217
       InstanceTarget: {fileID: 11478352}
     - LIIF: -762735795
-      InstanceTarget: {fileID: 170372}
+      InstanceTarget: {fileID: 129608}
     - LIIF: 618510842
-      InstanceTarget: {fileID: 462478}
+      InstanceTarget: {fileID: 476586}
     - LIIF: -1477188381
-      InstanceTarget: {fileID: 11472760}
+      InstanceTarget: {fileID: 11434990}
     - LIIF: 345504166
       InstanceTarget: {fileID: 6595658}
     - LIIF: 767377760
@@ -235,19 +264,21 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11447704}
     - LIIF: -807863025
       InstanceTarget: {fileID: 11497820}
+    - LIIF: -1115433898
+      InstanceTarget: {fileID: 170372}
+    - LIIF: 1697578520
+      InstanceTarget: {fileID: 462478}
+    - LIIF: -1616574937
+      InstanceTarget: {fileID: 11472760}
   Modifications:
     Modificated:
     - Object: {fileID: 464204}
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11447704}
-      ObjeckLink: -1552561943
-      PropertyPath: partImage
-      Mode: 0
-    - Object: {fileID: 11447704}
-      ObjeckLink: -1552561943
-      PropertyPath: descrptionLabel
+    - Object: {fileID: 462478}
+      ObjeckLink: 1697578520
+      PropertyPath: m_LocalPosition
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -255,6 +286,74 @@ MonoBehaviour:
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 7ade3a9e19e20604fbb63e9085f84a64
+--- !u!114 &11434990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 1
+  mWidth: 104
+  mHeight: 38
+  mDepth: 8
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 2.73684216
+  keepCrispWhenShrunk: 1
+  mTrueTypeFont: {fileID: 0}
+  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
+  mText: '+2 GPU
+
+    if near green'
+  mFontSize: 10
+  mFontStyle: 0
+  mAlignment: 0
+  mEncoding: 1
+  mMaxLineCount: 0
+  mEffectStyle: 0
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mSymbols: 1
+  mEffectDistance: {x: 1, y: 1}
+  mOverflow: 0
+  mMaterial: {fileID: 0}
+  mApplyGradient: 0
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
+  mSpacingX: 0
+  mSpacingY: 0
+  mUseFloatSpacing: 0
+  mFloatSpacingX: 0
+  mFloatSpacingY: 0
+  mOverflowEllipsis: 0
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
+  mLineWidth: 0
+  mMultiline: 1
 --- !u!114 &11447704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,7 +366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partImage: {fileID: 11478352}
-  descrptionLabel: {fileID: 11472760}
+  descrptionLabel: {fileID: 11434990}
+  heatCost: {fileID: 11472760}
 --- !u!114 &11468292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,10 +447,10 @@ MonoBehaviour:
     absolute: 0
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
-  mPivot: 1
+  mPivot: 2
   mWidth: 104
   mHeight: 38
-  mDepth: 8
+  mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -358,10 +458,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
-  mText: '+2 GPU
-
-    if near green'
-  mFontSize: 10
+  mText: 2*
+  mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1

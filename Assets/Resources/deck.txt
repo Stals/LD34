@@ -94,5 +94,3 @@
     }
   ]
 }
-UnityEngine.Debug:Log(Object)
-TestingSaver:Start() (at Assets/Scripts/CraftTesting/TestingSaver.cs:74)

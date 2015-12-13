@@ -14,8 +14,8 @@ public class Game  {
 	private static Game instance;
 	private Game() {
         //player =s Player.load();
-
-	}
+        deckCombiner = DeckCombiner.load();
+    }
 
     public static Game Instance
 	{
@@ -34,8 +34,9 @@ public class Game  {
 
 
 	GameManager manager;
+    DeckCombiner deckCombiner;
 
-	/*
+    /*
     public float SoundVolume
     {
         get
@@ -119,9 +120,14 @@ public class Game  {
 	{
 		return manager;
 	}
-	
 
-	public int getCurrentLevelID()
+    public DeckCombiner getDeckCombiner()
+    {
+        return deckCombiner;
+    }
+
+
+    public int getCurrentLevelID()
 	{
         return Application.loadedLevel;// int.Parse(Application.loadedLevelName.Substring(5)) - 1;
 	}

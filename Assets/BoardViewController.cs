@@ -23,60 +23,8 @@ public class BoardViewController : MonoBehaviour {
 
 	List<Card> getDeck()
 	{
-        List<Card> cards = new List<Card>();
-
-        {
-            Card card = new Card();
-            card.Type = EnergyType.Black;
-            card.setLevelEnergy(0, 0, 0);
-
-            cards.Add(card);
-        }
-
-        {
-            Card card = new Card();
-            card.Type = EnergyType.Red;
-            card.setLevelEnergy(0, 0, 0);
-
-            cards.Add(card);
-        }
-
-        {
-            Card card = new Card();
-            card.Type = EnergyType.Blue;
-            card.setLevelEnergy(0, 0, 0);
-
-            cards.Add(card);
-        }
-
-        {
-            Card card = new Card();
-            card.Type = EnergyType.Green;
-            card.setLevelEnergy(0, 0, 0);
-
-            cards.Add(card);
-        }
-
-        {
-            Card card = new Card();
-            card.Type = EnergyType.Black;
-            card.setLevelEnergy(0, 0, 0);
-
-            cards.Add(card);
-        }
-
-        {
-            Card card = new Card();
-            card.Type = EnergyType.Red;
-            card.setLevelEnergy(0, 0, 0);
-
-            cards.Add(card);
-        }
-
-        // TODO shuffle
-
-        return cards;
-	}
+        return Game.Instance.getDeckCombiner().combineDeck();
+    }
 
     public void onCardPlaced(int x, int y, Card card)
     {
