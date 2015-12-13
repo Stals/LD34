@@ -64,6 +64,12 @@ namespace CraftCore
             return outputForLevel[upgradeLevel] + ModifierValue;
         }
 
-
+        string Description
+        {
+            get
+            {
+                return "Gives " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
+            }
+        }
     }
 }
