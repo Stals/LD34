@@ -90,9 +90,9 @@
       "card": {
         "$type": "CraftCore.Card, Assembly-CSharp",
         "OutputForLevel": [
-          1,
           2,
-          3
+          4,
+          6
         ],
         "ModifierValue": 0,
         "EnergyType": 1,
@@ -150,7 +150,7 @@
             3
           ],
           "description": "RAM for each RAM component",
-          "AimColor": 3
+          "AimColor": 2
         },
         "HeatPrice": 2,
         "UpgradeLevel": 0,
@@ -170,7 +170,7 @@
         "ModifierValue": 0,
         "EnergyType": 2,
         "Modifier": {
-          "$type": "CraftCore.IfAdjacent, Assembly-CSharp",
+          "$type": "CraftCore.ForEachOfTypeAdjacent, Assembly-CSharp",
           "BonusForLevel": [
             1,
             2,
@@ -190,9 +190,9 @@
       "card": {
         "$type": "CraftCore.Card, Assembly-CSharp",
         "OutputForLevel": [
-          1,
           2,
-          3
+          4,
+          6
         ],
         "ModifierValue": 0,
         "EnergyType": 2,
@@ -219,9 +219,9 @@
         "Modifier": {
           "$type": "CraftCore.ColorNumberEquals, Assembly-CSharp",
           "BonusForLevel": [
-            1,
             2,
-            3
+            4,
+            6
           ],
           "description": "CPU if only 1 CPU on board",
           "AimColor": 0
@@ -244,11 +244,11 @@
         "ModifierValue": 0,
         "EnergyType": 3,
         "Modifier": {
-          "$type": "CraftCore.ForEachOfType, Assembly-CSharp",
+          "$type": "CraftCore.ForEachOfTypeAdjacent, Assembly-CSharp",
           "BonusForLevel": [
-            1,
             2,
-            3
+            4,
+            6
           ],
           "description": "CPU for each adj GPU",
           "AimColor": 1
@@ -273,9 +273,9 @@
         "Modifier": {
           "$type": "CraftCore.IfNotAdjacent, Assembly-CSharp",
           "BonusForLevel": [
-            1,
             2,
-            3
+            4,
+            6
           ],
           "description": "CPU if no RAM adj",
           "AimColor": 2
@@ -291,9 +291,9 @@
       "card": {
         "$type": "CraftCore.Card, Assembly-CSharp",
         "OutputForLevel": [
-          1,
           2,
-          3
+          4,
+          6
         ],
         "ModifierValue": 0,
         "EnergyType": 3,
@@ -344,7 +344,7 @@
         "ModifierValue": 0,
         "EnergyType": 4,
         "Modifier": {
-          "$type": "CraftCore.Column, Assembly-CSharp",
+          "$type": "CraftCore.Row, Assembly-CSharp",
           "BonusForLevel": [
             1,
             2,
@@ -370,7 +370,7 @@
         "ModifierValue": 0,
         "EnergyType": 4,
         "Modifier": {
-          "$type": "CraftCore.Row, Assembly-CSharp",
+          "$type": "CraftCore.Column, Assembly-CSharp",
           "BonusForLevel": [
             1,
             2,
@@ -398,9 +398,9 @@
         "Modifier": {
           "$type": "CraftCore.Energy, Assembly-CSharp",
           "BonusForLevel": [
-            1,
             2,
-            3
+            4,
+            6
           ],
           "description": "energy"
         },
