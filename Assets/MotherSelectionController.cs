@@ -84,11 +84,9 @@ public class MotherSelectionController : MonoBehaviour {
         contructButton.isEnabled = false;
     }
 
-
     // Use this for initialization
     void Start() {
         setup();
-
     }
 
     // Update is called once per frame

@@ -49,6 +49,15 @@ public class VictoryPanelController : MonoBehaviour {
 
     public void setup(GameSession session)
     {
+        // clear previous
+        foreach (var holder in cardHolders)
+        {
+            var card = holder.GetComponentInChildren<CardViewController>();
+            if (card != null) {
+                NGUITools.Destroy(card.gameObject);
+            }
+        }
+
         resultScoreLabel.text = session.ResultScore().ToString();
 
         int reward = convertScoreToMoney(session.ResultScore());
@@ -66,6 +75,12 @@ public class VictoryPanelController : MonoBehaviour {
             cardController.disableTouch();
 
             ++i;
+        }
+
+        foreach (var holder in cardHolders)
+        {
+            UIButton buyButton = holder.GetComponentsInChildren<UIButton>(true)[0];
+            buyButton.gameObject.SetActive(true);
         }
 
         updateButtons();
