@@ -72,6 +72,16 @@ namespace CraftCore
             }
         }
 
+        public void Discard()
+        {
+            foreach (var c in avaliableCards)
+            {
+                waste.Add(c);
+            }
+            Board.Heat--;
+            ReadyMove();
+        }
+
         private void ReadyMove()
         {
             avaliableCards.Clear();
