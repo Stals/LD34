@@ -65,7 +65,8 @@ public class MotherSelectionController : MonoBehaviour {
 
     Motherboard getRandomMotherboard()
     {
-        Motherboard board = new Motherboard(getRandomMotherboardSetup());
+        MotherBoardsCombiner boardCombiner = new MotherBoardsCombiner();
+        Motherboard board = new Motherboard(boardCombiner.Matrices[Random.Range(0, boardCombiner.Matrices.Count)]);
         board.Heat = 8;
         return board;
     }
