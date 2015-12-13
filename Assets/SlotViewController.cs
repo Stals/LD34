@@ -7,8 +7,14 @@ public class SlotViewController : MonoBehaviour {
 	[SerializeField]
 	UISprite background;
 
-	public void setup(EnergyType energyType)
+    int x;
+    int y;
+
+    public void setup(EnergyType energyType, int _x, int _y)
 	{
+        x = _x;
+        y = _y;
+
 		switch (energyType) {
 
 		case EnergyType.Empty:
@@ -40,4 +46,10 @@ public class SlotViewController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+
+    void OnDrop(GameObject drag)
+    {
+        Game.Instance.getManager().getBoardViewController().onCardPlaced(x, y, drag.GetComponent<CardViewController>().getCard());
+    }
 }

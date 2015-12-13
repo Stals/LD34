@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using CraftCore;
+using System;
 
 public class CardViewController : MonoBehaviour {
 
@@ -10,13 +11,16 @@ public class CardViewController : MonoBehaviour {
 	[SerializeField]
 	UILabel descrptionLabel;
 
+    Card card;
+
     public void onPress()
     {
         Game.Instance.getManager().getBoardViewController().onCardPress(this);
     }
 
-	public void setup(CraftCore.Card card){
-		switch (card.Type) {
+	public void setup(CraftCore.Card _card){
+        card = _card;
+        switch (card.Type) {
 
 			case EnergyType.Black:
 			partImage.color = Color.black;
@@ -48,4 +52,9 @@ public class CardViewController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public Card getCard()
+    {
+        return card;
+    }
 }

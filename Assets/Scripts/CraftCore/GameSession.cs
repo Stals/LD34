@@ -48,7 +48,7 @@ namespace CraftCore
             }
         }
 
-        public void pickCard(Card card, int x, int y)
+        public bool pickCard(Card card, int x, int y)
         {
             if (avaliableCards.Contains(card))
             {
@@ -59,10 +59,12 @@ namespace CraftCore
                 if ((deck.Count == 0) && (OnEndGame != null)) OnEndGame(ResultScore());
 
                 ReadyMove();
+                return true;
             }
             else
             {
                 Debug.Log("Not a valid card!");
+                return false;
             }
         }
 

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using CraftCore;
+using System;
 
 public class BoardViewController : MonoBehaviour {
 
@@ -31,22 +32,88 @@ public class BoardViewController : MonoBehaviour {
 
 	List<Card> getDeck()
 	{
-		Card card1 = new Card();
-		card1.Type = EnergyType.Black;
-		card1.setLevelEnergy(0, 0, 0);
-		
-		Card card2 = new Card();
-		card2.Type = EnergyType.Red;
-		card2.setLevelEnergy(1, 1, 1);
-		
-		List<Card> cards = new List<Card>();
-        cards.Add(card1);
-        cards.Add(card2);
+        List<Card> cards = new List<Card>();
 
-		return cards;
+        {
+            Card card = new Card();
+            card.Type = EnergyType.Black;
+            card.setLevelEnergy(0, 0, 0);
+
+            cards.Add(card);
+        }
+
+        {
+            Card card = new Card();
+            card.Type = EnergyType.Red;
+            card.setLevelEnergy(0, 0, 0);
+
+            cards.Add(card);
+        }
+
+        {
+            Card card = new Card();
+            card.Type = EnergyType.Blue;
+            card.setLevelEnergy(0, 0, 0);
+
+            cards.Add(card);
+        }
+
+        {
+            Card card = new Card();
+            card.Type = EnergyType.Green;
+            card.setLevelEnergy(0, 0, 0);
+
+            cards.Add(card);
+        }
+
+        {
+            Card card = new Card();
+            card.Type = EnergyType.Black;
+            card.setLevelEnergy(0, 0, 0);
+
+            cards.Add(card);
+        }
+
+        {
+            Card card = new Card();
+            card.Type = EnergyType.Red;
+            card.setLevelEnergy(0, 0, 0);
+
+            cards.Add(card);
+        }
+
+        // TODO shuffle
+
+        return cards;
 	}
 
-	void setupBackend()
+    public void onCardPlaced(int x, int y, Card card)
+    {
+        bool success = session.pickCard(card, x, y);
+
+        if (success)
+        {
+            // TODO place remaining card into discard pile
+
+            foreach (GameObject cardGO in currentChoiceCards) {
+                if (cardGO.GetComponent<CardViewController>().getCard() != card) {
+                    moveCardToDiscard(cardGO);
+                }
+            }
+
+            drawNewCards();
+        }
+    }
+
+    private void moveCardToDiscard(GameObject cardGO)
+    {
+        // Todo implamant animation and some discard pile
+        NGUITools.DestroyImmediate(cardGO);
+
+        cardSelectionGrid.Reposition();
+    }
+
+    void setupBackend()
 	{
 		board = new Motherboard(getRandomMotherboardSetup());
 		session = new GameSession (getDeck (), board);
@@ -74,14 +141,16 @@ public class BoardViewController : MonoBehaviour {
 			for(int y = 0; y < Motherboard.ySize; ++y){
 				EnergyType energyType = board.GetTyle(x, y);
 
-				slots[x].GetChild(y).gameObject.GetComponent<SlotViewController>().setup(energyType);
+				slots[x].GetChild(y).gameObject.GetComponent<SlotViewController>().setup(energyType, x, y);
 			}
 		}
 	}
 
     void drawNewCards()
     {
-		foreach(Card card in session.AvaliableCards){
+        currentChoiceCards.Clear();
+
+        foreach (Card card in session.AvaliableCards){
 			GameObject cardGO = NGUITools.AddChild(cardSelectionGrid.gameObject, cardPrefab);
 			currentChoiceCards.Add(cardGO);
 
