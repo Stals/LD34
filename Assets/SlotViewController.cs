@@ -50,6 +50,10 @@ public class SlotViewController : MonoBehaviour {
 
     void OnDrop(GameObject drag)
     {
-        Game.Instance.getManager().getBoardViewController().onCardPlaced(x, y, drag.GetComponent<CardViewController>().getCard());
+        CardViewController cardView = drag.GetComponent<CardViewController>();
+        if (!cardView) return;
+
+        cardView.disableTouch();
+        Game.Instance.getManager().getBoardViewController().onCardPlaced(x, y, cardView.getCard());
     }
 }
