@@ -74,6 +74,7 @@ public class VictoryPanelController : MonoBehaviour {
         {
             Card card = holder.GetComponentInChildren<CardViewController>().getCard();
             UIButton buyButton = holder.GetComponentInChildren<UIButton>();
+            if (!buyButton) return;
 
             if (card.UpgradeLevel == 2) { // is max
                 buyButton.SetState(UIButtonColor.State.Disabled, true);
@@ -112,9 +113,12 @@ public class VictoryPanelController : MonoBehaviour {
         int upgradeCost = getPriceForUpgrade(card.UpgradeLevel);
         if (Game.Instance.getPlayer().getMoney() >= upgradeCost)
         {
-            cardHolder.GetComponentInChildren<UIButton>().gameObject.SetActive(false);
-            cardHolder.GetComponentInChildren<UIButton>().SetState(UIButtonColor.State.Disabled, true);
             cardHolder.GetComponentInChildren<CardViewController>().getCard().UpgradeLevel += 1;
+            cardHolder.GetComponentInChildren<CardViewController>().setup(card);
+
+            cardHolder.GetComponentInChildren<UIButton>().SetState(UIButtonColor.State.Disabled, true);            
+
+            cardHolder.GetComponentInChildren<UIButton>().gameObject.SetActive(false);
             // TOdo update card visuals
 
             Game.Instance.getPlayer().addMoney(-upgradeCost);
