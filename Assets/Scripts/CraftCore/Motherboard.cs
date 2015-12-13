@@ -3,9 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
+using UnityEngine;
 
 namespace CraftCore
 {
+    public struct CardOnBoard
+    {
+        public CardOnBoard(int x, int y, Card card)
+        {
+            this.x = x;
+            this.y = y;
+            this.card = card;
+        }
+        public int x;
+        public int y;
+        public Card card;
+    }
+
     [Serializable]
     public class Motherboard
     {
@@ -40,6 +54,7 @@ namespace CraftCore
             int result = 0;
             foreach (var card in cardMatrix)
             {
+                if (card == null) continue;
                 if (card.Type == type)
                 {
                     result += card.ProducedEnergy();
@@ -69,28 +84,69 @@ namespace CraftCore
 
         private void RecalculateModifiers()
         {
-            for (int i = 0; i < xSize; ++i)
-                for (int j = 0; j < ySize; ++j)
+            foreach (var card in CardsOnBoard)
+            {
+                int buff = (card.card.Type == tyleMatrix[card.x, card.y]) ? 1 : 0;
+                card.card.ModifierValue = buff;
+            }
+
+            foreach (var card in CardsOnBoard)
+            {
+                if (card.card.Modifier != null)
                 {
-                    var card = GetCard(i, j);
-                    if (card != null)
-                    {
-                        int buff = (card.Type == tyleMatrix[i, j]) ? 1 : 0;
-                        card.ModifierValue = buff;
-                    }
+                    card.card.Modifier.Modify(this, card);
                 }
+            }
+        }
 
-            for (int i = 0; i < xSize; ++i)
-                for (int j = 0; j < ySize; ++j)
+        public delegate bool CardAndPlaceCondition (CardOnBoard card);
+
+        public List<CardOnBoard> CardsOnBoard
+        {
+            get
+            {
+                List<CardOnBoard> result = new List<CardOnBoard>();
+                for (int i = 0; i < cardMatrix.GetLength(0); ++i)
+                    for (int j = 0; j < cardMatrix.GetLength(1); ++j)
+                    {
+                        var card = GetCard(i, j);
+                        if (card != null)
+                        {
+                            result.Add(new CardOnBoard(i, j, card));
+                        }
+                    }
+                return result;
+            }
+        }
+
+        public List<Card> CardsByCondition(CardAndPlaceCondition condition)
+        {
+            List<Card> result = new List<Card>();
+            foreach (var card in CardsOnBoard)
+            {
+                if (condition(card))
                 {
-                    var card = GetCard(i, j);
-                    if ((card != null) && (card.Modifier != null))
-                    {
-                        card.Modifier.Modify(this, i, j, card);
-                    }
+                    result.Add(card.card);
                 }
+            }
 
+            return result;
+        }
 
+        public static CardAndPlaceCondition TypeCond(EnergyType type)
+        {
+            return (CardOnBoard card) =>
+            {
+                return (card.card.Type == type);
+            };
+        }
+        
+        public static CardAndPlaceCondition AdjacentCond(int myX, int myY)
+        {
+            return (CardOnBoard card) =>
+            {
+                return ( (Mathf.Abs(card.x - myX) + Mathf.Abs(card.y - myY) ) == 1);
+            };
         }
     }
 }
