@@ -21,15 +21,6 @@ public class BoardViewController : MonoBehaviour {
 
     List<GameObject> currentChoiceCards;
 
-	EnergyType[,] getRandomMotherboardSetup()
-	{
-		EnergyType[,] arr =  {    	{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
-									{EnergyType.Blue,  EnergyType.Green, EnergyType.Black, EnergyType.Red},
-									{EnergyType.Blue, EnergyType.Green, EnergyType.Black, EnergyType.Red},
-									{EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
-		return arr;
-	}
-
 	List<Card> getDeck()
 	{
         List<Card> cards = new List<Card>();
@@ -115,8 +106,8 @@ public class BoardViewController : MonoBehaviour {
 
     void setupBackend()
 	{
-		board = new Motherboard(getRandomMotherboardSetup());
-		session = new GameSession (getDeck (), board);
+		//board = new Motherboard(getRandomMotherboardSetup());
+		//session = new GameSession (getDeck (), board);
 	}
 
     // Use this for initialization

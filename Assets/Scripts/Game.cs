@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using CraftCore;
 
 
 public class Game  {
@@ -15,7 +16,8 @@ public class Game  {
         //player =s Player.load();
 
 	}
-	public static Game Instance
+
+    public static Game Instance
 	{
 		get 
 		{
