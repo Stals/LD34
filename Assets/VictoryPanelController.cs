@@ -112,8 +112,10 @@ public class VictoryPanelController : MonoBehaviour {
         int upgradeCost = getPriceForUpgrade(card.UpgradeLevel);
         if (Game.Instance.getPlayer().getMoney() >= upgradeCost)
         {
+            cardHolder.GetComponentInChildren<UIButton>().gameObject.SetActive(false);
             cardHolder.GetComponentInChildren<UIButton>().SetState(UIButtonColor.State.Disabled, true);
             cardHolder.GetComponentInChildren<CardViewController>().getCard().UpgradeLevel += 1;
+            // TOdo update card visuals
 
             Game.Instance.getPlayer().addMoney(-upgradeCost);
         }

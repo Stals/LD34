@@ -34,32 +34,32 @@ public class MotherSelectionController : MonoBehaviour {
         if (r == 0)
         {
             EnergyType[,] arr =   { { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
-                                    { EnergyType.Blue,  EnergyType.Green, EnergyType.Black, EnergyType.Red},
-                                    { EnergyType.Blue, EnergyType.Green, EnergyType.Black, EnergyType.Red},
+                                    { EnergyType.Empty,  EnergyType.Blue, EnergyType.Black, EnergyType.Empty},
+                                    { EnergyType.Black, EnergyType.Red, EnergyType.Green, EnergyType.Black},
                                     { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty} };
             return arr;
         }
         if(r == 1) {
-            EnergyType[,] arr =   { { EnergyType.Blue,  EnergyType.Green, EnergyType.Black, EnergyType.Red},
-                                     { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},                                    
-                                    { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
-                                     { EnergyType.Blue, EnergyType.Green, EnergyType.Black, EnergyType.Red}};
+            EnergyType[,] arr =   { { EnergyType.Empty,  EnergyType.Red, EnergyType.Empty, EnergyType.Empty},
+                                     { EnergyType.Empty, EnergyType.Green, EnergyType.Blue, EnergyType.Blue},                                    
+                                    { EnergyType.Empty, EnergyType.Red, EnergyType.Empty, EnergyType.Black},
+                                     { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
             return arr;
         }
         if (r == 2)
         {
-            EnergyType[,] arr =   { { EnergyType.Blue, EnergyType.Blue, EnergyType.Empty, EnergyType.Empty},
-                                    { EnergyType.Blue,  EnergyType.Blue, EnergyType.Empty, EnergyType.Empty},
-                                    { EnergyType.Empty, EnergyType.Empty, EnergyType.Green, EnergyType.Green},
-                                    { EnergyType.Empty, EnergyType.Empty, EnergyType.Green, EnergyType.Green} };
+            EnergyType[,] arr =   { { EnergyType.Empty,  EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                     { EnergyType.Empty, EnergyType.Red, EnergyType.Empty, EnergyType.Empty},
+                                    { EnergyType.Blue, EnergyType.Green, EnergyType.Green, EnergyType.Blue},
+                                     { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
             return arr;
         }
 
         // never used
-        EnergyType[,] arr1 =   { { EnergyType.Blue, EnergyType.Blue, EnergyType.Empty, EnergyType.Empty},
-                                    { EnergyType.Blue,  EnergyType.Blue, EnergyType.Empty, EnergyType.Empty},
-                                    { EnergyType.Empty, EnergyType.Empty, EnergyType.Green, EnergyType.Green},
-                                    { EnergyType.Empty, EnergyType.Empty, EnergyType.Green, EnergyType.Green} };
+        EnergyType[,] arr1 =   { { EnergyType.Empty,  EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                     { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                    { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
+                                     { EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty}};
         return arr1;
     }
 

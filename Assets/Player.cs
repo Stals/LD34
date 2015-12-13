@@ -2,13 +2,13 @@
 using System.Collections;
 using System;
 
-public class Player : MonoBehaviour {
+public class Player {
 
     int money;
 
     // Use this for initialization
-    void Start() {
-        money = 0;
+    public Player() {
+        money = 5000;
     }
 
     // Update is called once per frame

@@ -11,6 +11,9 @@ public class CardViewController : MonoBehaviour {
     [SerializeField]
     UILabel descrptionLabel;
     [SerializeField]
+    UILabel descriptionSmallLabel;
+
+    [SerializeField]
     UILabel heatCost;
 
     Card card;
@@ -43,12 +46,12 @@ public class CardViewController : MonoBehaviour {
         }
 
         heatCost.text = card.HeatPrice.ToString();
-        descrptionLabel.text = getCardDescription(card);
+        descrptionLabel.text = getColorDescription(card.DescriptionPerk);
+        descriptionSmallLabel.text = getColorDescription(card.DescriptionMain);
     }
 
-    string getCardDescription(Card card)
+    string getColorDescription(string description)
     {
-        string description = card.Description;
         description = description.Replace("GPU", "[FF0000][b]GPU[/b][-]");
         description = description.Replace("RAM", "[00FF00][b]RAM[/b][-]");
         description = description.Replace("CPU", "[0000FF][b]CPU[/b][-]");
