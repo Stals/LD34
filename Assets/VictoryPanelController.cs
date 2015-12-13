@@ -77,6 +77,7 @@ public class VictoryPanelController : MonoBehaviour {
 
             if (card.UpgradeLevel == 2) { // is max
                 buyButton.SetState(UIButtonColor.State.Disabled, true);
+                buyButton.isEnabled = false;
                 buyButton.GetComponentInChildren<UILabel>().text = "";
                 return;
             }
@@ -85,6 +86,7 @@ public class VictoryPanelController : MonoBehaviour {
             if (Game.Instance.getPlayer().getMoney() < upgradeCost)
             {
                 buyButton.SetState(UIButtonColor.State.Disabled, true);
+                buyButton.isEnabled = false;
             }
 
             buyButton.GetComponentInChildren<UILabel>().text = upgradeCost + " $";
