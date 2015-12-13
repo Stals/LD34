@@ -109,7 +109,7 @@ namespace CraftCore
             {
                 int buff = (card.card.Type == tyleMatrix[card.x, card.y]) ? 1 : 0;
                 card.card.ModifierValue = buff;
-                Heat -= card.card.HeatPrice;
+                HeatModifier -= card.card.HeatPrice;
             }
 
             foreach (var card in CardsOnBoard)
