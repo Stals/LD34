@@ -69,10 +69,15 @@ public class TestingSaver : MonoBehaviour
 
             json = JsonConvert.SerializeObject(game.Board);
             Debug.Log(json);
+
             json = JsonConvert.SerializeObject(game.AvaliableCards[0]);
             Debug.Log(json);
             json = JsonConvert.SerializeObject(game.AvaliableCards[1]);
             Debug.Log(json);
+
+            Debug.Log("Red energy = " + game.Board.Energy(EnergyType.Red));
+            Debug.Log("Green energy = " + game.Board.Energy(EnergyType.Green));
+            Debug.Log("Blue energy = " + game.Board.Energy(EnergyType.Blue));
 
             pickFirst = false;
             pickSecond = false;       
