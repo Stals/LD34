@@ -64,7 +64,7 @@ namespace CraftCore
             return outputForLevel[upgradeLevel] + ModifierValue;
         }
 
-        string Description
+        public string Description
         {
             get
             {
