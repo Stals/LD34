@@ -15,6 +15,9 @@ public class BoardViewController : MonoBehaviour {
     [SerializeField]
     List<UIGrid> slots;
 
+    [SerializeField]
+    VictoryPanelController victoryPanel;
+
     const int cardsPerDraft = 2;
     Motherboard board;
     public GameSession session;
@@ -132,6 +135,11 @@ public class BoardViewController : MonoBehaviour {
     {
         // TODO switch to victory screen and cards choosign 
         // + ability to select cards
+
+        victoryPanel.GetComponent<UITweener>().PlayForward();
+        GetComponent<UITweener>().PlayReverse();
+
+        victoryPanel.setup(session);
     }
 
 }

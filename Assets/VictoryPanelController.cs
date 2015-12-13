@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using CraftCore;
+using System;
 
 public class VictoryPanelController : MonoBehaviour {
+
+    [SerializeField]
+    UILabel resultScoreLabel;
 
 	// Use this for initialization
 	void Start () {
@@ -12,4 +17,9 @@ public class VictoryPanelController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    internal void setup(GameSession session)
+    {
+        resultScoreLabel.text = session.ResultScore().ToString();
+    }
 }
