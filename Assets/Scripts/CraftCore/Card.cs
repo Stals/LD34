@@ -9,11 +9,11 @@ namespace CraftCore
     [Serializable]
     public enum EnergyType
     {
-        Empty,
-        Black,
+        Empty,        
         Red,
         Green,
-        Blue
+        Blue,
+        Black,
     }
     
     public class Card
