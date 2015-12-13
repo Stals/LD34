@@ -73,10 +73,10 @@ namespace CraftCore
                     main = "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
                 }
 
-                string additional = "/n";
+                string additional = "";
                 if (Modifier != null) additional = Modifier.Description(this);
 
-                return main + additional;
+                return main + "\n" + additional;
             }
         }
     }
