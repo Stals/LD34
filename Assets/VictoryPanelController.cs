@@ -18,6 +18,9 @@ public class VictoryPanelController : MonoBehaviour {
     [SerializeField]
     GameObject cardPrefab;
 
+    [SerializeField]
+    MotherSelectionController boarSelectionController;
+
     // Use this for initialization
     void Start() {
 
@@ -128,5 +131,11 @@ public class VictoryPanelController : MonoBehaviour {
         }
 
         updateButtons();
+    }
+
+    public void onContinuePressed() {
+        GetComponent<UITweener>().PlayReverse();
+
+        boarSelectionController.GetComponent<UITweener>().PlayReverse();
     }
 }
