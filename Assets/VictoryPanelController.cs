@@ -21,9 +21,20 @@ public class VictoryPanelController : MonoBehaviour {
     [SerializeField]
     MotherSelectionController boarSelectionController;
 
+	[SerializeField]
+	UILabel tipLabel;
+
+	List<string> tips;
+
     // Use this for initialization
     void Start() {
-
+		tips = new List<string>();
+		tips.Add ("Get an extra +1 if the color of a component and slot match");
+		tips.Add ("'Adj' means adjacent components in a cross pattern");
+		tips.Add ("Create a board with 35 each to complete the game");
+		tips.Add ("Balance CPU, GPU and RAM to get more money");
+		tips.Add ("UTI cards don't cost anything to place");
+		tips.Add ("THANK YOU FOR PLAYING!");
     }
 
     // Update is called once per frame
@@ -31,6 +42,11 @@ public class VictoryPanelController : MonoBehaviour {
 
     }
 
+	void setupTip()
+	{
+		string text = "TIP: [000000][c]"+ tips[UnityEngine.Random.Range(0, tips.Count)] +"[/c][-]";
+		tipLabel.text = Utils.getColorDescription (text);
+	}
 
     int convertScoreToMoney(float score) {
         return (int)(score * 4);
@@ -84,6 +100,7 @@ public class VictoryPanelController : MonoBehaviour {
         }
 
         updateButtons();
+		setupTip ();
     }
 
     void updateButtons()
