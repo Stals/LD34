@@ -33,6 +33,8 @@ public class BoardViewController : MonoBehaviour {
 
     List<GameObject> currentChoiceCards;
 
+	static bool winShown = false;
+
     List<Card> getDeck()
     {
         return Game.Instance.getDeckCombiner().combineDeck();
@@ -185,7 +187,8 @@ public class BoardViewController : MonoBehaviour {
 
     public void onShipPressed()
     {
-		bool isFinalVictory = true;
+
+		bool isFinalVictory = true & (!winShown);
 		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Red) >= 45;
 		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Green) >= 45;
 		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Blue) >= 45;
@@ -199,9 +202,13 @@ public class BoardViewController : MonoBehaviour {
 			victoryPanel.setup (session);
 
 		} else {
+			winShown = true;
+
 			var panel = transform.parent.gameObject.GetComponentInChildren<FinalVictoryController> ();
 			panel.GetComponent<UITweener> ().PlayForward ();
 			GetComponent<UITweener> ().PlayReverse ();
+
+			panel.setup (session);
         }
 
         Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Vocal-Mobo-ready");
