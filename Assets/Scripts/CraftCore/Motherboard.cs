@@ -20,6 +20,19 @@ namespace CraftCore
         public Card card;
     }
 
+    public struct BoardSlot
+    {
+        public BoardSlot(int x, int y, EnergyType type)
+        {
+            this.x = x;
+            this.y = y;
+            this.type = type;
+        }
+        public int x;
+        public int y;
+        public EnergyType type;
+    }
+
     [Serializable]
     public class Motherboard
     {
@@ -31,8 +44,10 @@ namespace CraftCore
         [JsonProperty("Heat")]
         public int Heat { get; set; }
         public int HeatModifier { get; set; }
+        public MotherboardAcheivment Achievment { get; set; }
 
         Dictionary<EnergyType, int> modifiers = new Dictionary<EnergyType, int>();
+        Dictionary<EnergyType, int> achModifiers = new Dictionary<EnergyType, int>();
 
         public int TotalHeat
         {
@@ -52,6 +67,14 @@ namespace CraftCore
         public Motherboard(EnergyType[,] matrix)
         {
             Array.Copy(matrix, tyleMatrix, tyleMatrix.GetLength(0) * tyleMatrix.GetLength(1));
+            ZeroAchModifiers();
+        }
+
+        private void ZeroAchModifiers()
+        {
+            achModifiers[EnergyType.Green] = 0;
+            achModifiers[EnergyType.Red] = 0;
+            achModifiers[EnergyType.Blue] = 0;
         }
 
         public Motherboard(Motherboard board)
@@ -60,12 +83,14 @@ namespace CraftCore
             Array.Copy(board.cardMatrix, cardMatrix, board.cardMatrix.GetLength(0) * board.cardMatrix.GetLength(1));
             Heat = board.Heat;
             HeatModifier = board.HeatModifier;
+            achModifiers = new Dictionary<EnergyType, int>(board.achModifiers);
         }
 
         public int Energy(EnergyType type)
         {
             int result = 0;
             if (Modifiers.ContainsKey(type)) result += Modifiers[type];
+            result += AchModifiers[type];
             foreach (var card in cardMatrix)
             {
                 if (card == null) continue;
@@ -108,6 +133,7 @@ namespace CraftCore
         private void RecalculateModifiers()
         {
             HeatModifier = 0;
+            ZeroAchModifiers();
             foreach (var card in CardsOnBoard)
             {
                 int buff = (card.card.Type == tyleMatrix[card.x, card.y]) ? 1 : 0;
@@ -122,6 +148,8 @@ namespace CraftCore
                     card.card.Modifier.Modify(this, card);
                 }
             }
+
+            if (Achievment != null) Achievment.Calculate(this);
         }
 
         public delegate bool CardAndPlaceCondition (CardOnBoard card);
@@ -144,6 +172,24 @@ namespace CraftCore
             }
         }
 
+        public List<BoardSlot> SlotsOnBoard
+        {
+            get
+            {
+                List<BoardSlot> result = new List<BoardSlot>();
+                for (int i = 0; i < cardMatrix.GetLength(0); ++i)
+                    for (int j = 0; j < cardMatrix.GetLength(1); ++j)
+                    {
+                        var slot = GetTyle(i, j);
+                        if (slot != EnergyType.Empty)
+                        {
+                            result.Add(new BoardSlot(i, j, slot));
+                        }
+                    }
+                return result;
+            }
+        }
+
         public Dictionary<EnergyType, int> Modifiers
         {
             get
@@ -154,6 +200,19 @@ namespace CraftCore
             set
             {
                 modifiers = value;
+            }
+        }
+
+        public Dictionary<EnergyType, int> AchModifiers
+        {
+            get
+            {
+                return achModifiers;
+            }
+
+            set
+            {
+                achModifiers = value;
             }
         }
 

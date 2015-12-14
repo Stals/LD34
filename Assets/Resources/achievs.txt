@@ -1,0 +1,25 @@
+{
+  "$type": "CraftCore.AchievementProvider, Assembly-CSharp",
+  "Bonuses": [
+    {
+      "$type": "CraftCore.ProperFilled, Assembly-CSharp",
+      "aimcolor": 4,
+      "bonus": {
+        "$type": "CraftCore.AddToAllTypes, Assembly-CSharp",
+        "val": 1
+      },
+      "Descrition": " + 1 TO ALL if all UTI filled with UTI"
+    },
+    {
+      "$type": "CraftCore.NumberFilled, Assembly-CSharp",
+      "aimcolor": 2,
+      "number": 1,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 3,
+        "type": 3
+      },
+      "Descrition": " + 1 RND STAT if only one RAM on board"
+    }
+  ]
+}
