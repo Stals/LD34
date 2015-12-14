@@ -12,7 +12,10 @@ public class ResearchItemViewController : MonoBehaviour {
 	[SerializeField]
 	UILabel priceLabel;
 
-	StatUpgrade upgrade;
+    [SerializeField]
+    UISprite selector;
+
+	public StatUpgrade upgrade;
 
 	public void setup(StatUpgrade _upgrade){
 		upgrade = _upgrade;
@@ -37,4 +40,10 @@ public class ResearchItemViewController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+
+    public void onItemPress()
+    {
+        selector.alpha = UIToggle.current.value ? 1f : 0f;
+    }
 }

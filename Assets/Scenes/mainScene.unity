@@ -841,8 +841,8 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 1760553676}
-    mMethodName: onConstructPress
+  - mTarget: {fileID: 1842341110}
+    mMethodName: onReserchPress
     mParameters: []
     oneShot: 0
 --- !u!114 &890086116
@@ -933,6 +933,7 @@ Transform:
   - {fileID: 1760553673}
   - {fileID: 356199046}
   - {fileID: 280934681}
+  - {fileID: 1795386422}
   - {fileID: 2040775140}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1253,7 +1254,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3006
+  startingRenderQueue: 3005
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -2318,15 +2319,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1842341109}
+    m_TransformParent: {fileID: 993848410}
     m_Modifications:
     - target: {fileID: 429850, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1182
       objectReference: {fileID: 0}
     - target: {fileID: 429850, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 892
       objectReference: {fileID: 0}
     - target: {fileID: 429850, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2350,7 +2351,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 429850, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
@@ -2520,7 +2521,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3003
+  startingRenderQueue: 3004
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -2814,8 +2815,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -358, y: 261, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1795386422}
+  m_Children: []
   m_Father: {fileID: 1760553673}
   m_RootOrder: 2
 --- !u!114 &1842341110
@@ -2880,7 +2880,7 @@ Transform:
   m_Children:
   - {fileID: 167464567}
   m_Father: {fileID: 993848410}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!114 &2040775141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3054,7 +3054,7 @@ MonoBehaviour:
   eventReceiverMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  debug: 0
+  debug: 1
   useMouse: 1
   useTouch: 1
   allowMultiTouch: 1

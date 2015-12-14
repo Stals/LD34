@@ -46,7 +46,7 @@ public class Player {
 
     // Use this for initialization
     public Player() {
-        money = 0;
+        money = 99;
 		// TODO sort by cost?
 		statUpgrades = new List<StatUpgrade> ();
 

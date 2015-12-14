@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &107082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422728}
+  - 114: {fileID: 11457880}
+  - 95: {fileID: 9595696}
+  m_Layer: 5
+  m_Name: selected
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &112444
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,6 +59,8 @@ GameObject:
   - 4: {fileID: 429850}
   - 114: {fileID: 11413630}
   - 114: {fileID: 11496196}
+  - 114: {fileID: 11447300}
+  - 65: {fileID: 6564876}
   m_Layer: 5
   m_Name: ResearchItem
   m_TagString: Untagged
@@ -65,6 +84,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &422728
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 429850}
+  m_RootOrder: 3
 --- !u!4 &429850
 Transform:
   m_ObjectHideFlags: 1
@@ -78,6 +109,7 @@ Transform:
   - {fileID: 476378}
   - {fileID: 494518}
   - {fileID: 465400}
+  - {fileID: 422728}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &465400
@@ -116,6 +148,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 429850}
   m_RootOrder: 1
+--- !u!65 &6564876
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 300, y: 20, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &9595696
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107082}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0dee18a70f2c184d8a76b467ccc385a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11413630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,20 +220,20 @@ MonoBehaviour:
       InstanceTarget: {fileID: 116194}
     - LIIF: -102984790
       InstanceTarget: {fileID: 11496196}
+    - LIIF: -1042062466
+      InstanceTarget: {fileID: 9595696}
+    - LIIF: 1127401179
+      InstanceTarget: {fileID: 11457880}
+    - LIIF: -27029242
+      InstanceTarget: {fileID: 422728}
+    - LIIF: -625062587
+      InstanceTarget: {fileID: 107082}
+    - LIIF: 393031220
+      InstanceTarget: {fileID: 11447300}
+    - LIIF: -844297804
+      InstanceTarget: {fileID: 6564876}
   Modifications:
-    Modificated:
-    - Object: {fileID: 11428252}
-      ObjeckLink: -1840724601
-      PropertyPath: rightAnchor.absolute
-      Mode: 0
-    - Object: {fileID: 11428252}
-      ObjeckLink: -1840724601
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11428252}
-      ObjeckLink: -1840724601
-      PropertyPath: aspectRatio
-      Mode: 0
+    Modificated: []
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -275,13 +336,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .980392218, g: .70588237, b: .0196078438, a: 1}
   mPivot: 5
-  mWidth: 34
+  mWidth: 32
   mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.125
+  aspectRatio: 2
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
   mFont: {fileID: 0}
@@ -311,6 +372,35 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!114 &11447300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446d504799d99174383957fca80713c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  group: 34
+  activeSprite: {fileID: 11457880}
+  activeAnimation: {fileID: 0}
+  animator: {fileID: 0}
+  tween: {fileID: 0}
+  startsActive: 0
+  instantTween: 0
+  optionCanBeNone: 0
+  onChange:
+  - mTarget: {fileID: 11496196}
+    mMethodName: onItemPress
+    mParameters: []
+    oneShot: 0
+  checkSprite: {fileID: 0}
+  checkAnimation: {fileID: 0}
+  eventReceiver: {fileID: 0}
+  functionName: 
+  startsChecked: 0
 --- !u!114 &11451748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -377,6 +467,56 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!114 &11457880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 0}
+  mPivot: 4
+  mWidth: 268
+  mHeight: 26
+  mDepth: -1
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 10.3076925
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
+  mSpriteName: Button
+  mFillCenter: 1
 --- !u!114 &11496196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -391,6 +531,7 @@ MonoBehaviour:
   nameLabel: {fileID: 11451748}
   bonusLabel: {fileID: 11428252}
   priceLabel: {fileID: 11435194}
+  selector: {fileID: 11457880}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
