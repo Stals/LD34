@@ -73,10 +73,26 @@ public class BoardViewController : MonoBehaviour {
 
     private void applyResearches()
     {
+        board.Modifiers.Clear();
+
         foreach (var upg in Game.Instance.getPlayer().getStatUpgrades()) {
             if (upg.isEnabled) {
-                if (upg.energyType == EnergyType.Black) {
+                if (upg.energyType == EnergyType.Black)
+                {
                     board.Heat += upg.bonus;
+                }
+                else if (upg.energyType == EnergyType.Empty)
+                {
+                    continue;
+                }
+                else {
+                    if (board.Modifiers.ContainsKey(upg.energyType))
+                    {
+                        board.Modifiers[upg.energyType] += upg.bonus;
+                    }
+                    else {
+                        board.Modifiers[upg.energyType] = upg.bonus;
+                    }
                 }
             }
         }
