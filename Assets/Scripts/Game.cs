@@ -67,6 +67,9 @@ public class Game {
             soundPlayer = value;
         }
     }
+
+    public MusicPlayer musicManager;
+
     /*
     public float MusicVolume
     {
