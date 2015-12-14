@@ -32,6 +32,8 @@ namespace CraftCore
         public int Heat { get; set; }
         public int HeatModifier { get; set; }
 
+        Dictionary<EnergyType, int> modifiers = new Dictionary<EnergyType, int>();
+
         public int TotalHeat
         {
             get { return Heat + HeatModifier; }
@@ -63,6 +65,7 @@ namespace CraftCore
         public int Energy(EnergyType type)
         {
             int result = 0;
+            if (Modifiers.ContainsKey(type)) result += Modifiers[type];
             foreach (var card in cardMatrix)
             {
                 if (card == null) continue;
@@ -138,6 +141,19 @@ namespace CraftCore
                         }
                     }
                 return result;
+            }
+        }
+
+        public Dictionary<EnergyType, int> Modifiers
+        {
+            get
+            {
+                return modifiers;
+            }
+
+            set
+            {
+                modifiers = value;
             }
         }
 
