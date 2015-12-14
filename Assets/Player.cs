@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System;
 using CraftCore;
 
-public class StatUpgrade{
+public class StatUpgrade : IComparable
+{
 	public StatUpgrade(EnergyType _energyType, int _bonus, string _description, int _cost){
 		energyType = _energyType;
 		bonus = _bonus;
@@ -32,6 +33,22 @@ public class StatUpgrade{
 
 		return "+" + bonus.ToString () + " " + appendix;
 	}
+
+    public int CompareTo(object obj)
+    {
+        StatUpgrade upgrade = obj as StatUpgrade;
+        if (cost > upgrade.cost)
+        {
+            return 1;
+        }
+        if (cost < upgrade.cost)
+        {
+            return -1;
+        }
+
+        // The orders are equivalent.
+        return 0;
+    }
 }
 
 public class Player {
@@ -65,6 +82,8 @@ public class Player {
 		statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "CPU Socket update", 25));
 		statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 650));
 		statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 1000));
+
+        statUpgrades.Sort();
     }
 
     // Update is called once per frame
