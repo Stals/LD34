@@ -16,7 +16,7 @@
       "aimcolor": 1,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 1
+        "val": 3
       },
       "Descrition": "+3 RND STAT if GPU slots filled with proper components"
     },
@@ -26,7 +26,7 @@
       "aimcolor": 2,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 1
+        "val": 3
       },
       "Descrition": "+3 RND STAT if RAM slots filled with proper components"
     },
@@ -36,7 +36,7 @@
       "aimcolor": 3,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 1
+        "val": 3
       },
       "Descrition": "+3 RND STAT if CPU slots filled with proper components"
     },
@@ -46,7 +46,7 @@
       "aimcolor": 4,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 1
+        "val": 3
       },
       "Descrition": "+3 RND STAT if UTI slots filled with proper components"
     },
@@ -70,7 +70,7 @@
       "aimcolor": 1,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 1
+        "val": 3
       },
       "Descrition": "  +3 RND STAT if only one GPU on board"
     },
@@ -80,7 +80,7 @@
       "aimcolor": 2,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 1
+        "val": 3
       },
       "Descrition": "  +3 RND STAT if only one RAM on board"
     },
@@ -90,7 +90,7 @@
       "aimcolor": 3,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 1
+        "val": 3
       },
       "Descrition": "  +3 RND STAT if only one CPU on board"
     },
