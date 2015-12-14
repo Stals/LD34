@@ -27,7 +27,7 @@ public class ResearchItemViewController : MonoBehaviour {
 			priceLabel.text = upgrade.cost + "$";
 		} else {
 			priceLabel.text = "";
-			nameLabel.color = Color.green;
+            nameLabel.color = new Color(97f/255f, 168f / 255f, 0f / 255f);
 		}
 	}
 
