@@ -404,7 +404,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -38, z: 0}
+  m_LocalPosition: {x: -1, y: -41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 464204}
@@ -688,22 +688,6 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: mHeight
-      Mode: 0
-    - Object: {fileID: 11488172}
-      ObjeckLink: -191291109
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11488172}
-      ObjeckLink: -191291109
-      PropertyPath: mHeight
-      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -806,20 +790,20 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 124
-  mHeight: 57
+  mWidth: 134
+  mHeight: 54
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.17543864
+  aspectRatio: 2.48148155
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: '+2 GPU
 
     if near green'
-  mFontSize: 15
+  mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
