@@ -151,6 +151,7 @@ namespace CraftCore
 
             foreach (var b in CardsByCondition(TypeCond(EnergyType.Black)))
             {
+                if (b.ZeroGivingUti()) continue;
                 HeatModifier += b.ModifierValue;
             }
 

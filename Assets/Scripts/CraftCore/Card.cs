@@ -94,6 +94,10 @@ namespace CraftCore
                 return DescriptionMain + "/n" + DescriptionPerk;
             }
         }
-        
+
+        public bool ZeroGivingUti()
+        {
+            return (Type == EnergyType.Black) && (outputForLevel[0] == 0);
+        }
     }
 }
