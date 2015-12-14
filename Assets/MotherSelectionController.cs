@@ -17,6 +17,7 @@ public class MotherSelectionController : MonoBehaviour {
     MotherViewController currentSelected;
 
     MotherBoardsCombiner boardCombiner;
+    AchievementProvider provider;
 
     public void deselectAll()
     {
@@ -67,6 +68,7 @@ public class MotherSelectionController : MonoBehaviour {
         int maxCount = (int)(boardCombiner.Matrices.Count * Game.Instance.getPlayer().getBoardsAvalible());
 
         Motherboard board = new Motherboard(boardCombiner.Matrices[Random.Range(0, maxCount)]);
+        board.Achievment = provider.allBonuses[Random.Range(0, provider.allBonuses.Count - 1)];
         board.Heat = 7;
         return board;
     }
@@ -88,6 +90,7 @@ public class MotherSelectionController : MonoBehaviour {
     // Use this for initialization
     void Start() {
         boardCombiner = new MotherBoardsCombiner();
+        provider = AchievementProvider.load();
         setup();
 
     }

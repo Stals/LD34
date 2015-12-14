@@ -149,6 +149,11 @@ namespace CraftCore
                 }
             }
 
+            foreach (var b in CardsByCondition(TypeCond(EnergyType.Black)))
+            {
+                HeatModifier += b.ModifierValue;
+            }
+
             if (Achievment != null) Achievment.Calculate(this);
         }
 
