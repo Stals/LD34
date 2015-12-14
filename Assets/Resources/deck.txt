@@ -171,7 +171,7 @@
             3
           ],
           "AimColor": 4,
-          "description": "RAM if UTI adj"
+          "description": "RAM for each UTI adj"
         },
         "HeatPrice": 2,
         "UpgradeLevel": 0
