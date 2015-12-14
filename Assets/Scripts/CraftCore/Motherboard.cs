@@ -141,6 +141,11 @@ namespace CraftCore
                 HeatModifier -= card.card.HeatPrice;
             }
 
+            foreach (var card in CardsByCondition(TypeCond(EnergyType.Black)))
+            {
+                card.ModifierValue = 0;
+            }
+
             foreach (var card in CardsOnBoard)
             {
                 if (card.card.Modifier != null)
@@ -152,7 +157,7 @@ namespace CraftCore
             foreach (var b in CardsByCondition(TypeCond(EnergyType.Black)))
             {
                 if (b.ZeroGivingUti()) continue;
-                HeatModifier += b.ModifierValue;
+                HeatModifier += b.ProducedEnergy();
             }
 
             if (Achievment != null) Achievment.Calculate(this);
