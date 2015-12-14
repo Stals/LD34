@@ -101,6 +101,10 @@ public class VictoryPanelController : MonoBehaviour {
 
         updateButtons();
 		setupTip ();
+
+        Game.Instance.musicManager.pickMotherMusic.Stop();
+        Game.Instance.musicManager.pickPlayMusic.Stop();
+        Game.Instance.musicManager.finishPlayMusic.Play();
     }
 
     void updateButtons()

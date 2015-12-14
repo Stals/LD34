@@ -7,6 +7,7 @@ public class MusicPlayer : MonoBehaviour {
     public AudioSource pickPlayMusic;
     public AudioSource finishPlayMusic;
 
+
     // Use this for initialization
     void Awake () {
         Game.Instance.musicManager = this;
