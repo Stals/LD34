@@ -51,16 +51,16 @@ public class MotherViewController : MonoBehaviour {
                         tileColor = Color.white;
                         break;
                     case EnergyType.Black:
-                        tileColor = Color.gray;
+                        tileColor = new Color(59f/255f, 59f / 255f, 59f / 255f);
                         break;
                     case EnergyType.Red:
-                        tileColor = Color.red;
+                        tileColor = new Color(149f / 255f, 110f / 255f, 44f / 255f);
                         break;
                     case EnergyType.Green:
-                        tileColor = Color.green;
+                        tileColor = new Color(57f / 255f, 115f / 255f, 59f / 255f);
                         break;
                     case EnergyType.Blue:
-                        tileColor = Color.blue;
+                        tileColor = new Color(63f / 255f, 192f / 255f, 238f / 255f);
 
                         break;
                 }

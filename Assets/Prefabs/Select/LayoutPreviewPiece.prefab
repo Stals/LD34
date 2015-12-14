@@ -55,7 +55,19 @@ MonoBehaviour:
     - LIIF: 494262839
       InstanceTarget: {fileID: 11460528}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 407266}
+      ObjeckLink: 55509132
+      PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 11460528}
+      ObjeckLink: 494262839
+      PropertyPath: mAtlas
+      Mode: 0
+    - Object: {fileID: 11460528}
+      ObjeckLink: 494262839
+      PropertyPath: mSpriteName
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -109,8 +121,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
-  mSpriteName: Button
+  mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
+  mSpriteName: previewSquare
   mFillCenter: 1
 --- !u!1001 &100100000
 Prefab:
