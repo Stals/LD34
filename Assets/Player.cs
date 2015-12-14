@@ -83,12 +83,12 @@ public class Player {
 
         // unlock more energy
         statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "Socket update", 25));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 1000));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "Clock generator", 1000));
         //statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 1000));
 
         // unlock motherboards
-        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "More Boards Layouts", 75));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "More Boards Layouts", 75));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "Boards Layouts", 75));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "Boards Layouts", 75));
 
         statUpgrades.Sort();
     }
