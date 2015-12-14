@@ -200,6 +200,8 @@ public class BoardViewController : MonoBehaviour {
 
         victoryPanel.setup(session);
 
+        Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Vocal-Mobo-ready");
+
         Destroy(this.gameObject, 2f);
     }
 
@@ -211,7 +213,7 @@ public class BoardViewController : MonoBehaviour {
         {
             moveCardToDiscard(cardGO);    
         }
-
+        Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Generic-Shuffle");
         drawNewCards();
     }
 }

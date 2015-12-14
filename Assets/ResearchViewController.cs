@@ -40,5 +40,6 @@ public class ResearchViewController : MonoBehaviour
         Game.Instance.getPlayer().addMoney(-itemController.upgrade.cost);
         itemController.upgrade.isEnabled = true;
         itemController.setup(itemController.upgrade);
+        Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Upgrade-Alternative");
     }
 }

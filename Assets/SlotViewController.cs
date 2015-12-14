@@ -58,7 +58,25 @@ public class SlotViewController : MonoBehaviour {
 	void Update () {
 	}
 
-
+    void PlayPlaced(EnergyType type)
+    {
+        switch (type)
+        {
+            case EnergyType.Black:
+                Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Place-Utility");
+                break;
+            case EnergyType.Red:
+                Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Place-GPU");
+                break;
+            case EnergyType.Green:
+                Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Place-RAM");
+                break;
+            case EnergyType.Blue:
+                Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Place-CPU");
+                break;
+        }
+    }
+    
     void OnDrop(GameObject drag)
     {
         CardViewController cardView = drag.GetComponent<CardViewController>();
@@ -70,6 +88,10 @@ public class SlotViewController : MonoBehaviour {
         if (placed) {
             GetComponent<BoxCollider>().enabled = false;
             cardView.disableTouch();
+            PlayPlaced(cardView.getCard().Type);
+        } else
+        {
+            Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Reject-Insert");
         }
     }
 }
