@@ -185,20 +185,24 @@ public class BoardViewController : MonoBehaviour {
 
     public void onShipPressed()
     {
-        // discard your last cards (for next session)
-        /*foreach (GameObject cardGO in currentChoiceCards)
-        {
-            moveCardToDiscard(cardGO);
-        }*/
+		bool isFinalVictory = true;
+		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Red) >= 45;
+		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Green) >= 45;
+		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Blue) >= 45;
 
-        // TODO switch to victory screen and cards choosign 
-        // + ability to select cards
 
-        victoryPanel = transform.parent.gameObject.GetComponentInChildren<VictoryPanelController>();
-        victoryPanel.GetComponent<UITweener>().PlayForward();
-        GetComponent<UITweener>().PlayReverse();
+		if (!isFinalVictory) {
+			victoryPanel = transform.parent.gameObject.GetComponentInChildren<VictoryPanelController> ();
+			victoryPanel.GetComponent<UITweener> ().PlayForward ();
+			GetComponent<UITweener> ().PlayReverse ();
 
-        victoryPanel.setup(session);
+			victoryPanel.setup (session);
+
+		} else {
+			var panel = transform.parent.gameObject.GetComponentInChildren<FinalVictoryController> ();
+			panel.GetComponent<UITweener> ().PlayForward ();
+			GetComponent<UITweener> ().PlayReverse ();
+        }
 
         Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Vocal-Mobo-ready");
 

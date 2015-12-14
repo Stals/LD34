@@ -31,10 +31,9 @@ public class VictoryPanelController : MonoBehaviour {
 		tips = new List<string>();
 		tips.Add ("Get an extra +1 if the color of a component and slot match");
 		tips.Add ("'Adj' means adjacent components in a cross pattern");
-		tips.Add ("Create a board with 40 each to complete the game");
+		tips.Add ("Create a board with 45 each to complete the game");
 		tips.Add ("Balance CPU, GPU and RAM to get more money");
 		tips.Add ("UTI cards don't cost anything to place");
-		tips.Add ("THANK YOU FOR PLAYING!");
 		tips.Add ("You will get a lower score if any stat is 0");
     }
 

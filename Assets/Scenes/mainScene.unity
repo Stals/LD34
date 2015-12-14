@@ -238,7 +238,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 290
+  mWidth: 286
   mHeight: 60
   mDepth: 11
   autoResizeBoxCollider: 0
@@ -943,7 +943,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 150
+  mWidth: 154
   mHeight: 80
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .270588249, g: .721568644, b: 0, a: 1}
   mPivot: 4
-  mWidth: 72
+  mWidth: 76
   mHeight: 26
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .270588249, g: .721568644, b: 0, a: 1}
   mPivot: 4
-  mWidth: 72
+  mWidth: 76
   mHeight: 26
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 560
+  mWidth: 558
   mHeight: 100
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -1721,6 +1721,7 @@ GameObject:
   - 4: {fileID: 956277441}
   - 114: {fileID: 956277443}
   - 114: {fileID: 956277442}
+  - 114: {fileID: 956277444}
   m_Layer: 5
   m_Name: FinalVictory
   m_TagString: Untagged
@@ -1895,6 +1896,17 @@ MonoBehaviour:
   mDepth: 3
   mSortingOrder: 0
   mClipOffset: {x: 0, y: 0}
+--- !u!114 &956277444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956277440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad31d6a1e85974f1583121a443958493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &993848409
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,7 +2888,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .490196109, g: .443137288, b: .34117648, a: 1}
   mPivot: 3
-  mWidth: 238
+  mWidth: 244
   mHeight: 26
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -3293,7 +3305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11465100, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: mWidth
-      value: 36
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 11454590, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: mWidth
@@ -3309,11 +3321,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: mWidth
-      value: 428
+      value: 436
       objectReference: {fileID: 0}
     - target: {fileID: 11476694, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: mWidth
-      value: 190
+      value: 194
       objectReference: {fileID: 0}
     - target: {fileID: 181576, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: m_IsActive
@@ -3325,15 +3337,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11454590, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 11409798, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 11403810, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
@@ -3341,15 +3353,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11476694, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 4.8499999
+      value: 4.80000019
       objectReference: {fileID: 0}
     - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: mWidth
-      value: 228
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: mWidth
-      value: 176
+      value: 184
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 7.66666651
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 3.0666666
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
@@ -3412,7 +3432,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .490196109, g: .443137288, b: .34117648, a: 1}
   mPivot: 4
-  mWidth: 436
+  mWidth: 448
   mHeight: 26
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -3764,17 +3784,17 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 102
+  mWidth: 274
   mHeight: 26
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.07692289
+  aspectRatio: 10.5384617
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
-  mText: AWESOME
+  mText: THANKS FOR PLAYING!
   mFontSize: 25
   mFontStyle: 0
   mAlignment: 0
@@ -4846,7 +4866,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .270588249, g: .721568644, b: 0, a: 1}
   mPivot: 4
-  mWidth: 362
+  mWidth: 356
   mHeight: 120
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -4975,7 +4995,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11485006, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 11423120, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
@@ -4983,7 +5003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11421196, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
@@ -5112,7 +5132,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 3
-  mWidth: 348
+  mWidth: 354
   mHeight: 80
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -5333,7 +5353,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .490196109, g: .443137288, b: .34117648, a: 1}
   mPivot: 4
-  mWidth: 78
+  mWidth: 80
   mHeight: 26
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -5690,7 +5710,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 398
+  mWidth: 392
   mHeight: 60
   mDepth: 11
   autoResizeBoxCollider: 0
