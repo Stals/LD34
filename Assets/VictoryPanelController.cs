@@ -162,6 +162,7 @@ public class VictoryPanelController : MonoBehaviour {
             // TOdo update card visuals
 
             Game.Instance.getPlayer().addMoney(-upgradeCost);
+            Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Upgrade-click");
         }
         else {
             //TODO because buttons are disabled - impossible

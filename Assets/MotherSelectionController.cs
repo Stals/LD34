@@ -111,6 +111,7 @@ public class MotherSelectionController : MonoBehaviour {
         BoardViewController boardController = boardPanel.GetComponent<BoardViewController>();
         // TODO call setup with the selected motherboard
         boardController.setup(currentSelected.getMotherboard());
+        Game.Instance.SoundPlayer.PlaySound("Music/Interaction/Vocal-begin-dev");
     }
 
     public void onMotherPress(MotherViewController mother) {
