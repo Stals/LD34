@@ -113,7 +113,7 @@ public class VictoryPanelController : MonoBehaviour {
                 buyButton.isEnabled = false;
             }
 
-            buyButton.GetComponentInChildren<UILabel>().text = upgradeCost + " $";
+            buyButton.GetComponentInChildren<UILabel>().text = upgradeCost + "$";
         }
     }
 

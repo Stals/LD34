@@ -3599,9 +3599,7 @@ MonoBehaviour:
   Modifications:
     Modificated: []
     NonPrefabObjects: []
-    NonPrefabComponents:
-    - child: {fileID: 11408048}
-      parent: {fileID: 174808}
+    NonPrefabComponents: []
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
