@@ -41,6 +41,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 758d4579caffca743ad7f136bffb3dd5, type: 2}
   mSprites:
+  - name: fix__0000_ram
+    x: 828
+    y: 1474
+    width: 57
+    height: 49
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fix__0001_GPU
+    x: 204
+    y: 634
+    width: 59
+    height: 42
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: "ng__0000_\u0421\u043B\u043E\u0439-24"
     x: 887
     y: 1692
@@ -302,7 +328,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0019_\u0421\u043B\u043E\u0439-2"
-    x: 886
+    x: 944
     y: 1481
     width: 59
     height: 42
@@ -315,7 +341,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0020_\u0421\u043B\u043E\u0439-1"
-    x: 828
+    x: 886
     y: 1474
     width: 57
     height: 49

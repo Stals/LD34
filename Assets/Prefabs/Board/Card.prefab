@@ -571,7 +571,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
-  mSpriteName: "ng__0020_\u0421\u043B\u043E\u0439-1"
+  mSpriteName: fix__0000_ram
   mFillCenter: 1
 --- !u!114 &11422558
 MonoBehaviour:
@@ -688,37 +688,13 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11407158}
-      ObjeckLink: -702155166
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11407158}
-      ObjeckLink: -702155166
-      PropertyPath: mHeight
-      Mode: 0
     - Object: {fileID: 11418320}
       ObjeckLink: 1147627922
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11418320}
-      ObjeckLink: 1147627922
-      PropertyPath: mHeight
-      Mode: 0
-    - Object: {fileID: 11418320}
-      ObjeckLink: 1147627922
-      PropertyPath: aspectRatio
+      PropertyPath: mSpriteName
       Mode: 0
     - Object: {fileID: 11497644}
       ObjeckLink: -770143583
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11497644}
-      ObjeckLink: -770143583
-      PropertyPath: mHeight
-      Mode: 0
-    - Object: {fileID: 11497644}
-      ObjeckLink: -770143583
-      PropertyPath: aspectRatio
+      PropertyPath: mSpriteName
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -1295,7 +1271,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
-  mSpriteName: "ng__0019_\u0421\u043B\u043E\u0439-2"
+  mSpriteName: fix__0001_GPU
   mFillCenter: 1
 --- !u!114 &11497820
 MonoBehaviour:
