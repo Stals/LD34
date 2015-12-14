@@ -4304,10 +4304,6 @@ Prefab:
       propertyPath: mWidth
       value: 114
       objectReference: {fileID: 0}
-    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
-      propertyPath: aspectRatio
-      value: 2.8499999
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0

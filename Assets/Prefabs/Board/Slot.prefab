@@ -31,7 +31,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &124130
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,9 +338,9 @@ MonoBehaviour:
       ObjeckLink: -639707849
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 448488}
-      ObjeckLink: 1810415408
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 106344}
+      ObjeckLink: 1001869429
+      PropertyPath: m_IsActive
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []

@@ -522,7 +522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &117074
 GameObject:
   m_ObjectHideFlags: 1
@@ -656,7 +656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &122150
 GameObject:
   m_ObjectHideFlags: 1
@@ -752,7 +752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &126822
 GameObject:
   m_ObjectHideFlags: 1
@@ -835,7 +835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &128654
 GameObject:
   m_ObjectHideFlags: 1
@@ -851,7 +851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &129282
 GameObject:
   m_ObjectHideFlags: 1
@@ -1297,7 +1297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &142488
 GameObject:
   m_ObjectHideFlags: 1
@@ -1329,7 +1329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &143278
 GameObject:
   m_ObjectHideFlags: 1
@@ -1393,7 +1393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &144346
 GameObject:
   m_ObjectHideFlags: 1
@@ -1555,7 +1555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &149688
 GameObject:
   m_ObjectHideFlags: 1
@@ -1986,7 +1986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &172582
 GameObject:
   m_ObjectHideFlags: 1
@@ -2151,7 +2151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &176654
 GameObject:
   m_ObjectHideFlags: 1
@@ -2352,7 +2352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &182568
 GameObject:
   m_ObjectHideFlags: 1
@@ -2464,7 +2464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &185816
 GameObject:
   m_ObjectHideFlags: 1
@@ -2496,7 +2496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &187104
 GameObject:
   m_ObjectHideFlags: 1
@@ -2611,7 +2611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &190910
 GameObject:
   m_ObjectHideFlags: 1
@@ -2627,7 +2627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &191566
 GameObject:
   m_ObjectHideFlags: 1
@@ -6789,69 +6789,69 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11427162}
   Modifications:
     Modificated:
-    - Object: {fileID: 469450}
-      ObjeckLink: 157059200
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 142776}
+      ObjeckLink: 900969239
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 481072}
-      ObjeckLink: -1659360499
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 122004}
+      ObjeckLink: -362899221
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 487006}
-      ObjeckLink: 155670295
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 125366}
+      ObjeckLink: -734004673
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 413024}
-      ObjeckLink: -752721981
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 182290}
+      ObjeckLink: 1230779926
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 452592}
-      ObjeckLink: -1631735764
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 142460}
+      ObjeckLink: 2069550335
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 449078}
-      ObjeckLink: -1600678626
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 116376}
+      ObjeckLink: 2095702426
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 496850}
-      ObjeckLink: 1229564354
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 190910}
+      ObjeckLink: -2144990392
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 475314}
-      ObjeckLink: -1941264516
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 175410}
+      ObjeckLink: 737131500
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 444780}
-      ObjeckLink: -377749443
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 144322}
+      ObjeckLink: 1155085493
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 462134}
-      ObjeckLink: 674665747
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 128412}
+      ObjeckLink: 783196006
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 408732}
-      ObjeckLink: 822935942
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 186046}
+      ObjeckLink: -1045505731
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 440166}
-      ObjeckLink: -1313588210
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 172514}
+      ObjeckLink: 109991029
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 489518}
-      ObjeckLink: -1294049836
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 185622}
+      ObjeckLink: -1243546430
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 492496}
-      ObjeckLink: -1102177952
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 128654}
+      ObjeckLink: -662648754
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 401670}
-      ObjeckLink: -304535347
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 189960}
+      ObjeckLink: 980906982
+      PropertyPath: m_IsActive
       Mode: 0
-    - Object: {fileID: 493234}
-      ObjeckLink: -170747698
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 148688}
+      ObjeckLink: 671987646
+      PropertyPath: m_IsActive
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
