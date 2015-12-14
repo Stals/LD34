@@ -22,7 +22,7 @@ public class TestingSaver : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+
         //List<Card> cards = new List<Card>();
         //string cardstr = "{  \"$type\": \"CraftCore.Card, Assembly-CSharp\",  \"OutputForLevel\": [1, 2,    3  ],  \"ModifierValue\": 0,  \"LevelsInfo\": 1,  \"Modifier\": {    \"$type\": \"CraftCore.AdjacentBonus, Assembly-CSharp\"  },  \"UpgradeLevel\": 0}";
         //var settings = new JsonSerializerSettings();
@@ -36,6 +36,7 @@ public class TestingSaver : MonoBehaviour
         //card = JsonConvert.DeserializeObject<Card>(cardstr, settings);
         //cards.Add(card);
 
+        AchievementProvider provAch = new AchievementProvider();
 
         DeckCombiner deck = new DeckCombiner();
 
@@ -78,6 +79,8 @@ public class TestingSaver : MonoBehaviour
         var settings = new JsonSerializerSettings();
         settings.TypeNameHandling = TypeNameHandling.Objects;
         Debug.Log(JsonConvert.SerializeObject(deck, Formatting.Indented, settings));
+        Debug.Log("achhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+        Debug.Log(JsonConvert.SerializeObject(provAch, Formatting.Indented, settings));
 
 
         EnergyType[,] arr = {   {EnergyType.Empty, EnergyType.Empty, EnergyType.Empty, EnergyType.Empty},
