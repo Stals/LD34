@@ -58,6 +58,7 @@
     {
       "$type": "CraftCore.NumberFilled, Assembly-CSharp",
       "aimcolor": 4,
+      "number": 3,
       "bonus": {
         "$type": "CraftCore.AddToAllTypes, Assembly-CSharp",
         "val": 3
@@ -68,6 +69,7 @@
     {
       "$type": "CraftCore.NumberFilled, Assembly-CSharp",
       "aimcolor": 1,
+      "number": 1,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
         "val": 3
@@ -78,6 +80,7 @@
     {
       "$type": "CraftCore.NumberFilled, Assembly-CSharp",
       "aimcolor": 2,
+      "number": 1,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
         "val": 3
@@ -88,6 +91,7 @@
     {
       "$type": "CraftCore.NumberFilled, Assembly-CSharp",
       "aimcolor": 3,
+      "number": 1,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
         "val": 3

@@ -85,6 +85,10 @@ public class MotherSelectionController : MonoBehaviour {
 
         contructButton.SetState(UIButtonColor.State.Disabled, true);
         contructButton.isEnabled = false;
+
+        Game.Instance.musicManager.pickMotherMusic.Play();
+        Game.Instance.musicManager.pickPlayMusic.Stop();
+        Game.Instance.musicManager.finishPlayMusic.Stop();
     }
 
     // Use this for initialization

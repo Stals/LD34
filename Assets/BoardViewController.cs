@@ -78,6 +78,10 @@ public class BoardViewController : MonoBehaviour {
 		if (board.Achievment != null) {
 			achivDescritpion.text = Utils.getColorDescription (board.Achievment.Descrition);
 		}
+
+        Game.Instance.musicManager.pickMotherMusic.Stop();
+        Game.Instance.musicManager.pickPlayMusic.Play();
+        Game.Instance.musicManager.finishPlayMusic.Stop();
     }
 
     private void applyResearches()
