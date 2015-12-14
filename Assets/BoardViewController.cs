@@ -18,6 +18,9 @@ public class BoardViewController : MonoBehaviour {
     [SerializeField]
     VictoryPanelController victoryPanel;
 
+    [SerializeField]
+    GameObject cardsSpawn;
+
     const int cardsPerDraft = 2;
     Motherboard board;
     public GameSession session;
@@ -104,12 +107,15 @@ public class BoardViewController : MonoBehaviour {
         currentChoiceCards.Clear();
 
         foreach (Card card in session.AvaliableCards) {
-            GameObject cardGO = NGUITools.AddChild(cardSelectionGrid.gameObject, cardPrefab);
+            GameObject cardGO = NGUITools.AddChild(cardsSpawn, cardPrefab);
             currentChoiceCards.Add(cardGO);
 
             cardGO.GetComponent<CardViewController>().setup(card);
+
+            callCardBack(cardGO);
         }
         cardSelectionGrid.Reposition();
+        cardSelectionGrid.repositionNow = true;
     }
 
     public void onCardPress(CardViewController cardController) {

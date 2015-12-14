@@ -265,6 +265,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &120462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 406500}
+  m_Layer: 5
+  m_Name: CardsSpawnPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &124076
 GameObject:
   m_ObjectHideFlags: 1
@@ -1450,6 +1465,18 @@ Transform:
   - {fileID: 445452}
   m_Father: {fileID: 458960}
   m_RootOrder: 0
+--- !u!4 &406500
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 586, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 415128}
+  m_RootOrder: 5
 --- !u!4 &408172
 Transform:
   m_ObjectHideFlags: 1
@@ -1530,6 +1557,7 @@ Transform:
   - {fileID: 450524}
   - {fileID: 465430}
   - {fileID: 488652}
+  - {fileID: 406500}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &419904
@@ -3388,15 +3416,15 @@ MonoBehaviour:
       InstanceTarget: {fileID: 486728}
     - LIIF: -1283230336
       InstanceTarget: {fileID: 199560}
+    - LIIF: -756539400
+      InstanceTarget: {fileID: 406500}
+    - LIIF: -1922021830
+      InstanceTarget: {fileID: 120462}
   Modifications:
     Modificated:
-    - Object: {fileID: 474082}
-      ObjeckLink: 817444238
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 459900}
-      ObjeckLink: 1379663130
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11461222}
+      ObjeckLink: 504976957
+      PropertyPath: cardsSpawn
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -6308,6 +6336,7 @@ MonoBehaviour:
   - {fileID: 11421356}
   - {fileID: 11480256}
   victoryPanel: {fileID: 0}
+  cardsSpawn: {fileID: 120462}
 --- !u!114 &11463130
 MonoBehaviour:
   m_ObjectHideFlags: 1
