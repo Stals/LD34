@@ -38,12 +38,12 @@ public class Game {
     DeckCombiner deckCombiner;
     Player player;
 
-    /*
+    
     public float SoundVolume
     {
         get
         {
-            return player.soundVolume;
+            return SoundPlayer.Volume;
         }
         set
         {
@@ -51,8 +51,7 @@ public class Game {
                 SoundPlayer.Volume = value;
             else
                 Debug.LogWarning("SoundPlayer does not exist.");
-
-            player.soundVolume = value;
+            
         }
     }
     private SoundPlayingManager soundPlayer;
@@ -68,7 +67,7 @@ public class Game {
             soundPlayer = value;
         }
     }
-
+    /*
     public float MusicVolume
     {
         get { return player.musicVolume; }
