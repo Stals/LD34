@@ -30,9 +30,11 @@ public class VictoryPanelController : MonoBehaviour {
     void Start() {
 		tips = new List<string>();
 		tips.Add ("Get an extra +1 if the color of a component and slot match");
-		tips.Add ("'Adj' means adjacent containers in a cross pattern");
+		tips.Add ("'Adj' means adjacent components in a cross pattern");
 		tips.Add ("Create a board with 35 each to complete the game");
 		tips.Add ("Balance CPU, GPU and RAM to get more money");
+		tips.Add ("UTI cards don't cost anything to place");
+		tips.Add ("THANK YOU FOR PLAYING!");
     }
 
     // Update is called once per frame
