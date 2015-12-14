@@ -61,7 +61,7 @@ public class VictoryPanelController : MonoBehaviour {
         resultScoreLabel.text = session.ResultScore().ToString();
 
         int reward = convertScoreToMoney(session.ResultScore());
-        newMoneyLabel.text = reward.ToString();
+        newMoneyLabel.text = "+" + reward.ToString() + "$";
         Game.Instance.getPlayer().addMoney(reward);
 
         var cards = shuffleCards(Game.Instance.getDeckCombiner().Cards);
