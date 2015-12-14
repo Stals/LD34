@@ -101,7 +101,11 @@ namespace CraftCore
             vals[2] = board.Energy(EnergyType.Red);
             foreach (var v in vals) res += v;
             res = res - (res / 3.0f - Mathf.Min(vals));
-            return res;
+
+			foreach (var v in vals) {
+				if(v <= 0) res -= 5f;
+			}
+			return res <= 0f ? 0f : res;
         }
     }
 }
