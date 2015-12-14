@@ -35,6 +35,7 @@ public class VictoryPanelController : MonoBehaviour {
 		tips.Add ("Balance CPU, GPU and RAM to get more money");
 		tips.Add ("UTI cards don't cost anything to place");
 		tips.Add ("THANK YOU FOR PLAYING!");
+		tips.Add ("You will get a lower score if any stat is 0");
     }
 
     // Update is called once per frame
