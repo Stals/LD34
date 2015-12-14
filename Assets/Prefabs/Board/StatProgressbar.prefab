@@ -110,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29, y: 14, z: 0}
+  m_LocalPosition: {x: 599, y: 57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 452322}
@@ -249,9 +249,49 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11443774}
   Modifications:
     Modificated:
+    - Object: {fileID: 490154}
+      ObjeckLink: 577663071
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 490154}
+      ObjeckLink: 577663071
+      PropertyPath: m_RootOrder
+      Mode: 0
     - Object: {fileID: 11462960}
       ObjeckLink: -872993203
-      PropertyPath: m_Enabled
+      PropertyPath: mHeight
+      Mode: 0
+    - Object: {fileID: 11462960}
+      ObjeckLink: -872993203
+      PropertyPath: aspectRatio
+      Mode: 0
+    - Object: {fileID: 11467206}
+      ObjeckLink: 290993655
+      PropertyPath: leftAnchor.absolute
+      Mode: 0
+    - Object: {fileID: 11467206}
+      ObjeckLink: 290993655
+      PropertyPath: rightAnchor.absolute
+      Mode: 0
+    - Object: {fileID: 11467206}
+      ObjeckLink: 290993655
+      PropertyPath: bottomAnchor.absolute
+      Mode: 0
+    - Object: {fileID: 11467206}
+      ObjeckLink: 290993655
+      PropertyPath: topAnchor.absolute
+      Mode: 0
+    - Object: {fileID: 11467206}
+      ObjeckLink: 290993655
+      PropertyPath: mWidth
+      Mode: 0
+    - Object: {fileID: 11467206}
+      ObjeckLink: 290993655
+      PropertyPath: mHeight
+      Mode: 0
+    - Object: {fileID: 11467206}
+      ObjeckLink: 290993655
+      PropertyPath: aspectRatio
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -290,12 +330,12 @@ MonoBehaviour:
   mColor: {r: .313432813, g: .313432813, b: .313432813, a: 1}
   mPivot: 4
   mWidth: 154
-  mHeight: 26
+  mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.92307711
+  aspectRatio: 9.625
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -323,29 +363,29 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 490154}
     relative: 0
-    absolute: 4
+    absolute: 0
   rightAnchor:
     target: {fileID: 490154}
     relative: 1
-    absolute: -4
+    absolute: 0
   bottomAnchor:
     target: {fileID: 490154}
     relative: 0
-    absolute: 4
+    absolute: 0
   topAnchor:
     target: {fileID: 490154}
     relative: 1
-    absolute: -4
+    absolute: 0
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 146
-  mHeight: 18
+  mWidth: 154
+  mHeight: 16
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 8.11111069
+  aspectRatio: 7
   mType: 1
   mFillDirection: 4
   mFillAmount: 1

@@ -91,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26, y: -3, z: 0}
+  m_LocalPosition: {x: 22, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 429850}
@@ -234,10 +234,6 @@ MonoBehaviour:
       InstanceTarget: {fileID: 6564876}
   Modifications:
     Modificated:
-    - Object: {fileID: 161412}
-      ObjeckLink: 870271978
-      PropertyPath: m_Name
-      Mode: 0
     - Object: {fileID: 429850}
       ObjeckLink: 634629722
       PropertyPath: m_RootOrder
@@ -248,7 +244,19 @@ MonoBehaviour:
       Mode: 0
     - Object: {fileID: 11457880}
       ObjeckLink: 1127401179
+      PropertyPath: mHeight
+      Mode: 0
+    - Object: {fileID: 11457880}
+      ObjeckLink: 1127401179
       PropertyPath: aspectRatio
+      Mode: 0
+    - Object: {fileID: 11457880}
+      ObjeckLink: 1127401179
+      PropertyPath: mAtlas
+      Mode: 0
+    - Object: {fileID: 11457880}
+      ObjeckLink: 1127401179
+      PropertyPath: mSpriteName
       Mode: 0
     - Object: {fileID: 422728}
       ObjeckLink: -27029242
@@ -517,13 +525,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
-  mWidth: 318
-  mHeight: 26
+  mWidth: 310
+  mHeight: 22
   mDepth: -1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12.2307692
+  aspectRatio: 14.090909
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -534,8 +542,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
-  mSpriteName: Button
+  mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
+  mSpriteName: "ng__0005_\u0421\u043B\u043E\u0439-19"
   mFillCenter: 1
 --- !u!114 &11496196
 MonoBehaviour:
