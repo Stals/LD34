@@ -971,6 +971,14 @@ Prefab:
       propertyPath: aspectRatio
       value: .899999976
       objectReference: {fileID: 0}
+    - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 5.42500019
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494850, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 4.80000019
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
   m_IsPrefabParent: 0
@@ -2066,7 +2074,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3024
+  startingRenderQueue: 3028
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -3417,7 +3425,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3019
+  startingRenderQueue: 3023
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
