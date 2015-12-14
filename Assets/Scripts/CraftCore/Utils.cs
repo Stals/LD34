@@ -34,7 +34,7 @@ namespace CraftCore
 			description = description.Replace("RAM", "[419772][c][b]●[/b][/c][-]");
 			description = description.Replace("CPU", "[03AED9][c][b]●[/b][/c][-]");
 			description = description.Replace("UTI", "[888888][c][b]●[/b][/c][-]");
-			description = description.Replace("COOL","[888888][c][b]❆[/b][/c][-]");
+			//description = description.Replace(" COOL","[FFFFFF][c][b]❆[/b][/c][-]");
 			
 			return description;
 		}
