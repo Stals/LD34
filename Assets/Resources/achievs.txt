@@ -8,18 +8,93 @@
         "$type": "CraftCore.AddToAllTypes, Assembly-CSharp",
         "val": 1
       },
-      "Descrition": " + 1 TO ALL if all UTI filled with UTI"
+      "Descrition": " + 1 to ALL if all UTI filled with proper components"
     },
+    
+    {
+      "$type": "CraftCore.ProperFilled, Assembly-CSharp",
+      "aimcolor": 1,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 1
+      },
+      "Descrition": "+3 RND STAT if GPU slots filled with proper components"
+    },
+    
+    {
+      "$type": "CraftCore.ProperFilled, Assembly-CSharp",
+      "aimcolor": 2,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 1
+      },
+      "Descrition": "+3 RND STAT if RAM slots filled with proper components"
+    },
+    
+    {
+      "$type": "CraftCore.ProperFilled, Assembly-CSharp",
+      "aimcolor": 3,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 1
+      },
+      "Descrition": "+3 RND STAT if CPU slots filled with proper components"
+    },
+    
+    {
+      "$type": "CraftCore.ProperFilled, Assembly-CSharp",
+      "aimcolor": 4,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 1
+      },
+      "Descrition": "+3 RND STAT if UTI slots filled with proper components"
+    },
+    
+    
+    
+    
+    
+    {
+      "$type": "CraftCore.NumberFilled, Assembly-CSharp",
+      "aimcolor": 4,
+      "bonus": {
+        "$type": "CraftCore.AddToAllTypes, Assembly-CSharp",
+        "val": 3
+      },
+      "Descrition": "  +3 to ALL if 3 UTI on board"
+    },    
+    
+    {
+      "$type": "CraftCore.NumberFilled, Assembly-CSharp",
+      "aimcolor": 1,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 1
+      },
+      "Descrition": "  +3 RND STAT if only one GPU on board"
+    },
+    
     {
       "$type": "CraftCore.NumberFilled, Assembly-CSharp",
       "aimcolor": 2,
-      "number": 1,
       "bonus": {
         "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
-        "val": 3,
-        "type": 3
+        "val": 1
       },
-      "Descrition": " + 1 RND STAT if only one RAM on board"
-    }
+      "Descrition": "  +3 RND STAT if only one RAM on board"
+    },
+    
+    {
+      "$type": "CraftCore.NumberFilled, Assembly-CSharp",
+      "aimcolor": 3,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 1
+      },
+      "Descrition": "  +3 RND STAT if only one CPU on board"
+    },
+    
+
   ]
 }
