@@ -108,7 +108,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0002_\u0421\u043B\u043E\u0439-22"
     x: 887
-    y: 1951
+    y: 1755
     width: 97
     height: 97
     borderLeft: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0003_\u0421\u043B\u043E\u0439-21"
     x: 887
-    y: 1853
+    y: 1951
     width: 97
     height: 97
     borderLeft: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0004_\u0421\u043B\u043E\u0439-20"
     x: 887
-    y: 1755
+    y: 1853
     width: 97
     height: 97
     borderLeft: 0
@@ -315,7 +315,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0017_\u0421\u043B\u043E\u0439-4"
-    x: 683
+    x: 828
     y: 1479
     width: 144
     height: 190
@@ -368,7 +368,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0021_\u0421\u043B\u043E\u0439-10"
     x: 973
-    y: 1626
+    y: 1582
     width: 43
     height: 43
     borderLeft: 0
@@ -419,10 +419,23 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: siver
-    x: 828
+    x: 683
     y: 1479
     width: 144
     height: 190
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uti_ico
+    x: 973
+    y: 1626
+    width: 43
+    height: 43
     borderLeft: 0
     borderRight: 0
     borderTop: 0

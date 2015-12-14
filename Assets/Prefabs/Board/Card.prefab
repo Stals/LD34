@@ -484,7 +484,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
-  mSpriteName: "ng__0021_\u0421\u043B\u043E\u0439-10"
+  mSpriteName: uti_ico
   mFillCenter: 1
 --- !u!114 &11415844
 MonoBehaviour:
@@ -688,37 +688,9 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 462478}
-      ObjeckLink: 1697578520
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 11486032}
-      ObjeckLink: -879876865
-      PropertyPath: leftAnchor.absolute
-      Mode: 0
-    - Object: {fileID: 11486032}
-      ObjeckLink: -879876865
-      PropertyPath: bottomAnchor.absolute
-      Mode: 0
-    - Object: {fileID: 11486032}
-      ObjeckLink: -879876865
-      PropertyPath: topAnchor.absolute
-      Mode: 0
-    - Object: {fileID: 11486032}
-      ObjeckLink: -879876865
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11486032}
-      ObjeckLink: -879876865
-      PropertyPath: mHeight
-      Mode: 0
-    - Object: {fileID: 11486032}
-      ObjeckLink: -879876865
-      PropertyPath: aspectRatio
-      Mode: 0
-    - Object: {fileID: 433538}
-      ObjeckLink: -295440722
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11407158}
+      ObjeckLink: -702155166
+      PropertyPath: mSpriteName
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
