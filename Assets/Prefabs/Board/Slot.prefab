@@ -31,7 +31,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &124130
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,6 +76,7 @@ GameObject:
   - 65: {fileID: 6511714}
   - 114: {fileID: 11400264}
   - 114: {fileID: 11458536}
+  - 114: {fileID: 11452670}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -329,6 +330,8 @@ MonoBehaviour:
       InstanceTarget: {fileID: 494866}
     - LIIF: 1001869429
       InstanceTarget: {fileID: 106344}
+    - LIIF: 1627012247
+      InstanceTarget: {fileID: 11452670}
   Modifications:
     Modificated:
     - Object: {fileID: 438782}
@@ -427,7 +430,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 98
   mHeight: 98
-  mDepth: 1
+  mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -498,7 +501,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 98
   mHeight: 98
-  mDepth: 1
+  mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -516,6 +519,43 @@ MonoBehaviour:
   mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
   mSpriteName: "ng__0004_\u0421\u043B\u043E\u0439-20"
   mFillCenter: 1
+--- !u!114 &11452670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858a20c1b21a3f94bb5b2d3b901c9aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 100
+  mHeight: 100
+  mDepth: 12
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 1
 --- !u!114 &11458536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -564,7 +604,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 98
   mHeight: 98
-  mDepth: 1
+  mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -614,7 +654,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 98
   mHeight: 98
-  mDepth: 1
+  mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -664,7 +704,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 98
   mHeight: 98
-  mDepth: 0
+  mDepth: 10
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0

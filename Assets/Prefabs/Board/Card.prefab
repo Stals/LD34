@@ -350,7 +350,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 978, y: 691, z: 0}
+  m_LocalPosition: {x: 805.5, y: 674.599976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499996}
@@ -404,7 +404,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -23, z: 0}
+  m_LocalPosition: {x: -2, y: -38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 464204}
@@ -468,7 +468,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 44
   mHeight: 44
-  mDepth: 9
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -518,7 +518,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 100
   mHeight: 100
-  mDepth: 7
+  mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 50
-  mDepth: 9
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -688,39 +688,25 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11447704}
-      ObjeckLink: -1552561943
-      PropertyPath: upg3
+    - Object: {fileID: 11407158}
+      ObjeckLink: -702155166
+      PropertyPath: mDepth
       Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: mWidth
+    - Object: {fileID: 11418320}
+      ObjeckLink: 1147627922
+      PropertyPath: mDepth
       Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: mHeight
+    - Object: {fileID: 11497644}
+      ObjeckLink: -770143583
+      PropertyPath: mDepth
       Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: keepAspectRatio
+    - Object: {fileID: 11454226}
+      ObjeckLink: -1012851921
+      PropertyPath: mDepth
       Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: aspectRatio
-      Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: mAtlas
-      Mode: 0
-    - Object: {fileID: 11494610}
-      ObjeckLink: -1602983290
-      PropertyPath: mSpriteName
-      Mode: 0
-    NonPrefabObjects:
-    - child: {fileID: 406622}
-      parent: {fileID: 407636}
+    NonPrefabObjects: []
     NonPrefabComponents: []
-    RemovedObjects: 54c241cdc3854437
+    RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: 7ade3a9e19e20604fbb63e9085f84a64
@@ -820,13 +806,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 114
-  mHeight: 72
+  mWidth: 124
+  mHeight: 57
   mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.58333337
+  aspectRatio: 2.17543864
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -911,7 +897,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 54
   mHeight: 54
-  mDepth: 9
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -961,7 +947,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 144
   mHeight: 190
-  mDepth: 7
+  mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -1011,7 +997,7 @@ MonoBehaviour:
   mPivot: 0
   mWidth: 12
   mHeight: 20
-  mDepth: 9
+  mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -1127,7 +1113,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 22
   mHeight: 26
-  mDepth: 10
+  mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -1277,7 +1263,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 60
   mHeight: 42
-  mDepth: 9
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0

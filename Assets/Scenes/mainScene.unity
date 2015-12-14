@@ -961,11 +961,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 464204, guid: 7ade3a9e19e20604fbb63e9085f84a64, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 978
+      value: 805.5
       objectReference: {fileID: 0}
     - target: {fileID: 464204, guid: 7ade3a9e19e20604fbb63e9085f84a64, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 691
+      value: 674.599976
       objectReference: {fileID: 0}
     - target: {fileID: 464204, guid: 7ade3a9e19e20604fbb63e9085f84a64, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2132,7 +2132,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3018
+  startingRenderQueue: 3020
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -3541,7 +3541,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3013
+  startingRenderQueue: 3015
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
