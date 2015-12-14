@@ -55,32 +55,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0001_\u0421\u043B\u043E\u0439-23"
-    x: 887
-    y: 1853
-    width: 97
-    height: 97
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: "ng__0002_\u0421\u043B\u043E\u0439-22"
-    x: 887
-    y: 1951
-    width: 97
-    height: 97
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: "ng__0003_\u0421\u043B\u043E\u0439-21"
     x: 828
     y: 1572
     width: 97
@@ -93,9 +67,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: "ng__0004_\u0421\u043B\u043E\u0439-20"
+  - name: "ng__0002_\u0421\u043B\u043E\u0439-22"
     x: 887
     y: 1755
+    width: 97
+    height: 97
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "ng__0003_\u0421\u043B\u043E\u0439-21"
+    x: 887
+    y: 1853
+    width: 97
+    height: 97
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "ng__0004_\u0421\u043B\u043E\u0439-20"
+    x: 887
+    y: 1951
     width: 97
     height: 97
     borderLeft: 0
@@ -223,9 +223,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: "ng__0014_\u0421\u043B\u043E\u0438\u0306-79"
+    x: 985
+    y: 1968
+    width: 22
+    height: 26
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: "ng__0014_\u0421\u043B\u043E\u0439-7"
     x: 985
-    y: 2022
+    y: 1995
     width: 22
     height: 26
     borderLeft: 0
@@ -238,7 +251,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0015_\u0421\u043B\u043E\u0439-6"
     x: 985
-    y: 1995
+    y: 2022
     width: 22
     height: 26
     borderLeft: 0
@@ -355,7 +368,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: previewSquare
     x: 985
-    y: 1972
+    y: 1928
     width: 22
     height: 22
     borderLeft: 0

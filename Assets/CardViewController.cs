@@ -22,6 +22,19 @@ public class CardViewController : MonoBehaviour {
     [SerializeField]
     GameObject upg3;
 
+
+	[SerializeField]
+	GameObject cpuImage;
+
+	[SerializeField]
+	GameObject gpuImage;
+
+	[SerializeField]
+	GameObject ramImage;
+
+	[SerializeField]
+	GameObject utiImage;
+
     Card card;
 
     public void onPress()
@@ -34,20 +47,16 @@ public class CardViewController : MonoBehaviour {
         switch (card.Type) {
 
             case EnergyType.Black:
-                partImage.color = Color.black;
-                descrptionLabel.text = "Black";
+				utiImage.SetActive(true);
                 break;
             case EnergyType.Red:
-                partImage.color = Color.red;
-                descrptionLabel.text = "Red";
+				gpuImage.SetActive(true);
                 break;
             case EnergyType.Green:
-                partImage.color = Color.green;
-                descrptionLabel.text = "Green";
+				ramImage.SetActive(true);	
                 break;
             case EnergyType.Blue:
-                partImage.color = Color.blue;
-                descrptionLabel.text = "Blue";
+				cpuImage.SetActive(true);
                 break;
         }
 
