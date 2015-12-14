@@ -119,7 +119,7 @@ public class Player {
 
 		float p = 0.5f;
 		// give 0.25 for each next upgrade
-		p += (boardUpgradesUnlocked - 1) * 0.25;
+		p += (boardUpgradesUnlocked - 1) * 0.25f;
 
 		return p;
     }
