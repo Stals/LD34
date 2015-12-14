@@ -69,26 +69,26 @@ public class Player {
         // TODO sort by cost?
         statUpgrades = new List<StatUpgrade>();
 
-        statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated audio chip", 50));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated graphics", 150));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Red, 2, "Power connectors", 430));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated audio", 25));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated GPU", 150));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Red, 2, "Power", 430));
 
-        statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 1, "CMOS back up battery", 50));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 1, "SATA connector", 250));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 2, "Non-volatile memory", 300));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 1, "CMOS", 25));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 1, "SATA", 250));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 2, "Memory", 300));
 
         statUpgrades.Add(new StatUpgrade(EnergyType.Green, 1, "DIMM modules", 100));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Green, 1, "Slots for exp. cards", 250));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Green, 3, "Super IO Chip", 400));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Green, 1, "Exp. cards", 250));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Green, 3, "IO Chip", 400));
 
         // unlock more energy
-        statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "CPU Socket update", 25));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "Socket update", 25));
         statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 1000));
         //statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 1000));
 
         // unlock motherboards
-        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "New Motherboards", 75));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "New Motherboards", 500));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "More Boards Layouts", 75));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "More Boards Layouts", 500));
 
         statUpgrades.Sort();
     }
