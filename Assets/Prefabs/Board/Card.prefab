@@ -688,13 +688,21 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11443422}
-      ObjeckLink: -1477188381
-      PropertyPath: mDepth
+    - Object: {fileID: 11494610}
+      ObjeckLink: -1602983290
+      PropertyPath: mWidth
       Mode: 0
-    - Object: {fileID: 11434990}
-      ObjeckLink: 148605243
-      PropertyPath: mDepth
+    - Object: {fileID: 11494610}
+      ObjeckLink: -1602983290
+      PropertyPath: mHeight
+      Mode: 0
+    - Object: {fileID: 11488172}
+      ObjeckLink: -191291109
+      PropertyPath: mWidth
+      Mode: 0
+    - Object: {fileID: 11488172}
+      ObjeckLink: -191291109
+      PropertyPath: mHeight
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -1153,8 +1161,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 148
-  mHeight: 195
+  mWidth: 146
+  mHeight: 193
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1203,8 +1211,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 148
-  mHeight: 195
+  mWidth: 146
+  mHeight: 193
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0

@@ -68,8 +68,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: gold
-    x: 828
-    y: 1479
+    x: 0
+    y: 107
     width: 144
     height: 190
     borderLeft: 0
@@ -419,8 +419,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: siver
-    x: 0
-    y: 107
+    x: 828
+    y: 1479
     width: 144
     height: 190
     borderLeft: 0
