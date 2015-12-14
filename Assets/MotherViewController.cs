@@ -14,6 +14,9 @@ public class MotherViewController : MonoBehaviour {
     [SerializeField]
     GameObject tilePrefab;
 
+	[SerializeField]
+	UILabel description;
+
     Motherboard motherboard;
 
     public void setSelected(bool selected) {
@@ -69,6 +72,12 @@ public class MotherViewController : MonoBehaviour {
             }
         }
         previewTiles.Reposition();
+
+		if (motherboard.Achievment != null) {
+			description.text = Utils.getColorDescription (motherboard.Achievment.Descrition);
+		} else {
+			description.text = "";
+		}
     }
 
     public Motherboard getMotherboard()
