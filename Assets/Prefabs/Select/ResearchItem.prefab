@@ -91,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -3, z: 0}
+  m_LocalPosition: {x: 26, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 429850}
@@ -103,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -387, y: 12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 476378}
@@ -119,7 +119,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 116194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18, y: -1, z: 0}
+  m_LocalPosition: {x: 128, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 429850}
@@ -143,7 +143,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 127, y: 0, z: 0}
+  m_LocalPosition: {x: 174.800003, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 429850}
@@ -233,7 +233,27 @@ MonoBehaviour:
     - LIIF: -844297804
       InstanceTarget: {fileID: 6564876}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 161412}
+      ObjeckLink: 870271978
+      PropertyPath: m_Name
+      Mode: 0
+    - Object: {fileID: 429850}
+      ObjeckLink: 634629722
+      PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 11457880}
+      ObjeckLink: 1127401179
+      PropertyPath: mWidth
+      Mode: 0
+    - Object: {fileID: 11457880}
+      ObjeckLink: 1127401179
+      PropertyPath: aspectRatio
+      Mode: 0
+    - Object: {fileID: 422728}
+      ObjeckLink: -27029242
+      PropertyPath: m_LocalPosition
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 
@@ -252,24 +272,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftAnchor:
-    target: {fileID: 476378}
-    relative: 1
-    absolute: 3
+    target: {fileID: 494518}
+    relative: 0
+    absolute: -75
   rightAnchor:
-    target: {fileID: 476378}
-    relative: 1
-    absolute: 71
+    target: {fileID: 494518}
+    relative: 0
+    absolute: -7
   bottomAnchor:
-    target: {fileID: 476378}
-    relative: .5
-    absolute: -8
+    target: {fileID: 494518}
+    relative: 0
+    absolute: 0
   topAnchor:
-    target: {fileID: 476378}
-    relative: .5
-    absolute: 8
+    target: {fileID: 494518}
+    relative: 1
+    absolute: 0
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
-  mPivot: 3
+  mPivot: 5
   mWidth: 68
   mHeight: 16
   mDepth: 0
@@ -278,7 +298,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.25
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: (+2 CPU)
   mFontSize: 15
@@ -336,15 +356,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .980392218, g: .70588237, b: .0196078438, a: 1}
   mPivot: 5
-  mWidth: 32
+  mWidth: 40
   mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2
+  aspectRatio: 2.5
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: 300$
   mFontSize: 15
@@ -431,15 +451,15 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 3
-  mWidth: 144
-  mHeight: 18
+  mWidth: 192
+  mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 8
+  aspectRatio: 12
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: '"Research thing name"'
   mFontSize: 15
@@ -451,7 +471,7 @@ MonoBehaviour:
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 0
+  mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
@@ -497,13 +517,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
-  mWidth: 268
+  mWidth: 318
   mHeight: 26
   mDepth: -1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 10.3076925
+  aspectRatio: 12.2307692
   mType: 1
   mFillDirection: 4
   mFillAmount: 1

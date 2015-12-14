@@ -78,7 +78,7 @@ public class Player {
         statUpgrades.Add(new StatUpgrade(EnergyType.Blue, 2, "Non-volatile memory", 300));
 
         statUpgrades.Add(new StatUpgrade(EnergyType.Green, 1, "DIMM modules", 100));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Green, 1, "Slots for expansion cards", 250));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Green, 1, "Slots for exp. cards", 250));
         statUpgrades.Add(new StatUpgrade(EnergyType.Green, 3, "Super IO Chip", 400));
 
         statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "CPU Socket update", 25));

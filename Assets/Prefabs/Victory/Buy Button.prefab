@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 103, z: 0}
+  m_LocalPosition: {x: 0, y: -86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 445528}
@@ -146,7 +146,13 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 0}
+    mMethodName: onPurchasePressed
+    mParameters:
+    - obj: {fileID: 0}
+      field: 
+    oneShot: 0
 --- !u!114 &11468688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,8 +191,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.4375
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: 50 $
   mFontSize: 20
   mFontStyle: 0
@@ -249,7 +255,47 @@ MonoBehaviour:
     - LIIF: 1954738123
       InstanceTarget: {fileID: 11468688}
   Modifications:
-    Modificated: []
+    Modificated:
+    - Object: {fileID: 480360}
+      ObjeckLink: -1729306796
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 11440618}
+      ObjeckLink: 1333370612
+      PropertyPath: onClick.Array.size
+      Mode: 0
+    - Object: {fileID: 11440618}
+      ObjeckLink: 1333370612
+      PropertyPath: onClick.Array.data[0].mTarget
+      Mode: 0
+    - Object: {fileID: 11440618}
+      ObjeckLink: 1333370612
+      PropertyPath: onClick.Array.data[0].mMethodName
+      Mode: 0
+    - Object: {fileID: 11440618}
+      ObjeckLink: 1333370612
+      PropertyPath: onClick.Array.data[0].mParameters.Array.size
+      Mode: 0
+    - Object: {fileID: 11440618}
+      ObjeckLink: 1333370612
+      PropertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
+      Mode: 0
+    - Object: {fileID: 11440618}
+      ObjeckLink: 1333370612
+      PropertyPath: onClick.Array.data[0].mParameters.Array.data[0].field
+      Mode: 0
+    - Object: {fileID: 11440618}
+      ObjeckLink: 1333370612
+      PropertyPath: onClick.Array.data[0].oneShot
+      Mode: 0
+    - Object: {fileID: 11468688}
+      ObjeckLink: 1954738123
+      PropertyPath: mTrueTypeFont
+      Mode: 0
+    - Object: {fileID: 11468688}
+      ObjeckLink: 1954738123
+      PropertyPath: mFont
+      Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
     RemovedObjects: 

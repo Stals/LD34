@@ -152,8 +152,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 3.875
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: CONSTRUCT
   mFontSize: 20
   mFontStyle: 0
@@ -432,8 +432,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.5999999
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: $
   mFontSize: 40
   mFontStyle: 0
@@ -538,110 +538,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &228382562
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 228382563}
-  - 20: {fileID: 228382565}
-  - 114: {fileID: 228382564}
-  m_Layer: 8
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &228382563
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228382562}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1416634744}
-  m_RootOrder: 0
---- !u!114 &228382564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228382562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a92b5d748695fd44aac9feef17ba415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventType: 1
-  eventsGoToColliders: 0
-  eventReceiverMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  debug: 0
-  useMouse: 1
-  useTouch: 1
-  allowMultiTouch: 1
-  useKeyboard: 1
-  useController: 1
-  stickyTooltip: 1
-  tooltipDelay: 1
-  longPressTooltip: 0
-  mouseDragThreshold: 4
-  mouseClickThreshold: 10
-  touchDragThreshold: 40
-  touchClickThreshold: 40
-  rangeDistance: -1
-  horizontalAxisName: Horizontal
-  verticalAxisName: Vertical
-  horizontalPanAxisName: 
-  verticalPanAxisName: 
-  scrollAxisName: Mouse ScrollWheel
-  commandClick: 1
-  submitKey0: 13
-  submitKey1: 330
-  cancelKey0: 27
-  cancelKey1: 331
-  autoHideCursor: 1
---- !u!20 &228382565
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 228382562}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 3
-  m_BackGroundColor: {r: .5, g: .5, b: .5, a: 1}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: -10
-  far clip plane: 10
-  field of view: 60
-  orthographic: 1
-  orthographic size: 1
-  m_Depth: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 256
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!1001 &254098586
 Prefab:
   m_ObjectHideFlags: 0
@@ -946,6 +842,15 @@ Prefab:
     - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
       propertyPath: onClick.Array.data[0].mMethodName
       value: onContinuePressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468688, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11468688, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
+      propertyPath: mFont
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
@@ -1465,7 +1370,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3015
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -1481,14 +1386,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1659836587}
     m_Modifications:
-    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
-      propertyPath: onClick.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
-      propertyPath: onClick.Array.data[0].mParameters.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 480360, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1525,10 +1422,6 @@ Prefab:
       propertyPath: onClick.Array.data[0].mTarget
       value: 
       objectReference: {fileID: 1060525632}
-    - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
-      propertyPath: onClick.Array.data[0].mMethodName
-      value: onPurchasePressed
-      objectReference: {fileID: 0}
     - target: {fileID: 11440618, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
       propertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
       value: 
@@ -1943,6 +1836,28 @@ Prefab:
       propertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
       value: 
       objectReference: {fileID: 1364905872}
+    - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mWidth
+      value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0
@@ -1964,117 +1879,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 480360, guid: 6d52a9611d9e2cf4ba60d7596ce57abb, type: 2}
   m_PrefabInternal: {fileID: 1292779502}
---- !u!1 &1416634740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1416634744}
-  - 114: {fileID: 1416634743}
-  - 114: {fileID: 1416634742}
-  - 54: {fileID: 1416634741}
-  m_Layer: 8
-  m_Name: UI Root
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &1416634741
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1416634740}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1416634742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1416634740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae942c9068183dc40a9d01f648273726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftAnchor:
-    target: {fileID: 0}
-    relative: 0
-    absolute: 0
-  rightAnchor:
-    target: {fileID: 0}
-    relative: 1
-    absolute: 0
-  bottomAnchor:
-    target: {fileID: 0}
-    relative: 0
-    absolute: 0
-  topAnchor:
-    target: {fileID: 0}
-    relative: 1
-    absolute: 0
-  updateAnchors: 1
-  showInPanelTool: 1
-  generateNormals: 0
-  widgetsAreStatic: 0
-  cullWhileDragging: 1
-  alwaysOnScreen: 0
-  anchorOffset: 0
-  softBorderPadding: 1
-  renderQueue: 0
-  startingRenderQueue: 3000
-  mClipTexture: {fileID: 0}
-  mAlpha: 1
-  mClipping: 0
-  mClipRange: {x: 0, y: 0, z: 300, w: 200}
-  mClipSoftness: {x: 4, y: 4}
-  mDepth: 0
-  mSortingOrder: 0
-  mClipOffset: {x: 0, y: 0}
---- !u!114 &1416634743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1416634740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c5ecb5660b11414fb042fb826e03b73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scalingStyle: 0
-  manualWidth: 1280
-  manualHeight: 720
-  minimumHeight: 320
-  maximumHeight: 1536
-  fitWidth: 0
-  fitHeight: 1
-  adjustByDPI: 0
-  shrinkPortraitUI: 0
---- !u!4 &1416634744
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1416634740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00508905854, y: .00508905854, z: .00508905854}
-  m_Children:
-  - {fileID: 228382563}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1001 &1569640577
 Prefab:
   m_ObjectHideFlags: 0
@@ -2278,6 +2082,28 @@ Prefab:
       propertyPath: onClick.Array.data[0].mParameters.Array.data[0].obj
       value: 
       objectReference: {fileID: 1569640579}
+    - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mWidth
+      value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0
@@ -2639,11 +2465,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: mWidth
-      value: 32
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 2
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+      propertyPath: aspectRatio
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
@@ -2715,8 +2545,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 3.875
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: RESEARCH
   mFontSize: 20
   mFontStyle: 0
@@ -2813,7 +2643,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3006
+  startingRenderQueue: 3011
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -3182,6 +3012,106 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mText
+      value: CPU
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 1.89999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mText
+      value: GPU
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mText
+      value: RAM
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 2.0999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mPivot
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 475206, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -74.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 475206, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mPivot
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mPivot
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 428288, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -74.8000031
+      objectReference: {fileID: 0}
+    - target: {fileID: 451196, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -76
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431612, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11431612, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
   m_IsPrefabParent: 0
@@ -3265,8 +3195,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 4.5999999
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: 100
   mFontSize: 40
   mFontStyle: 0
@@ -3336,6 +3266,28 @@ Prefab:
       propertyPath: onClick.Array.data[0].mTarget
       value: 
       objectReference: {fileID: 1760553676}
+    - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mWidth
+      value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mTrueTypeFont
+      value: 
+      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
+        type: 3}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: mFont
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0
@@ -3389,7 +3341,7 @@ MonoBehaviour:
   eventReceiverMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  debug: 1
+  debug: 0
   useMouse: 1
   useTouch: 1
   allowMultiTouch: 1
