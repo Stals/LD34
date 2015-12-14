@@ -67,7 +67,7 @@ public class MotherSelectionController : MonoBehaviour {
         int maxCount = (int)(boardCombiner.Matrices.Count * Game.Instance.getPlayer().getBoardsAvalible());
 
         Motherboard board = new Motherboard(boardCombiner.Matrices[Random.Range(0, maxCount)]);
-        board.Heat = 8;
+        board.Heat = 7;
         return board;
     }
 

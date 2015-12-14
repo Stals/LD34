@@ -65,9 +65,21 @@ public class BoardViewController : MonoBehaviour {
         session = new GameSession(getDeck(), motherboard);
 
         setupBoard();
+        applyResearches();
 
         currentChoiceCards = new List<GameObject>();
         drawNewCards();
+    }
+
+    private void applyResearches()
+    {
+        foreach (var upg in Game.Instance.getPlayer().getStatUpgrades()) {
+            if (upg.isEnabled) {
+                if (upg.energyType == EnergyType.Black) {
+                    board.Heat += upg.bonus;
+                }
+            }
+        }
     }
 
     private void moveCardToDiscard(GameObject cardGO)

@@ -2643,7 +2643,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 1.875
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
