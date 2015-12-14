@@ -16,7 +16,7 @@ namespace CraftCore
     public class AddToRandomType: AchievementBonus
     {
         public int val { get; set; }
-        public EnergyType type { get; set; }
+        EnergyType type;
         public AddToRandomType(int valToAdd)
         {
             val = valToAdd;
