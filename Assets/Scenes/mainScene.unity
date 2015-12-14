@@ -244,7 +244,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.83333349
+  aspectRatio: 4.73333311
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -867,7 +867,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 2.9333334
+      value: 3.0666666
       objectReference: {fileID: 0}
     - target: {fileID: 491746, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: m_LocalPosition.x
@@ -895,7 +895,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 7.5999999
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11453706, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
@@ -915,15 +915,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11454590, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11409798, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11403810, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11465100, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
@@ -931,7 +931,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 5.3499999
+      value: 5.42500019
       objectReference: {fileID: 0}
     - target: {fileID: 11494850, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
@@ -947,7 +947,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11476694, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 4.75
+      value: 4.80000019
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
@@ -1174,7 +1174,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.875
+  aspectRatio: 1.89999998
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -1390,7 +1390,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.76923084
+  aspectRatio: 3
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -1566,7 +1566,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.76923084
+  aspectRatio: 3
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 9.15384579
+  aspectRatio: 9.84615421
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -2747,7 +2747,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 16.7692299
+  aspectRatio: 18
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -3646,11 +3646,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 2.375
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 9.19999981
+      value: 11.3000002
       objectReference: {fileID: 0}
     - target: {fileID: 465400, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4095,15 +4095,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11485006, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11423120, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11421196, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
@@ -4238,7 +4238,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.3499999
+  aspectRatio: 4.4000001
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3
+  aspectRatio: 3.23076916
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -4689,7 +4689,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.63333321
+  aspectRatio: 6.5
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}

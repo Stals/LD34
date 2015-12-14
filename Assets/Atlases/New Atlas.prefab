@@ -41,9 +41,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 758d4579caffca743ad7f136bffb3dd5, type: 2}
   mSprites:
+  - name: card_upgrade_01
+    x: 951
+    y: 643
+    width: 144
+    height: 190
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: card_upgrade_02
+    x: 951
+    y: 452
+    width: 144
+    height: 190
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: fix__0000_ram
-    x: 204
-    y: 627
+    x: 612
+    y: 254
     width: 57
     height: 49
     borderLeft: 0
@@ -55,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: fix__0001_GPU
-    x: 204
-    y: 534
+    x: 612
+    y: 161
     width: 59
     height: 42
     borderLeft: 0
@@ -68,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: gold
-    x: 0
-    y: 107
+    x: 951
+    y: 261
     width: 144
     height: 190
     borderLeft: 0
@@ -81,8 +107,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0000_\u0421\u043B\u043E\u0439-24"
-    x: 887
-    y: 1692
+    x: 612
+    y: 359
     width: 70
     height: 62
     borderLeft: 0
@@ -94,8 +120,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0001_\u0421\u043B\u043E\u0439-23"
-    x: 0
-    y: 9
+    x: 828
+    y: 158
     width: 97
     height: 97
     borderLeft: 0
@@ -107,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0002_\u0421\u043B\u043E\u0439-22"
-    x: 887
-    y: 1755
+    x: 951
+    y: 65
     width: 97
     height: 97
     borderLeft: 0
@@ -120,8 +146,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0003_\u0421\u043B\u043E\u0439-21"
-    x: 887
-    y: 1951
+    x: 951
+    y: 163
     width: 97
     height: 97
     borderLeft: 0
@@ -133,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0004_\u0421\u043B\u043E\u0439-20"
-    x: 887
-    y: 1853
+    x: 828
+    y: 60
     width: 97
     height: 97
     borderLeft: 0
@@ -146,8 +172,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0005_\u0421\u043B\u043E\u0439-19"
-    x: 682
-    y: 1413
+    x: 1516
+    y: 992
     width: 245
     height: 32
     borderLeft: 0
@@ -159,8 +185,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0006_\u0421\u043B\u043E\u0439-18"
-    x: 472
-    y: 1381
+    x: 1306
+    y: 960
     width: 209
     height: 64
     borderLeft: 0
@@ -172,8 +198,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0007_\u0421\u043B\u043E\u0439-17"
-    x: 472
-    y: 1268
+    x: 1762
+    y: 977
     width: 151
     height: 47
     borderLeft: 0
@@ -185,8 +211,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0008_\u0421\u043B\u043E\u0439-16"
-    x: 0
-    y: 677
+    x: 683
+    y: 256
     width: 267
     height: 768
     borderLeft: 0
@@ -198,8 +224,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0009_\u0421\u043B\u043E\u0439-15"
-    x: 268
-    y: 1067
+    x: 408
+    y: 43
     width: 203
     height: 378
     borderLeft: 0
@@ -211,8 +237,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0010_\u0421\u043B\u043E\u0439-14"
-    x: 0
-    y: 298
+    x: 204
+    y: 43
     width: 203
     height: 378
     borderLeft: 0
@@ -224,8 +250,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0011_\u0421\u043B\u043E\u0439-13"
-    x: 683
-    y: 1670
+    x: 0
+    y: 43
     width: 203
     height: 378
     borderLeft: 0
@@ -237,8 +263,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0012_\u0421\u043B\u043E\u0439-12"
-    x: 145
-    y: 209
+    x: 1096
+    y: 871
     width: 88
     height: 88
     borderLeft: 0
@@ -250,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0013_\u0421\u043B\u043E\u0439-11"
-    x: 683
-    y: 1446
+    x: 0
+    y: 10
     width: 112
     height: 32
     borderLeft: 0
@@ -263,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0014_\u0421\u043B\u043E\u0438\u0306-79"
-    x: 985
-    y: 1968
+    x: 159
+    y: 16
     width: 22
     height: 26
     borderLeft: 0
@@ -276,8 +302,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0014_\u0421\u043B\u043E\u0439-7"
-    x: 985
-    y: 1995
+    x: 136
+    y: 16
     width: 22
     height: 26
     borderLeft: 0
@@ -289,8 +315,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0015_\u0421\u043B\u043E\u0439-6"
-    x: 985
-    y: 2022
+    x: 113
+    y: 16
     width: 22
     height: 26
     borderLeft: 0
@@ -302,8 +328,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0016_\u0421\u043B\u043E\u0439-5"
-    x: 472
-    y: 1255
+    x: 204
+    y: 30
     width: 159
     height: 12
     borderLeft: 0
@@ -315,8 +341,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0017_\u0421\u043B\u043E\u0439-4"
-    x: 828
-    y: 1479
+    x: 951
+    y: 834
     width: 144
     height: 190
     borderLeft: 0
@@ -328,8 +354,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0018_\u0421\u043B\u043E\u0439-3"
-    x: 958
-    y: 1700
+    x: 612
+    y: 304
     width: 54
     height: 54
     borderLeft: 0
@@ -341,8 +367,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0019_\u0421\u043B\u043E\u0439-2"
-    x: 204
-    y: 491
+    x: 612
+    y: 118
     width: 59
     height: 42
     borderLeft: 0
@@ -354,8 +380,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0020_\u0421\u043B\u043E\u0439-1"
-    x: 204
-    y: 577
+    x: 612
+    y: 204
     width: 57
     height: 49
     borderLeft: 0
@@ -367,8 +393,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0021_\u0421\u043B\u043E\u0439-10"
-    x: 973
-    y: 1582
+    x: 612
+    y: 30
     width: 43
     height: 43
     borderLeft: 0
@@ -380,8 +406,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0022_\u0421\u043B\u043E\u0439-9"
-    x: 472
-    y: 1316
+    x: 1096
+    y: 960
     width: 209
     height: 64
     borderLeft: 0
@@ -394,7 +420,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0023_\u0421\u043B\u043E\u0439-8"
     x: 0
-    y: 1446
+    y: 422
     width: 682
     height: 602
     borderLeft: 0
@@ -406,8 +432,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: previewSquare
-    x: 985
-    y: 1928
+    x: 204
+    y: 7
     width: 22
     height: 22
     borderLeft: 0
@@ -420,7 +446,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: siver
     x: 683
-    y: 1479
+    y: 65
     width: 144
     height: 190
     borderLeft: 0
@@ -432,8 +458,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: uti_ico
-    x: 973
-    y: 1626
+    x: 612
+    y: 74
     width: 43
     height: 43
     borderLeft: 0

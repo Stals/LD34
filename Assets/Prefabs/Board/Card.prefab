@@ -468,7 +468,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 44
   mHeight: 44
-  mDepth: 5
+  mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 50
-  mDepth: 5
+  mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -687,10 +687,6 @@ MonoBehaviour:
     - Object: {fileID: 464204}
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
-      Mode: 0
-    - Object: {fileID: 11407158}
-      ObjeckLink: -702155166
-      PropertyPath: mSpriteName
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -885,7 +881,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 54
   mHeight: 54
-  mDepth: 5
+  mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -1151,7 +1147,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 146
   mHeight: 193
-  mDepth: 1
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 1
@@ -1167,7 +1163,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
-  mSpriteName: gold
+  mSpriteName: card_upgrade_02
   mFillCenter: 1
 --- !u!114 &11494610
 MonoBehaviour:
@@ -1201,7 +1197,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 146
   mHeight: 193
-  mDepth: 1
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 1
@@ -1217,7 +1213,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
-  mSpriteName: siver
+  mSpriteName: card_upgrade_01
   mFillCenter: 1
 --- !u!114 &11497644
 MonoBehaviour:
@@ -1251,7 +1247,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 60
   mHeight: 42
-  mDepth: 5
+  mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
