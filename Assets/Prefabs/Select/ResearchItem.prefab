@@ -103,7 +103,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -387, y: 12, z: 0}
+  m_LocalPosition: {x: -1182, y: 892, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 476378}
@@ -238,29 +238,9 @@ MonoBehaviour:
       ObjeckLink: 634629722
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11457880}
-      ObjeckLink: 1127401179
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11457880}
-      ObjeckLink: 1127401179
-      PropertyPath: mHeight
-      Mode: 0
-    - Object: {fileID: 11457880}
-      ObjeckLink: 1127401179
-      PropertyPath: aspectRatio
-      Mode: 0
-    - Object: {fileID: 11457880}
-      ObjeckLink: 1127401179
-      PropertyPath: mAtlas
-      Mode: 0
-    - Object: {fileID: 11457880}
-      ObjeckLink: 1127401179
-      PropertyPath: mSpriteName
-      Mode: 0
-    - Object: {fileID: 422728}
-      ObjeckLink: -27029242
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11435194}
+      ObjeckLink: 834850199
+      PropertyPath: mColor
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -309,7 +289,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: (+2 CPU)
-  mFontSize: 15
+  mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -362,7 +342,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .980392218, g: .70588237, b: .0196078438, a: 1}
+  mColor: {r: .380392194, g: .654901981, b: .00392156886, a: 1}
   mPivot: 5
   mWidth: 40
   mHeight: 16
@@ -459,18 +439,18 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 3
-  mWidth: 192
-  mHeight: 16
+  mWidth: 226
+  mHeight: 20
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12
+  aspectRatio: 11.3000002
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: '"Research thing name"'
-  mFontSize: 15
+  mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
