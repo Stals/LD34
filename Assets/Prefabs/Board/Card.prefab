@@ -790,13 +790,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 134
+  mWidth: 130
   mHeight: 54
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.48148155
+  aspectRatio: 2.40740752
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
