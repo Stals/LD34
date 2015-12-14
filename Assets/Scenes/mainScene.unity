@@ -935,7 +935,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11494850, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 4.80000019
+      value: 17.0499992
       objectReference: {fileID: 0}
     - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: mWidth
@@ -1950,7 +1950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1060525631
 Transform:
   m_ObjectHideFlags: 0
@@ -2569,30 +2569,6 @@ Prefab:
     - target: {fileID: 415128, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 240
-      objectReference: {fileID: 0}
-    - target: {fileID: 11454590, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 184
-      objectReference: {fileID: 0}
-    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 11454590, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 1.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 3.0666666
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}

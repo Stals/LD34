@@ -24,6 +24,9 @@ public class BoardViewController : MonoBehaviour {
     [SerializeField]
     UIGrid cardDiscardPlace;
 
+	[SerializeField]
+	UILabel achivDescritpion;
+
     const int cardsPerDraft = 2;
     Motherboard board;
     public GameSession session;
@@ -69,6 +72,10 @@ public class BoardViewController : MonoBehaviour {
 
         currentChoiceCards = new List<GameObject>();
         drawNewCards();
+
+		if (board.Achievment != null) {
+			achivDescritpion.text = Utils.getColorDescription (board.Achievment.Descrition);
+		}
     }
 
     private void applyResearches()
