@@ -299,9 +299,9 @@
       "card": {
         "$type": "CraftCore.Card, Assembly-CSharp",
         "OutputForLevel": [
-          1,
-          2,
-          3
+          0,
+          0,
+          0
         ],
         "ModifierValue": 0,
         "EnergyType": 4,
@@ -324,9 +324,9 @@
       "card": {
         "$type": "CraftCore.Card, Assembly-CSharp",
         "OutputForLevel": [
-          1,
-          2,
-          3
+          0,
+          0,
+          0
         ],
         "ModifierValue": 0,
         "EnergyType": 4,
@@ -349,9 +349,9 @@
       "card": {
         "$type": "CraftCore.Card, Assembly-CSharp",
         "OutputForLevel": [
-          1,
-          2,
-          3
+          0,
+          0,
+          0
         ],
         "ModifierValue": 0,
         "EnergyType": 4,
@@ -374,21 +374,13 @@
       "card": {
         "$type": "CraftCore.Card, Assembly-CSharp",
         "OutputForLevel": [
-          1,
           2,
-          3
+          4,
+          6
         ],
         "ModifierValue": 0,
         "EnergyType": 4,
-        "Modifier": {
-          "$type": "CraftCore.Energy, Assembly-CSharp",
-          "BonusForLevel": [
-            2,
-            4,
-            6
-          ],
-          "description": "energy"
-        },
+        "Modifier": null,
         "HeatPrice": 0,
         "UpgradeLevel": 0
       },

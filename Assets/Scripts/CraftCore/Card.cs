@@ -68,7 +68,7 @@ namespace CraftCore
             get
             {
                 string main = "";
-                if (Type != EnergyType.Black)
+                if (ProducedEnergy() != 0)
                 {
                     main = "+ " + ProducedEnergy().ToString() + " " + Utils.NameFromType(Type);
                 }
