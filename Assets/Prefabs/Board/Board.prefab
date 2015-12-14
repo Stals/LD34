@@ -5142,7 +5142,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6506100
 BoxCollider:
@@ -5154,7 +5154,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6506348
 BoxCollider:
@@ -5166,7 +5166,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6509712
 BoxCollider:
@@ -5178,7 +5178,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6513700
 BoxCollider:
@@ -5190,7 +5190,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6521668
 BoxCollider:
@@ -5214,7 +5214,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6534916
 BoxCollider:
@@ -5226,7 +5226,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6535664
 BoxCollider:
@@ -5238,7 +5238,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6536628
 BoxCollider:
@@ -5250,7 +5250,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6538186
 BoxCollider:
@@ -5262,7 +5262,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6563044
 BoxCollider:
@@ -5322,7 +5322,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6589388
 BoxCollider:
@@ -5334,7 +5334,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6589796
 BoxCollider:
@@ -5346,7 +5346,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6590152
 BoxCollider:
@@ -5358,7 +5358,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6594432
 BoxCollider:
@@ -5370,7 +5370,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!65 &6596006
 BoxCollider:
@@ -5382,7 +5382,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!114 &11400168
 MonoBehaviour:
@@ -6824,25 +6824,69 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11494850}
   Modifications:
     Modificated:
-    - Object: {fileID: 445560}
-      ObjeckLink: -692347625
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 6501916}
+      ObjeckLink: 156577652
+      PropertyPath: m_Size
       Mode: 0
-    - Object: {fileID: 11452506}
-      ObjeckLink: 1649638624
-      PropertyPath: leftAnchor.absolute
+    - Object: {fileID: 6506348}
+      ObjeckLink: 1888343285
+      PropertyPath: m_Size
       Mode: 0
-    - Object: {fileID: 11452506}
-      ObjeckLink: 1649638624
-      PropertyPath: rightAnchor.absolute
+    - Object: {fileID: 6589388}
+      ObjeckLink: -1775853539
+      PropertyPath: m_Size
       Mode: 0
-    - Object: {fileID: 11452506}
-      ObjeckLink: 1649638624
-      PropertyPath: mText
+    - Object: {fileID: 6538186}
+      ObjeckLink: 1378407001
+      PropertyPath: m_Size
       Mode: 0
-    - Object: {fileID: 448030}
-      ObjeckLink: -1839952242
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 6506100}
+      ObjeckLink: -321952200
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6589274}
+      ObjeckLink: -372222758
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6590152}
+      ObjeckLink: -728418144
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6596006}
+      ObjeckLink: 1439966051
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6535664}
+      ObjeckLink: -1207570962
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6589796}
+      ObjeckLink: -336642633
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6536628}
+      ObjeckLink: -984239464
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6594432}
+      ObjeckLink: 1361906814
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6525042}
+      ObjeckLink: 126896471
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6513700}
+      ObjeckLink: -1584597735
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6509712}
+      ObjeckLink: -1109895007
+      PropertyPath: m_Size
+      Mode: 0
+    - Object: {fileID: 6534916}
+      ObjeckLink: 1022588223
+      PropertyPath: m_Size
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []

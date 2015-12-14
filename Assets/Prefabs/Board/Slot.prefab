@@ -245,7 +245,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 150, y: 160, z: 1}
+  m_Size: {x: 140, y: 145, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!114 &11400264
 MonoBehaviour:
@@ -338,9 +338,9 @@ MonoBehaviour:
       ObjeckLink: -639707849
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 448488}
-      ObjeckLink: 1810415408
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 6511714}
+      ObjeckLink: 528715260
+      PropertyPath: m_Size
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
