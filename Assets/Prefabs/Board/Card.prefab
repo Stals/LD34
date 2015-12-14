@@ -803,7 +803,7 @@ MonoBehaviour:
   mText: '+2 GPU
 
     if near green'
-  mFontSize: 20
+  mFontSize: 19
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
