@@ -117,7 +117,11 @@ public class Player {
             }
         }
 
-        return boardUpgradesUnlocked / 3f;
+		float p = 0.5f;
+		// give 0.25 for each next upgrade
+		p += (boardUpgradesUnlocked - 1) * 0.25;
+
+		return p;
     }
 
 }
