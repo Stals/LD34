@@ -170,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 438782}
@@ -338,9 +338,9 @@ MonoBehaviour:
       ObjeckLink: -639707849
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11424310}
-      ObjeckLink: -795403686
-      PropertyPath: mDepth
+    - Object: {fileID: 448488}
+      ObjeckLink: 1810415408
+      PropertyPath: m_LocalPosition
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []

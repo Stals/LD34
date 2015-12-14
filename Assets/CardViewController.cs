@@ -40,6 +40,7 @@ public class CardViewController : MonoBehaviour {
     public void onPress()
     {
         Game.Instance.getManager().getBoardViewController().onCardPress(this);
+		transform.localScale = new Vector3 (0.77f, 0.77f);
     }
 
     public void setup(CraftCore.Card _card) {

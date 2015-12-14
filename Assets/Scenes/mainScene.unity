@@ -961,7 +961,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 464204, guid: 7ade3a9e19e20604fbb63e9085f84a64, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 805.5
+      value: 947.400024
       objectReference: {fileID: 0}
     - target: {fileID: 464204, guid: 7ade3a9e19e20604fbb63e9085f84a64, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2132,7 +2132,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3020
+  startingRenderQueue: 3028
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -2568,22 +2568,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 415128, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 240
-      objectReference: {fileID: 0}
-    - target: {fileID: 11454590, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 184
-      objectReference: {fileID: 0}
-    - target: {fileID: 181576, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3541,7 +3525,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3015
+  startingRenderQueue: 3023
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
