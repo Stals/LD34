@@ -413,13 +413,21 @@ MonoBehaviour:
       ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11478352}
-      ObjeckLink: -1646318217
-      PropertyPath: mWidth
+    - Object: {fileID: 11443422}
+      ObjeckLink: -1477188381
+      PropertyPath: mTrueTypeFont
       Mode: 0
-    - Object: {fileID: 11478352}
-      ObjeckLink: -1646318217
-      PropertyPath: aspectRatio
+    - Object: {fileID: 11472760}
+      ObjeckLink: -1616574937
+      PropertyPath: mTrueTypeFont
+      Mode: 0
+    - Object: {fileID: 11472760}
+      ObjeckLink: -1616574937
+      PropertyPath: mFont
+      Mode: 0
+    - Object: {fileID: 11434990}
+      ObjeckLink: 148605243
+      PropertyPath: mTrueTypeFont
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -465,7 +473,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.16326523
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: +1 GPU
   mFontSize: 15
@@ -531,7 +539,7 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.16326523
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 12800000, guid: 9170265a378484403a3d3293bf984429, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: '+2 GPU
 
@@ -716,8 +724,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.73684216
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: 2*
   mFontSize: 20
   mFontStyle: 0

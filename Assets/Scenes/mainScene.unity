@@ -581,6 +581,26 @@ Prefab:
       propertyPath: startingRenderQueue
       value: 3004
       objectReference: {fileID: 0}
+    - target: {fileID: 11430240, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: .899999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440166, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 1.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474738, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: .600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444432, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: .600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 11443858, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: .600000024
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
   m_IsPrefabParent: 0
@@ -1370,7 +1390,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3015
+  startingRenderQueue: 3016
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -1858,6 +1878,10 @@ Prefab:
       propertyPath: mFont
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: aspectRatio
+      value: 2.95000005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0
@@ -2103,6 +2127,10 @@ Prefab:
     - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
       propertyPath: mFont
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: aspectRatio
+      value: 2.95000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
@@ -2643,7 +2671,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3012
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -3012,105 +3040,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mText
-      value: CPU
-      objectReference: {fileID: 0}
-    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+    - target: {fileID: 11430240, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 1.89999998
+      value: .899999976
       objectReference: {fileID: 0}
-    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mText
-      value: GPU
-      objectReference: {fileID: 0}
-    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+    - target: {fileID: 11440166, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 2
+      value: 1.79999995
       objectReference: {fileID: 0}
-    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mText
-      value: RAM
-      objectReference: {fileID: 0}
-    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+    - target: {fileID: 11474738, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 2.0999999
+      value: .600000024
       objectReference: {fileID: 0}
-    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mPivot
-      value: 5
+    - target: {fileID: 11444432, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: .600000024
       objectReference: {fileID: 0}
-    - target: {fileID: 475206, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -74.4000015
-      objectReference: {fileID: 0}
-    - target: {fileID: 475206, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -45
-      objectReference: {fileID: 0}
-    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mPivot
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mPivot
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mTrueTypeFont
-      value: 
-      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
-        type: 3}
-    - target: {fileID: 11493164, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mFont
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mTrueTypeFont
-      value: 
-      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
-        type: 3}
-    - target: {fileID: 11497410, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mFont
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mTrueTypeFont
-      value: 
-      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
-        type: 3}
-    - target: {fileID: 11412908, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mFont
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 428288, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -74.8000031
-      objectReference: {fileID: 0}
-    - target: {fileID: 451196, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -76
-      objectReference: {fileID: 0}
-    - target: {fileID: 11431612, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mTrueTypeFont
-      value: 
-      objectReference: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007,
-        type: 3}
-    - target: {fileID: 11431612, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mFont
-      value: 
+    - target: {fileID: 11443858, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: .600000024
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
@@ -3287,6 +3235,10 @@ Prefab:
     - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
       propertyPath: mFont
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471326, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: aspectRatio
+      value: 2.95000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
