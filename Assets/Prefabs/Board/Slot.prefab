@@ -245,7 +245,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 140, y: 160, z: 1}
+  m_Size: {x: 150, y: 160, z: 1}
   m_Center: {x: 0, y: -15, z: 0}
 --- !u!114 &11400264
 MonoBehaviour:
@@ -338,13 +338,9 @@ MonoBehaviour:
       ObjeckLink: -639707849
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 6511714}
-      ObjeckLink: 528715260
-      PropertyPath: m_Size
-      Mode: 0
-    - Object: {fileID: 6511714}
-      ObjeckLink: 528715260
-      PropertyPath: m_Center
+    - Object: {fileID: 106344}
+      ObjeckLink: 1001869429
+      PropertyPath: m_IsActive
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -380,7 +376,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .703000009, g: .703000009, b: .703000009, a: 1}
+  mColor: {r: .602999985, g: .602999985, b: .602999985, a: 1}
   mPivot: 4
   mWidth: 70
   mHeight: 62

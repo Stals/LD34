@@ -686,15 +686,15 @@ MonoBehaviour:
     Modificated:
     - Object: {fileID: 464204}
       ObjeckLink: -160185010
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 464204}
-      ObjeckLink: -160185010
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 462478}
-      ObjeckLink: 1697578520
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11443422}
+      ObjeckLink: -1477188381
+      PropertyPath: mDepth
+      Mode: 0
+    - Object: {fileID: 11434990}
+      ObjeckLink: 148605243
+      PropertyPath: mDepth
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -734,7 +734,7 @@ MonoBehaviour:
   mPivot: 2
   mWidth: 106
   mHeight: 49
-  mDepth: 8
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -800,7 +800,7 @@ MonoBehaviour:
   mPivot: 1
   mWidth: 124
   mHeight: 57
-  mDepth: 8
+  mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 22
   mHeight: 26
-  mDepth: 8
+  mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
