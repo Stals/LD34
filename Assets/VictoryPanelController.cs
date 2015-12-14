@@ -58,7 +58,7 @@ public class VictoryPanelController : MonoBehaviour {
             }
         }
 
-        resultScoreLabel.text = session.ResultScore().ToString();
+		resultScoreLabel.text = session.ResultScore().ToString("n2") + "!";
 
         int reward = convertScoreToMoney(session.ResultScore());
         newMoneyLabel.text = "+" + reward.ToString() + "$";
