@@ -21,6 +21,9 @@ public class BoardViewController : MonoBehaviour {
     [SerializeField]
     GameObject cardsSpawn;
 
+    [SerializeField]
+    UIGrid cardDiscardPlace;
+
     const int cardsPerDraft = 2;
     Motherboard board;
     public GameSession session;
@@ -70,9 +73,12 @@ public class BoardViewController : MonoBehaviour {
     private void moveCardToDiscard(GameObject cardGO)
     {
         // Todo implamant animation and some discard pile
-        NGUITools.DestroyImmediate(cardGO);
 
-        cardSelectionGrid.Reposition();
+        moveCardToGrid(cardDiscardPlace, cardGO);
+
+        //cardSelectionGrid.Reposition();
+
+        //NGUITools.Destroy(cardGO);
     }
 
     void setupBackend()
@@ -115,7 +121,6 @@ public class BoardViewController : MonoBehaviour {
             callCardBack(cardGO);
         }
         cardSelectionGrid.Reposition();
-        cardSelectionGrid.repositionNow = true;
     }
 
     public void onCardPress(CardViewController cardController) {
@@ -129,21 +134,27 @@ public class BoardViewController : MonoBehaviour {
         }
     }
 
-    // returns the card onto its dealing place
-    public void callCardBack(GameObject cardObject) {
-        cardObject.transform.parent = cardSelectionGrid.transform;
+    public void moveCardToGrid(UIGrid grid, GameObject cardObject)
+    {
+        cardObject.transform.parent = grid.transform;
 
         NGUITools.MarkParentAsChanged(cardObject);
-        cardSelectionGrid.Reposition();
+        grid.Reposition();
+    }
+
+
+    // returns the card onto its dealing place
+    public void callCardBack(GameObject cardObject) {
+        moveCardToGrid(cardSelectionGrid, cardObject);
     }
 
     public void onShipPressed()
     {
         // discard your last cards (for next session)
-        foreach (GameObject cardGO in currentChoiceCards)
+        /*foreach (GameObject cardGO in currentChoiceCards)
         {
             moveCardToDiscard(cardGO);
-        }
+        }*/
 
         // TODO switch to victory screen and cards choosign 
         // + ability to select cards
@@ -153,6 +164,8 @@ public class BoardViewController : MonoBehaviour {
         GetComponent<UITweener>().PlayReverse();
 
         victoryPanel.setup(session);
+
+        Destroy(this.gameObject, 2f);
     }
 
     public void onReDrawPressed()

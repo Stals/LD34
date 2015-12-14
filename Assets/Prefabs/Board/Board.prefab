@@ -118,6 +118,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &105670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 468884}
+  m_Layer: 5
+  m_Name: CardsSpawnPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &107878
 GameObject:
   m_ObjectHideFlags: 1
@@ -273,8 +288,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 406500}
+  - 114: {fileID: 11499976}
+  - 114: {fileID: 11408908}
+  - 65: {fileID: 6585480}
   m_Layer: 5
-  m_Name: CardsSpawnPlace
+  m_Name: CardsDiscardPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1472,11 +1490,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 586, y: 0, z: 0}
+  m_LocalPosition: {x: 358, y: 941, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 415128}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!4 &408172
 Transform:
   m_ObjectHideFlags: 1
@@ -1557,6 +1575,7 @@ Transform:
   - {fileID: 450524}
   - {fileID: 465430}
   - {fileID: 488652}
+  - {fileID: 468884}
   - {fileID: 406500}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2110,6 +2129,18 @@ Transform:
   - {fileID: 452592}
   m_Father: {fileID: 413104}
   m_RootOrder: 2
+--- !u!4 &468884
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 586, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 415128}
+  m_RootOrder: 5
 --- !u!4 &469104
 Transform:
   m_ObjectHideFlags: 1
@@ -2682,6 +2713,18 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 250, y: 1024, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6585480
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 250, y: 250, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6589274
 BoxCollider:
@@ -3417,14 +3460,24 @@ MonoBehaviour:
     - LIIF: -1283230336
       InstanceTarget: {fileID: 199560}
     - LIIF: -756539400
-      InstanceTarget: {fileID: 406500}
+      InstanceTarget: {fileID: 468884}
     - LIIF: -1922021830
+      InstanceTarget: {fileID: 105670}
+    - LIIF: 1695690449
+      InstanceTarget: {fileID: 11499976}
+    - LIIF: -135506417
       InstanceTarget: {fileID: 120462}
+    - LIIF: -606845548
+      InstanceTarget: {fileID: 406500}
+    - LIIF: -1399791883
+      InstanceTarget: {fileID: 11408908}
+    - LIIF: 580119165
+      InstanceTarget: {fileID: 6585480}
   Modifications:
     Modificated:
-    - Object: {fileID: 11461222}
-      ObjeckLink: 504976957
-      PropertyPath: cardsSpawn
+    - Object: {fileID: 406500}
+      ObjeckLink: -606845548
+      PropertyPath: m_LocalPosition
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -3672,6 +3725,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 11487674}
+--- !u!114 &11408908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33bc83ab81ec0c44976c6fb1d44e55a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reparentTarget: {fileID: 496850}
 --- !u!114 &11409570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6336,7 +6401,8 @@ MonoBehaviour:
   - {fileID: 11421356}
   - {fileID: 11480256}
   victoryPanel: {fileID: 0}
-  cardsSpawn: {fileID: 120462}
+  cardsSpawn: {fileID: 105670}
+  cardDiscardPlace: {fileID: 11499976}
 --- !u!114 &11463130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8015,6 +8081,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 493234}
+--- !u!114 &11499976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c4de3b4b6fe9045b059ee627c100df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrangement: 1
+  sorting: 0
+  pivot: 1
+  maxPerLine: 0
+  cellWidth: 200
+  cellHeight: 10
+  animateSmoothly: 0
+  hideInactive: 0
+  keepWithinPanel: 0
+  sorted: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
