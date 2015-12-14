@@ -81,10 +81,12 @@ public class Player {
         statUpgrades.Add(new StatUpgrade(EnergyType.Green, 1, "Slots for exp. cards", 250));
         statUpgrades.Add(new StatUpgrade(EnergyType.Green, 3, "Super IO Chip", 400));
 
+        // unlock more energy
         statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "CPU Socket update", 25));
         statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 1000));
         //statUpgrades.Add(new StatUpgrade(EnergyType.Black, 1, "A clock generator", 1000));
 
+        // unlock motherboards
         statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "New Motherboards", 75));
         statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "New Motherboards", 500));
 

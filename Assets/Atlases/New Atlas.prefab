@@ -81,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0003_\u0421\u043B\u043E\u0439-21"
-    x: 268
-    y: 862
+    x: 880
+    y: 927
     width: 97
     height: 97
     borderLeft: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0004_\u0421\u043B\u043E\u0439-20"
-    x: 366
-    y: 862
+    x: 880
+    y: 829
     width: 97
     height: 97
     borderLeft: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0005_\u0421\u043B\u043E\u0439-19"
     x: 688
-    y: 992
+    y: 613
     width: 245
     height: 32
     borderLeft: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0006_\u0421\u043B\u043E\u0439-18"
     x: 268
-    y: 960
+    y: 581
     width: 209
     height: 64
     borderLeft: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0007_\u0421\u043B\u043E\u0439-17"
-    x: 464
-    y: 912
+    x: 268
+    y: 533
     width: 151
     height: 47
     borderLeft: 0
@@ -150,6 +150,45 @@ MonoBehaviour:
     y: 256
     width: 267
     height: 768
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "ng__0009_\u0421\u043B\u043E\u0439-15"
+    x: 268
+    y: 646
+    width: 203
+    height: 378
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "ng__0010_\u0421\u043B\u043E\u0439-14"
+    x: 472
+    y: 646
+    width: 203
+    height: 378
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: "ng__0011_\u0421\u043B\u043E\u0439-13"
+    x: 676
+    y: 646
+    width: 203
+    height: 378
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -199,7 +238,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0016_\u0421\u043B\u043E\u0439-5"
     x: 688
-    y: 979
+    y: 600
     width: 159
     height: 12
     borderLeft: 0
@@ -237,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0019_\u0421\u043B\u043E\u0439-2"
-    x: 464
-    y: 869
+    x: 938
+    y: 786
     width: 59
     height: 42
     borderLeft: 0
@@ -250,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0020_\u0421\u043B\u043E\u0439-1"
-    x: 934
-    y: 975
+    x: 880
+    y: 779
     width: 57
     height: 49
     borderLeft: 0
@@ -263,8 +302,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0021_\u0421\u043B\u043E\u0439-10"
-    x: 524
-    y: 868
+    x: 978
+    y: 981
     width: 43
     height: 43
     borderLeft: 0
@@ -277,7 +316,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0022_\u0421\u043B\u043E\u0439-9"
     x: 478
-    y: 960
+    y: 581
     width: 209
     height: 64
     borderLeft: 0

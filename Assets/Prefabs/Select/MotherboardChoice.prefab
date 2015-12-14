@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -200, y: -0, z: 0}
+  m_LocalPosition: {x: -210, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404658}
@@ -151,7 +151,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -72, y: -178, z: 0}
+  m_LocalPosition: {x: -1, y: -208, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403374}
@@ -175,7 +175,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -177, z: 0}
+  m_LocalPosition: {x: 0, y: -208.199997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 485642}
@@ -187,7 +187,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -73, y: -210, z: 0}
+  m_LocalPosition: {x: -73, y: -240.300003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403374}
@@ -334,13 +334,21 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11482334}
   Modifications:
     Modificated:
+    - Object: {fileID: 410652}
+      ObjeckLink: 1450549380
+      PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 11449550}
+      ObjeckLink: 529667391
+      PropertyPath: mPivot
+      Mode: 0
     - Object: {fileID: 11414462}
       ObjeckLink: 1292626414
       PropertyPath: onClick.Array.data[0].mTarget
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
-    RemovedObjects: 76b4a64cb7f150181be974a8ee43090db13129ec41ad7585443bf68851a5a120411ee86582702267ec44d512523858a70c8b2214f7f7389fb1bfe0b94ffc83ec7cd1409dea9ad3fa1b937b4788208c42b255559fcad95b888a2113f5e25eadc811b20170765b35505f27b2a512381baa4a9957183e25a493299e695c1119fc88c0026c3d501128f0a4239e1d8a3bee5041339319d0352190f5e395322a3af8e8108dbf60ab384b8711095d8f596b815edf82580ff27d5174793c962c15b63e30
+    RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
   PrefabGUID: e3aaeab3053beaa44ab863e93fd7a341
@@ -374,13 +382,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 146
-  mHeight: 328
+  mWidth: 182
+  mHeight: 378
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .445121944
+  aspectRatio: .481481493
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -391,8 +399,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
-  mSpriteName: Button
+  mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
+  mSpriteName: "ng__0009_\u0421\u043B\u043E\u0439-15"
   mFillCenter: 1
 --- !u!114 &11449550
 MonoBehaviour:
@@ -423,7 +431,7 @@ MonoBehaviour:
     absolute: 0
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
-  mPivot: 3
+  mPivot: 4
   mWidth: 142
   mHeight: 20
   mDepth: 7
@@ -432,8 +440,8 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 7.0999999
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: BROFORCE MEGA
   mFontSize: 20
   mFontStyle: 0
@@ -472,32 +480,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftAnchor:
-    target: {fileID: 0}
+    target: {fileID: 404658}
     relative: 0
-    absolute: 0
+    absolute: -7
   rightAnchor:
-    target: {fileID: 0}
+    target: {fileID: 404658}
     relative: 1
-    absolute: 0
+    absolute: 5
   bottomAnchor:
-    target: {fileID: 0}
+    target: {fileID: 404658}
     relative: 0
-    absolute: 0
+    absolute: -5
   topAnchor:
-    target: {fileID: 0}
+    target: {fileID: 404658}
     relative: 1
-    absolute: 0
+    absolute: 5
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 0}
+  mColor: {r: .352999985, g: .352999985, b: .352999985, a: 1}
   mPivot: 4
-  mWidth: 190
-  mHeight: 368
+  mWidth: 194
+  mHeight: 388
   mDepth: -1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .516304374
-  mType: 1
+  aspectRatio: .5
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -507,8 +515,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: 2f2473f73b9ca724f9080d6d76009ea2, type: 2}
-  mSpriteName: Light
+  mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
+  mSpriteName: previewSquare
   mFillCenter: 1
 --- !u!114 &11471326
 MonoBehaviour:
@@ -540,16 +548,16 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .294999987, g: .294999987, b: .294999987, a: 1}
   mPivot: 3
-  mWidth: 110
+  mWidth: 118
   mHeight: 40
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.75
+  aspectRatio: 2.95000005
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 800fce3d977b52d4cadf1a0790a413f0, type: 2}
+  mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
+  mFont: {fileID: 0}
   mText: 'COOLING +9
 
     RAM +5'
@@ -608,14 +616,14 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .421999991, g: .421999991, b: .421999991, a: 1}
   mPivot: 4
-  mWidth: 186
-  mHeight: 46
+  mWidth: 184
+  mHeight: 23
   mDepth: 4
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.04347849
-  mType: 1
+  aspectRatio: 8
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -625,8 +633,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
-  mSpriteName: Window
+  mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
+  mSpriteName: previewSquare
   mFillCenter: 1
 --- !u!114 &11482334
 MonoBehaviour:
