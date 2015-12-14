@@ -5,7 +5,19 @@ using CraftCore;
 public class SlotViewController : MonoBehaviour {
 
 	[SerializeField]
-	UISprite background;
+	GameObject bg;
+
+	[SerializeField]
+	GameObject ramSlotImage;
+
+	[SerializeField]
+	GameObject cpuSlotImage;
+
+	[SerializeField]
+	GameObject gpuSlotImage;
+
+	[SerializeField]
+	GameObject utiSlotImage;
 
     int x;
     int y;
@@ -18,20 +30,20 @@ public class SlotViewController : MonoBehaviour {
 		switch (energyType) {
 
 		case EnergyType.Empty:
-			background.alpha = 0f;
+			bg.SetActive(false);
 			GetComponent<BoxCollider>().enabled = false;
 			break;
 		case EnergyType.Black:
-			background.color = Color.black;
+			utiSlotImage.SetActive(true);
 			break;
 		case EnergyType.Red:
-			background.color = Color.red;
+			gpuSlotImage.SetActive(true);
 			break;
 		case EnergyType.Green:
-			background.color = Color.green;
+			ramSlotImage.SetActive(true);
 			break;
 		case EnergyType.Blue:
-			background.color = Color.blue;
+			cpuSlotImage.SetActive(true);
 			break;
 		}
 
