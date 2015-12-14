@@ -53,12 +53,15 @@ public class StatsController : MonoBehaviour {
         int g = session.Board.Energy(CraftCore.EnergyType.Green);
 
         int sum = r + b + g;
+        float avg = (float)sum / 3.0f;
+
+        float da = Mathf.Abs(r - avg) + Mathf.Abs(g - avg) + Mathf.Abs(b - avg);
 
         if (sum != 0)
         {
-            redBar.setValue((float)r / sum);
-            greenBar.setValue((float)g / sum);
-            blueBar.setValue((float)b / sum);
+            redBar.setValue((0.5f + (((float)r - avg) / da) * 0.5f) * 0.5f + 0.5f * ((r * 1.5f) / sum));
+            greenBar.setValue((0.5f + (((float)g - avg) / da) * 0.5f) * 0.5f + 0.5f * ((g * 1.5f) / sum));
+            blueBar.setValue((0.5f + (((float)b - avg) / da) * 0.5f) * 0.5f + 0.5f* ((b*1.5f)/ sum));
         }
         else {
             redBar.setValue(0.5f);
