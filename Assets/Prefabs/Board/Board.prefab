@@ -3922,7 +3922,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89, y: 0, z: 0}
+  m_LocalPosition: {x: -85, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 402904}
@@ -3958,7 +3958,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78, y: 0, z: 0}
+  m_LocalPosition: {x: 54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 402904}
@@ -6824,68 +6824,24 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11494850}
   Modifications:
     Modificated:
-    - Object: {fileID: 469450}
-      ObjeckLink: 157059200
+    - Object: {fileID: 445560}
+      ObjeckLink: -692347625
       PropertyPath: m_LocalPosition
       Mode: 0
-    - Object: {fileID: 481072}
-      ObjeckLink: -1659360499
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11452506}
+      ObjeckLink: 1649638624
+      PropertyPath: leftAnchor.absolute
       Mode: 0
-    - Object: {fileID: 487006}
-      ObjeckLink: 155670295
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11452506}
+      ObjeckLink: 1649638624
+      PropertyPath: rightAnchor.absolute
       Mode: 0
-    - Object: {fileID: 413024}
-      ObjeckLink: -752721981
-      PropertyPath: m_LocalPosition
+    - Object: {fileID: 11452506}
+      ObjeckLink: 1649638624
+      PropertyPath: mText
       Mode: 0
-    - Object: {fileID: 452592}
-      ObjeckLink: -1631735764
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 449078}
-      ObjeckLink: -1600678626
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 496850}
-      ObjeckLink: 1229564354
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 475314}
-      ObjeckLink: -1941264516
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 444780}
-      ObjeckLink: -377749443
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 462134}
-      ObjeckLink: 674665747
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 408732}
-      ObjeckLink: 822935942
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 440166}
-      ObjeckLink: -1313588210
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 489518}
-      ObjeckLink: -1294049836
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 492496}
-      ObjeckLink: -1102177952
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 401670}
-      ObjeckLink: -304535347
-      PropertyPath: m_LocalPosition
-      Mode: 0
-    - Object: {fileID: 493234}
-      ObjeckLink: -170747698
+    - Object: {fileID: 448030}
+      ObjeckLink: -1839952242
       PropertyPath: m_LocalPosition
       Mode: 0
     NonPrefabObjects: []
@@ -12212,11 +12168,11 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 402904}
     relative: 0
-    absolute: 4
+    absolute: 8
   rightAnchor:
     target: {fileID: 402904}
     relative: 1
-    absolute: -4
+    absolute: 0
   bottomAnchor:
     target: {fileID: 402904}
     relative: 0
@@ -12238,7 +12194,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
-  mText: RE-DRAW 1
+  mText: RE-DRAW  1
   mFontSize: 30
   mFontStyle: 0
   mAlignment: 0
@@ -14789,6 +14745,14 @@ MonoBehaviour:
     - Object: {fileID: 445560}
       ObjeckLink: 943629603
       PropertyPath: m_LocalPosition
+      Mode: 0
+    - Object: {fileID: 11452506}
+      ObjeckLink: 1954738123
+      PropertyPath: leftAnchor.absolute
+      Mode: 0
+    - Object: {fileID: 11452506}
+      ObjeckLink: 1954738123
+      PropertyPath: rightAnchor.absolute
       Mode: 0
     - Object: {fileID: 11452506}
       ObjeckLink: 1954738123
