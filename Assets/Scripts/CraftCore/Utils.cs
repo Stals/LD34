@@ -21,6 +21,10 @@ namespace CraftCore
             {
                 return "RAM";
             }
+            if (type == EnergyType.Black)
+            {
+                return "COOL";
+            }
             return "error";
         }
 
