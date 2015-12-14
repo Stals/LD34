@@ -72,9 +72,9 @@ namespace CraftCore
 
         private void ZeroAchModifiers()
         {
-            achModifiers[EnergyType.Black] = 0;
+            achModifiers[EnergyType.Green] = 0;
             achModifiers[EnergyType.Red] = 0;
-            achModifiers[EnergyType.Black] = 0;
+            achModifiers[EnergyType.Blue] = 0;
         }
 
         public Motherboard(Motherboard board)
@@ -83,6 +83,7 @@ namespace CraftCore
             Array.Copy(board.cardMatrix, cardMatrix, board.cardMatrix.GetLength(0) * board.cardMatrix.GetLength(1));
             Heat = board.Heat;
             HeatModifier = board.HeatModifier;
+            achModifiers = new Dictionary<EnergyType, int>(board.achModifiers);
         }
 
         public int Energy(EnergyType type)
@@ -148,7 +149,7 @@ namespace CraftCore
                 }
             }
 
-            Achievment.Calculate(this);
+            if (Achievment != null) Achievment.Calculate(this);
         }
 
         public delegate bool CardAndPlaceCondition (CardOnBoard card);
