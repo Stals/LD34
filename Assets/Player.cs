@@ -88,7 +88,7 @@ public class Player {
 
         // unlock motherboards
         statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "More Boards Layouts", 75));
-        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "More Boards Layouts", 500));
+        statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "More Boards Layouts", 75));
 
         statUpgrades.Sort();
     }
