@@ -99,6 +99,17 @@
       "Descrition": "  +3 RND STAT if only one CPU on board"
     },
     
+    {
+      "$type": "CraftCore.NumberFilled, Assembly-CSharp",
+      "aimcolor": 3,
+      "number": 0,
+      "bonus": {
+        "$type": "CraftCore.AddToRandomType, Assembly-CSharp",
+        "val": 3
+      },
+      "Descrition": "  +3 RND STAT if no UTI on board"
+    },
+    
 
   ]
 }
