@@ -2752,15 +2752,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11485006, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11423120, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11421196, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 456358, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: m_LocalScale.x
@@ -4642,7 +4642,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 2.375
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
@@ -5091,15 +5091,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11485006, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11423120, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11421196, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.75
+      value: 1.875
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}

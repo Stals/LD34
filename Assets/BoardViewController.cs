@@ -193,9 +193,12 @@ public class BoardViewController : MonoBehaviour {
     {
 
 		bool isFinalVictory = true & (!winShown);
+		isFinalVictory &= session.ResultScore >= 45;
+
+		/*
 		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Red) >= 45;
 		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Green) >= 45;
-		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Blue) >= 45;
+		isFinalVictory &= session.Board.Energy (CraftCore.EnergyType.Blue) >= 45;*/
 
 
 		if (!isFinalVictory) {
