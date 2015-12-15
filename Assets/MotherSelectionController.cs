@@ -109,7 +109,7 @@ public class MotherSelectionController : MonoBehaviour {
         GameObject boardPanel = NGUITools.AddChild(transform.parent.gameObject, boardPrefab);
         boardPanel.transform.position = new Vector3(0, 768, 0);
 
-        GetComponent<UITweener>().PlayForward();
+        GetComponent<UITweener>().PlayReverse();
         boardPanel.GetComponent<UITweener>().PlayForward();
 
         BoardViewController boardController = boardPanel.GetComponent<BoardViewController>();

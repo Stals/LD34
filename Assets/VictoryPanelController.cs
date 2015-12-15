@@ -178,7 +178,7 @@ public class VictoryPanelController : MonoBehaviour {
     public void onContinuePressed() {
         GetComponent<UITweener>().PlayReverse();
 
-        boarSelectionController.GetComponent<UITweener>().PlayReverse();
+        boarSelectionController.GetComponent<UITweener>().PlayForward();
         boarSelectionController.setup();
     }
 }
