@@ -1670,7 +1670,7 @@ MonoBehaviour:
   eventReceiver: {fileID: 0}
   callWhenFinished: 
   from: {x: 0, y: 0, z: 0}
-  to: {x: 0, y: -1536, z: 0}
+  to: {x: -1536, y: 0, z: 0}
   worldSpace: 0
 --- !u!114 &692749457
 MonoBehaviour:
@@ -3111,15 +3111,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11485006, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.5
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11423120, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.5
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 11421196, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.5
+      value: 1.875
       objectReference: {fileID: 0}
     - target: {fileID: 456358, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: m_LocalScale.x
@@ -3913,7 +3913,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 7.66666651
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
@@ -5357,7 +5357,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 11.1000004
+      value: 11.3000002
       objectReference: {fileID: 0}
     - target: {fileID: 465400, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5810,7 +5810,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11421196, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
       propertyPath: aspectRatio
-      value: 1.5
+      value: 1.875
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68e357e7493c8e942a677b7ed0b3f8b8, type: 2}
