@@ -5347,25 +5347,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
-      propertyPath: mWidth
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+    - target: {fileID: 11428252, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
-      propertyPath: aspectRatio
-      value: 11.3000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 465400, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
-      propertyPath: mWidth
-      value: 226
+      value: 4.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}

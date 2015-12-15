@@ -238,9 +238,21 @@ MonoBehaviour:
       ObjeckLink: 634629722
       PropertyPath: m_RootOrder
       Mode: 0
-    - Object: {fileID: 11435194}
-      ObjeckLink: 834850199
-      PropertyPath: mColor
+    - Object: {fileID: 11428252}
+      ObjeckLink: -1840724601
+      PropertyPath: mWidth
+      Mode: 0
+    - Object: {fileID: 11428252}
+      ObjeckLink: -1840724601
+      PropertyPath: mHeight
+      Mode: 0
+    - Object: {fileID: 11428252}
+      ObjeckLink: -1840724601
+      PropertyPath: aspectRatio
+      Mode: 0
+    - Object: {fileID: 11428252}
+      ObjeckLink: -1840724601
+      PropertyPath: mFontSize
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -260,19 +272,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftAnchor:
-    target: {fileID: 494518}
+    target: {fileID: 0}
     relative: 0
     absolute: -75
   rightAnchor:
-    target: {fileID: 494518}
-    relative: 0
+    target: {fileID: 0}
+    relative: 1
     absolute: -7
   bottomAnchor:
-    target: {fileID: 494518}
+    target: {fileID: 0}
     relative: 0
     absolute: 0
   topAnchor:
-    target: {fileID: 494518}
+    target: {fileID: 0}
     relative: 1
     absolute: 0
   updateAnchors: 1
@@ -284,12 +296,12 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.25
+  aspectRatio: 4
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: (+2 CPU)
-  mFontSize: 20
+  mFontSize: 15
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -298,7 +310,7 @@ MonoBehaviour:
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 0
+  mOverflow: 2
   mMaterial: {fileID: 0}
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
