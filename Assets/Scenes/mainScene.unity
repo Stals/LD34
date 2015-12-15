@@ -4351,6 +4351,22 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: from.x
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: to.x
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: from.y
+      value: 600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0
@@ -4822,6 +4838,22 @@ Prefab:
     - target: {fileID: 475466, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: delay
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: from.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: to.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: from.y
+      value: 600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
@@ -6492,6 +6524,14 @@ Prefab:
       propertyPath: onClick.Array.data[0].mTarget
       value: 
       objectReference: {fileID: 1760553676}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: delay
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490878, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
+      propertyPath: from.y
+      value: 600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0

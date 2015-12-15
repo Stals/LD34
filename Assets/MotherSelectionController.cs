@@ -89,6 +89,12 @@ public class MotherSelectionController : MonoBehaviour {
         Game.Instance.musicManager.pickMotherMusic.Play();
         Game.Instance.musicManager.pickPlayMusic.Stop();
         Game.Instance.musicManager.finishPlayMusic.Stop();
+
+		foreach (var m in selectableMothers) {
+			var tween = m.GetComponent<UITweener>();
+			tween.ResetToBeginning();
+			tween.PlayForward();
+		}
     }
 
     // Use this for initialization
