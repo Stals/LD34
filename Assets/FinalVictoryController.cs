@@ -7,6 +7,9 @@ public class FinalVictoryController : MonoBehaviour {
 	[SerializeField]
 	VictoryPanelController victoryPanel;
 
+    [SerializeField]
+    UILabel resultScoreLabel;
+
 	GameSession session;
 
 	// Use this for initialization
@@ -22,7 +25,9 @@ public class FinalVictoryController : MonoBehaviour {
 	public void setup(GameSession _session)
 	{
 		session = _session;
-	}
+
+        resultScoreLabel.text = session.ResultScore().ToString("n2") + "!";
+    }
 
 	public void onContinuePress()
 	{
