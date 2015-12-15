@@ -43,7 +43,7 @@ MonoBehaviour:
   mSprites:
   - name: card_upgrade_01
     x: 951
-    y: 452
+    y: 76
     width: 144
     height: 190
     borderLeft: 0
@@ -55,8 +55,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: card_upgrade_02
-    x: 951
-    y: 643
+    x: 1155
+    y: 455
     width: 144
     height: 190
     borderLeft: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: fix__0000_ram
     x: 612
-    y: 254
+    y: 204
     width: 57
     height: 49
     borderLeft: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: fix__0001_GPU
     x: 612
-    y: 161
+    y: 118
     width: 59
     height: 42
     borderLeft: 0
@@ -94,10 +94,49 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: gold
-    x: 951
-    y: 261
+    x: 1155
+    y: 264
     width: 144
     height: 190
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: mbg1
+    x: 1155
+    y: 646
+    width: 203
+    height: 378
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: mbg2
+    x: 951
+    y: 267
+    width: 203
+    height: 378
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: mbg3
+    x: 951
+    y: 646
+    width: 203
+    height: 378
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -120,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0001_\u0421\u043B\u043E\u0439-23"
-    x: 828
-    y: 158
+    x: 1457
+    y: 862
     width: 97
     height: 97
     borderLeft: 0
@@ -133,8 +172,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0002_\u0421\u043B\u043E\u0439-22"
-    x: 951
-    y: 65
+    x: 1359
+    y: 862
     width: 97
     height: 97
     borderLeft: 0
@@ -146,8 +185,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0003_\u0421\u043B\u043E\u0439-21"
-    x: 951
-    y: 163
+    x: 828
+    y: 158
     width: 97
     height: 97
     borderLeft: 0
@@ -172,7 +211,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0005_\u0421\u043B\u043E\u0439-19"
-    x: 1516
+    x: 1779
     y: 992
     width: 245
     height: 32
@@ -185,7 +224,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0006_\u0421\u043B\u043E\u0439-18"
-    x: 1306
+    x: 1359
     y: 960
     width: 209
     height: 64
@@ -198,8 +237,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0007_\u0421\u043B\u043E\u0439-17"
-    x: 1762
-    y: 977
+    x: 951
+    y: 28
     width: 151
     height: 47
     borderLeft: 0
@@ -263,7 +302,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0012_\u0421\u043B\u043E\u0439-12"
-    x: 1096
+    x: 1555
     y: 871
     width: 88
     height: 88
@@ -341,8 +380,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0017_\u0421\u043B\u043E\u0439-4"
-    x: 951
-    y: 834
+    x: 683
+    y: 65
     width: 144
     height: 190
     borderLeft: 0
@@ -368,7 +407,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0019_\u0421\u043B\u043E\u0439-2"
     x: 612
-    y: 118
+    y: 161
     width: 59
     height: 42
     borderLeft: 0
@@ -381,7 +420,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0020_\u0421\u043B\u043E\u0439-1"
     x: 612
-    y: 204
+    y: 254
     width: 57
     height: 49
     borderLeft: 0
@@ -394,7 +433,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: "ng__0021_\u0421\u043B\u043E\u0439-10"
     x: 612
-    y: 30
+    y: 74
     width: 43
     height: 43
     borderLeft: 0
@@ -406,7 +445,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: "ng__0022_\u0421\u043B\u043E\u0439-9"
-    x: 1096
+    x: 1569
     y: 960
     width: 209
     height: 64
@@ -445,8 +484,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: siver
-    x: 683
-    y: 65
+    x: 1155
+    y: 73
     width: 144
     height: 190
     borderLeft: 0
@@ -459,7 +498,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: uti_ico
     x: 612
-    y: 74
+    y: 30
     width: 43
     height: 43
     borderLeft: 0

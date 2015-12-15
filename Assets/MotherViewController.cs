@@ -17,6 +17,9 @@ public class MotherViewController : MonoBehaviour {
 	[SerializeField]
 	UILabel description;
 
+	[SerializeField]
+	UISprite bg;
+
     Motherboard motherboard;
 
     public void setSelected(bool selected) {
@@ -78,6 +81,9 @@ public class MotherViewController : MonoBehaviour {
 		} else {
 			description.text = "";
 		}
+
+		bg.spriteName = "mbg" + UnityEngine.Random.Range(1, 4);
+		bg.MarkAsChanged ();
     }
 
     public Motherboard getMotherboard()
