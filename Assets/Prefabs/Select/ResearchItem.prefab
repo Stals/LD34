@@ -61,6 +61,7 @@ GameObject:
   - 114: {fileID: 11496196}
   - 114: {fileID: 11447300}
   - 65: {fileID: 6564876}
+  - 114: {fileID: 11490816}
   m_Layer: 5
   m_Name: ResearchItem
   m_TagString: Untagged
@@ -232,30 +233,38 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11447300}
     - LIIF: -844297804
       InstanceTarget: {fileID: 6564876}
+    - LIIF: -1094867080
+      InstanceTarget: {fileID: 11490816}
   Modifications:
     Modificated:
+    - Object: {fileID: 11451748}
+      ObjeckLink: -1797595411
+      PropertyPath: mWidth
+      Mode: 0
+    - Object: {fileID: 11451748}
+      ObjeckLink: -1797595411
+      PropertyPath: aspectRatio
+      Mode: 0
     - Object: {fileID: 429850}
       ObjeckLink: 634629722
       PropertyPath: m_RootOrder
+      Mode: 0
+    - Object: {fileID: 11435194}
+      ObjeckLink: 834850199
+      PropertyPath: mWidth
+      Mode: 0
+    - Object: {fileID: 11435194}
+      ObjeckLink: 834850199
+      PropertyPath: aspectRatio
       Mode: 0
     - Object: {fileID: 11428252}
       ObjeckLink: -1840724601
       PropertyPath: mWidth
       Mode: 0
-    - Object: {fileID: 11428252}
-      ObjeckLink: -1840724601
-      PropertyPath: mHeight
-      Mode: 0
-    - Object: {fileID: 11428252}
-      ObjeckLink: -1840724601
-      PropertyPath: aspectRatio
-      Mode: 0
-    - Object: {fileID: 11428252}
-      ObjeckLink: -1840724601
-      PropertyPath: mFontSize
-      Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents: []
+    NonPrefabComponents:
+    - child: {fileID: 11490816}
+      parent: {fileID: 161412}
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
@@ -290,7 +299,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 5
-  mWidth: 68
+  mWidth: 64
   mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 0
@@ -356,13 +365,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .380392194, g: .654901981, b: .00392156886, a: 1}
   mPivot: 5
-  mWidth: 40
+  mWidth: 36
   mHeight: 16
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.5
+  aspectRatio: 2.25
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -451,13 +460,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 3
-  mWidth: 226
+  mWidth: 240
   mHeight: 20
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 11.3000002
+  aspectRatio: 12
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
@@ -537,6 +546,43 @@ MonoBehaviour:
   mAtlas: {fileID: 11428016, guid: 95c3146ac13c93b4f8ec2fd1734c2e6a, type: 2}
   mSpriteName: "ng__0005_\u0421\u043B\u043E\u0439-19"
   mFillCenter: 1
+--- !u!114 &11490816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858a20c1b21a3f94bb5b2d3b901c9aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 100
+  mHeight: 100
+  mDepth: 0
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 1
 --- !u!114 &11496196
 MonoBehaviour:
   m_ObjectHideFlags: 1
