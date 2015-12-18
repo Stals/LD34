@@ -76,15 +76,14 @@ public class MotherSelectionController : MonoBehaviour {
 
     public void setup()
     {
-        deselectAll();
-
         foreach (var m in selectableMothers)
         {
             m.setup(getRandomMotherboard());
         }
 
-        contructButton.SetState(UIButtonColor.State.Disabled, true);
-        contructButton.isEnabled = false;
+        //unneeded because of the defailt motherboard
+        //contructButton.SetState(UIButtonColor.State.Disabled, true);
+        //contructButton.isEnabled = false;
 
         Game.Instance.musicManager.pickMotherMusic.Play();
         Game.Instance.musicManager.pickPlayMusic.Stop();
@@ -95,14 +94,18 @@ public class MotherSelectionController : MonoBehaviour {
 			tween.ResetToBeginning();
 			tween.PlayForward();
 		}
+
+        
+        deselectAll();
+        //select first one
+        selectableMothers[0].setSelected(true);
+        onMotherPress(selectableMothers[0]);
     }
 
     // Use this for initialization
     void Start() {
         boardCombiner = new MotherBoardsCombiner();
         provider = AchievementProvider.load();
-        setup();
-
     }
 
     // Update is called once per frame

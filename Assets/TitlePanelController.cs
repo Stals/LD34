@@ -21,5 +21,6 @@ public class TitlePanelController : MonoBehaviour {
 		GetComponent<UITweener>().PlayForward();
 		
 		motherBoardSelection.GetComponent<UITweener>().PlayForward();
-	}
+        motherBoardSelection.GetComponent<MotherSelectionController>().setup();
+    }
 }

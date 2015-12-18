@@ -341,10 +341,16 @@ MonoBehaviour:
       ObjeckLink: 1292626414
       PropertyPath: onClick.Array.data[0].mTarget
       Mode: 0
+    - Object: {fileID: 11453978}
+      ObjeckLink: 1196758826
+      PropertyPath: mColor
+      Mode: 0
+    - Object: {fileID: 11453978}
+      ObjeckLink: 1196758826
+      PropertyPath: mSpriteName
+      Mode: 0
     NonPrefabObjects: []
-    NonPrefabComponents:
-    - child: {fileID: 11490878}
-      parent: {fileID: 196590}
+    NonPrefabComponents: []
     RemovedObjects: 
     TransformParentChanges: []
   ParentPrefabGUID: 
@@ -493,7 +499,7 @@ MonoBehaviour:
     relative: 1
     absolute: 5
   updateAnchors: 1
-  mColor: {r: .352999985, g: .352999985, b: .352999985, a: 1}
+  mColor: {r: .5, g: .5, b: .5, a: .742999971}
   mPivot: 4
   mWidth: 194
   mHeight: 388
@@ -743,14 +749,14 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
   ignoreTimeScale: 1
-  delay: .25
+  delay: .5
   duration: .5
   steeperCurves: 0
   tweenGroup: 0
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: -210, y: -500, z: 0}
+  from: {x: -210, y: 600, z: 0}
   to: {x: -210, y: -0, z: 0}
   worldSpace: 0
 --- !u!1001 &100100000
