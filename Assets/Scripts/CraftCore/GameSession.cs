@@ -48,6 +48,24 @@ namespace CraftCore
             }
         }
 
+        bool CheckEnergyEndGame()
+        {
+            return ((board.TotalHeat == 0) &&
+                (avaliableCards[0].HeatPrice > 0) &&
+                (avaliableCards[1].HeatPrice > 0));
+        }
+
+        bool CheckSlotsEndGame()
+        {
+            return (board.SlotsOnBoard.Count - board.CardsOnBoard.Count == 0);
+        }
+
+        void CallEndGame()
+        {
+            if (OnEndGame != null) OnEndGame(ResultScore());
+            Debug.Log("EndGame");
+        }
+
         public bool pickCard(Card card, int x, int y)
         {
             if (avaliableCards.Contains(card))
@@ -60,9 +78,11 @@ namespace CraftCore
                 avaliableCards.Remove(card);
                 foreach (var c in avaliableCards) waste.Add(c);
 
-                if ((deck.Count == 0) && (OnEndGame != null)) OnEndGame(ResultScore());
+                if (deck.Count < 2) CallEndGame();
 
                 ReadyMove();
+
+                if (CheckEnergyEndGame() || CheckSlotsEndGame()) CallEndGame();
                 return true;
             }
             else
