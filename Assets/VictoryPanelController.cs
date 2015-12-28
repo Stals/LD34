@@ -112,7 +112,7 @@ public class VictoryPanelController : MonoBehaviour {
 
         if (deltaScore > 0) {
             penaltyImbalanced.alpha = 1f;
-            penaltyImbalanced.text = (-deltaScore).ToString("F1") + " for imbalanced stats";
+            penaltyImbalanced.text = (-deltaScore).ToString("F1") + " for imbalance";
         }
 
     }
