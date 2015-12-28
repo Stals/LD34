@@ -2905,6 +2905,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 162428, guid: 7ade3a9e19e20604fbb63e9085f84a64, type: 2}
   boarSelectionController: {fileID: 1760553676}
   tipLabel: {fileID: 1363682798}
+  moneyAnimation: {fileID: 1793798002}
 --- !u!114 &1060525633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4238,11 +4239,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11476694, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 4.94999981
+      value: 4.69999981
       objectReference: {fileID: 0}
     - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
-      value: 5.3499999
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 11403810, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: aspectRatio
@@ -4255,6 +4256,38 @@ Prefab:
     - target: {fileID: 181576, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465100, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 176
+      objectReference: {fileID: 0}
+    - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 428
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476694, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: mWidth
+      value: 198
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465100, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: .899999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
+      propertyPath: aspectRatio
+      value: 3.0999999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
@@ -5716,6 +5749,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+      propertyPath: mWidth
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428252, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+      propertyPath: mWidth
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+      propertyPath: mWidth
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+      propertyPath: aspectRatio
+      value: 2.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428252, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+      propertyPath: aspectRatio
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
+      propertyPath: aspectRatio
+      value: 11.6000004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
   m_IsPrefabParent: 0
@@ -5974,6 +6031,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1793798000}
   - 114: {fileID: 1793798001}
+  - 114: {fileID: 1793798002}
   m_Layer: 5
   m_Name: NewMoney
   m_TagString: Untagged
@@ -6059,6 +6117,148 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!114 &1793798002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1793797999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  duration: 2
+  easeType: 33
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1.92857146
+      outSlope: 1.92857146
+      tangentMode: 0
+    - time: .0714285746
+      value: .137755111
+      inSlope: 1.85714293
+      outSlope: 1.85714293
+      tangentMode: 0
+    - time: .142857149
+      value: .265306145
+      inSlope: 1.71428561
+      outSlope: 1.71428561
+      tangentMode: 0
+    - time: .214285716
+      value: .382653058
+      inSlope: 1.5714283
+      outSlope: 1.5714283
+      tangentMode: 0
+    - time: .285714298
+      value: .489795923
+      inSlope: 1.42857146
+      outSlope: 1.42857146
+      tangentMode: 0
+    - time: .357142866
+      value: .586734712
+      inSlope: 1.28571415
+      outSlope: 1.28571415
+      tangentMode: 0
+    - time: .428571433
+      value: .673469365
+      inSlope: 1.14285707
+      outSlope: 1.14285707
+      tangentMode: 0
+    - time: .5
+      value: .75
+      inSlope: 1.00000024
+      outSlope: 1.00000024
+      tangentMode: 0
+    - time: .571428597
+      value: .816326559
+      inSlope: .857142866
+      outSlope: .857142866
+      tangentMode: 0
+    - time: .642857134
+      value: .872448981
+      inSlope: .714285851
+      outSlope: .714285851
+      tangentMode: 0
+    - time: .714285731
+      value: .918367386
+      inSlope: .571428716
+      outSlope: .571428716
+      tangentMode: 0
+    - time: .785714269
+      value: .954081655
+      inSlope: .428571284
+      outSlope: .428571284
+      tangentMode: 0
+    - time: .857142866
+      value: .979591846
+      inSlope: .285714149
+      outSlope: .285714149
+      tangentMode: 0
+    - time: .928571403
+      value: .994897962
+      inSlope: .142857119
+      outSlope: .142857119
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: .071428515
+      outSlope: .071428515
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  loopType: 0
+  loops: 1
+  id: 
+  isRelative: 0
+  isFrom: 1
+  autoKill: 0
+  isValid: 1
+  animationType: 5
+  autoPlay: 0
+  endValueFloat: .899999976
+  endValueV3: {x: 0, y: 0, z: 0}
+  endValueColor: {r: 1, g: 1, b: 1, a: 1}
+  endValueString: 
+  optionalBool0: 1
+  optionalFloat0: 0
+  optionalInt0: 0
+  optionalRotationMode: 0
+  optionalScrambleMode: 0
+  optionalString: 
+  hasOnStart: 0
+  hasOnStepComplete: 0
+  hasOnComplete: 0
+  onStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onStepComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1060525632}
+        m_MethodName: moneyUpdateStep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!4 &1795386422 stripped
 Transform:
   m_PrefabParentObject: {fileID: 429850, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}

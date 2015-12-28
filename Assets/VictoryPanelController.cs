@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using CraftCore;
 using System;
+using DG.Tweening;
 
 public class VictoryPanelController : MonoBehaviour {
 
@@ -21,20 +22,26 @@ public class VictoryPanelController : MonoBehaviour {
     [SerializeField]
     MotherSelectionController boarSelectionController;
 
-	[SerializeField]
-	UILabel tipLabel;
+    [SerializeField]
+    UILabel tipLabel;
 
-	List<string> tips;
+    List<string> tips;
+    GameSession session;
+
+    [SerializeField]
+    DG.Tweening.DOTweenAnimation moneyAnimation;
 
     // Use this for initialization
     void Start() {
-		tips = new List<string>();
-		tips.Add ("Get an extra +1 if the color of a component and slot match");
-		tips.Add ("'Adj' means adjacent components in a cross pattern");
-		tips.Add ("Get a score of 45 to complete the game");
-		tips.Add ("Balance CPU, GPU and RAM to get more money");
-		tips.Add ("UTI cards don't cost anything to place");
-		tips.Add ("You will get a lower score if any stat is 0");
+        tips = new List<string>();
+        tips.Add("Get an extra +1 if the color of a component and slot match");
+        tips.Add("'Adj' means adjacent components in a cross pattern");
+        tips.Add("Get a score of 45 to complete the game");
+        tips.Add("Balance CPU, GPU and RAM to get more money");
+        tips.Add("UTI cards don't cost anything to place");
+        tips.Add("You will get a lower score if any stat is 0");
+
+        moneyAnimation._tween.OnUpdate(moneyUpdateStep);
     }
 
     // Update is called once per frame
@@ -42,11 +49,11 @@ public class VictoryPanelController : MonoBehaviour {
 
     }
 
-	void setupTip()
-	{
-		string text = "TIP: [000000][c]"+ tips[UnityEngine.Random.Range(0, tips.Count)] +"[/c][-]";
-		tipLabel.text = Utils.getColorDescription (text);
-	}
+    void setupTip()
+    {
+        string text = "TIP: [000000][c]" + tips[UnityEngine.Random.Range(0, tips.Count)] + "[/c][-]";
+        tipLabel.text = Utils.getColorDescription(text);
+    }
 
     int convertScoreToMoney(float score) {
         return (int)(score * 4);
@@ -63,8 +70,19 @@ public class VictoryPanelController : MonoBehaviour {
         return alpha;
     }
 
-    public void setup(GameSession session)
+    public void moneyUpdateStep() {
+
+        float step = moneyAnimation._tween.ElapsedPercentage();
+        Debug.Log(step);
+
+        int reward = (int)((convertScoreToMoney(session.ResultScore())) * step);
+        newMoneyLabel.text = "+" + reward.ToString() + "$";
+    }
+
+    public void setup(GameSession _session)
     {
+        session = _session;
+
         // clear previous
         foreach (var holder in cardHolders)
         {
@@ -105,6 +123,9 @@ public class VictoryPanelController : MonoBehaviour {
         Game.Instance.musicManager.pickMotherMusic.Stop();
         Game.Instance.musicManager.pickPlayMusic.Stop();
         Game.Instance.musicManager.finishPlayMusic.Play();
+
+        moneyAnimation.DORestart();
+        moneyAnimation.DOPlay();
     }
 
     void updateButtons()
