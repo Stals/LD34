@@ -31,6 +31,12 @@ public class VictoryPanelController : MonoBehaviour {
     [SerializeField]
     DG.Tweening.DOTweenAnimation moneyAnimation;
 
+    [SerializeField]
+    UILabel penaltyImbalanced;
+
+    [SerializeField]
+    UILabel penaltyZeroStat;
+
     // Use this for initialization
     void Start() {
         tips = new List<string>();
@@ -40,6 +46,7 @@ public class VictoryPanelController : MonoBehaviour {
         tips.Add("Balance CPU, GPU and RAM to get more money");
         tips.Add("UTI cards don't cost anything to place");
         tips.Add("You will get a lower score if any stat is 0");
+        tips.Add("Penalties are already deducted from the final score");
 
         moneyAnimation._tween.OnUpdate(moneyUpdateStep);
     }
@@ -73,10 +80,41 @@ public class VictoryPanelController : MonoBehaviour {
     public void moneyUpdateStep() {
 
         float step = moneyAnimation._tween.ElapsedPercentage();
-        Debug.Log(step);
 
         int reward = (int)((convertScoreToMoney(session.ResultScore())) * step);
         newMoneyLabel.text = "+" + reward.ToString() + "$";
+    }
+
+    public void updatePenalties()
+    {
+        // penalties
+        penaltyZeroStat.alpha = 0f;
+        penaltyImbalanced.alpha = 0f;
+
+        int red = session.Board.Energy(CraftCore.EnergyType.Red);
+        int green = session.Board.Energy(CraftCore.EnergyType.Green);
+        int blue = session.Board.Energy(CraftCore.EnergyType.Blue);
+
+        if (red == 0 ||
+            green == 0 ||
+            blue == 0)
+        {
+            penaltyZeroStat.alpha = 1f;
+        }
+
+        float perfectScore = (red + green + blue);
+        float deltaScore = perfectScore - session.ResultScore();
+
+        Debug.Log("perfectScore");
+        Debug.Log(perfectScore);
+        Debug.Log("deltaScore");
+        Debug.Log(deltaScore);
+
+        if (deltaScore > 0) {
+            penaltyImbalanced.alpha = 1f;
+            penaltyImbalanced.text = (-deltaScore).ToString("F1") + " for imbalanced stats";
+        }
+
     }
 
     public void setup(GameSession _session)
@@ -92,7 +130,11 @@ public class VictoryPanelController : MonoBehaviour {
             }
         }
 
-		resultScoreLabel.text = session.ResultScore().ToString("n2") + "!";
+        updatePenalties();
+
+
+
+        resultScoreLabel.text = session.ResultScore().ToString("n2") + "!";
 
         int reward = convertScoreToMoney(session.ResultScore());
         newMoneyLabel.text = "+" + reward.ToString() + "$";
