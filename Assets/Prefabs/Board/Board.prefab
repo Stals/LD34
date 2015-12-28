@@ -7222,9 +7222,21 @@ MonoBehaviour:
       InstanceTarget: {fileID: 11434372}
   Modifications:
     Modificated:
-    - Object: {fileID: 11461222}
-      ObjeckLink: 504976957
-      PropertyPath: outOfMovesGO
+    - Object: {fileID: 11472906}
+      ObjeckLink: -1729296485
+      PropertyPath: mWidth
+      Mode: 0
+    - Object: {fileID: 11472906}
+      ObjeckLink: -1729296485
+      PropertyPath: mHeight
+      Mode: 0
+    - Object: {fileID: 11472906}
+      ObjeckLink: -1729296485
+      PropertyPath: aspectRatio
+      Mode: 0
+    - Object: {fileID: 11472906}
+      ObjeckLink: -1729296485
+      PropertyPath: mFontSize
       Mode: 0
     NonPrefabObjects: []
     NonPrefabComponents: []
@@ -15197,18 +15209,18 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 1300
-  mHeight: 80
+  mWidth: 820
+  mHeight: 50
   mDepth: 150
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 16.25
+  aspectRatio: 16.333334
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: Out of moves | Press [5BA665][c]RELEASE[/c][-]
-  mFontSize: 80
+  mFontSize: 50
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
