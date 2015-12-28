@@ -115,6 +115,8 @@ namespace CraftCore
             }
             Board.Heat--;
             ReadyMove();
+
+            if (CheckEnergyEndGame() || CheckSlotsEndGame()) CallEndGame();
         }
 
         private void ReadyMove()
