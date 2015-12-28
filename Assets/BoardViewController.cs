@@ -27,6 +27,9 @@ public class BoardViewController : MonoBehaviour {
 	[SerializeField]
 	UILabel achivDescritpion;
 
+    [SerializeField]
+    GameObject outOfEnergyGO;
+
     const int cardsPerDraft = 2;
     Motherboard board;
     public GameSession session;
@@ -64,10 +67,21 @@ public class BoardViewController : MonoBehaviour {
         return success;
     }
 
+    public void onOutOfEnergy()
+    {
+        var tween = outOfEnergyGO.GetComponent<UITweener>();
+
+        tween.ResetToBeginning();
+        tween.PlayForward();
+    }
+
+
     public void setup(Motherboard motherboard)
     {
         board = motherboard;
         session = new GameSession(getDeck(), motherboard);
+
+        session.onOutOfEnergy += onOutOfEnergy;
 
         setupBoard();
         applyResearches();
@@ -191,8 +205,12 @@ public class BoardViewController : MonoBehaviour {
 
     public void onShipPressed()
     {
+        // TODO mb move to ~Dtor()
+        session.onOutOfEnergy -= onOutOfEnergy;
 
-		bool isFinalVictory = true & (!winShown);
+
+
+        bool isFinalVictory = true & (!winShown);
 		isFinalVictory &= (session.ResultScore() >= 45);
 
 		/*

@@ -7,6 +7,13 @@ using UnityEngine;
 
 namespace CraftCore
 {
+    public enum ErrorType {
+        OutOfEnergy,
+        Unknown,
+
+        None
+    };
+
     public struct CardOnBoard
     {
         public CardOnBoard(int x, int y, Card card)
@@ -102,22 +109,22 @@ namespace CraftCore
             return result;
         }
 
-        public bool addCard(Card card, int x, int y)
+        public ErrorType addCard(Card card, int x, int y)
         {
             if (tyleMatrix[x, y] == EnergyType.Empty)
             {
                 Debug.Log("not a valid place!");
-                return false;
+                return ErrorType.Unknown;
             }
             if (TotalHeat < card.HeatPrice)
             {
                 Debug.Log("not enought energy!");
-                return false;
+                return ErrorType.OutOfEnergy;
             }
 
             cardMatrix[x, y] = card;
             RecalculateModifiers();
-            return true;
+            return ErrorType.None;
         }
 
         public Card GetCard(int x, int y)

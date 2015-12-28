@@ -11,6 +11,9 @@ namespace CraftCore
         public delegate void EndGame(float result);
         public event EndGame OnEndGame;
 
+        public delegate void OutOfEnergy();
+        public event OutOfEnergy onOutOfEnergy;
+
         List<Card> deck;
         Motherboard board;
         List<Card> waste = new List<Card>();
@@ -60,6 +63,12 @@ namespace CraftCore
             return (board.SlotsOnBoard.Count - board.CardsOnBoard.Count == 0);
         }
 
+        void CallOutOfEnergy()
+        {
+            if (onOutOfEnergy != null) onOutOfEnergy();
+            Debug.Log("OutOfEnergy");
+        }
+
         void CallEndGame()
         {
             if (OnEndGame != null) OnEndGame(ResultScore());
@@ -69,9 +78,14 @@ namespace CraftCore
         public bool pickCard(Card card, int x, int y)
         {
             if (avaliableCards.Contains(card))
-            {                
-                if (!board.addCard(card, x, y))
+            {
+                ErrorType error = board.addCard(card, x, y);
+                if (error!= ErrorType.None)
                 {
+                    if (error == ErrorType.OutOfEnergy) {
+                        CallOutOfEnergy();
+                    }
+
                     Debug.Log("Not a valid card choice!");
                     return false;
                 }

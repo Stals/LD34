@@ -4233,62 +4233,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11408048, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: Links.Links.Array.data[69].InstanceTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11476694, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 4.69999981
-      objectReference: {fileID: 0}
-    - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11403810, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 1.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 11454590, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 1.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 181576, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 230
-      objectReference: {fileID: 0}
-    - target: {fileID: 11465100, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 38
-      objectReference: {fileID: 0}
-    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 176
-      objectReference: {fileID: 0}
-    - target: {fileID: 11479868, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 428
-      objectReference: {fileID: 0}
-    - target: {fileID: 11476694, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: mWidth
-      value: 198
-      objectReference: {fileID: 0}
-    - target: {fileID: 11482758, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 11465100, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: .899999976
-      objectReference: {fileID: 0}
-    - target: {fileID: 11466092, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
-      propertyPath: aspectRatio
-      value: 3.0999999
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4038431688611cd428b70b1882dc8c70, type: 2}
   m_IsPrefabParent: 0
@@ -5763,15 +5707,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11435194, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 2.125
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 11428252, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 3.75
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11451748, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
       propertyPath: aspectRatio
-      value: 11.6000004
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6616406b57da4099bf2a6ec1ef939da, type: 2}
