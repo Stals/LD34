@@ -30,6 +30,9 @@ public class BoardViewController : MonoBehaviour {
     [SerializeField]
     GameObject outOfEnergyGO;
 
+    [SerializeField]
+    GameObject outOfMovesGO;
+
     const int cardsPerDraft = 2;
     Motherboard board;
     public GameSession session;
@@ -82,6 +85,7 @@ public class BoardViewController : MonoBehaviour {
         session = new GameSession(getDeck(), motherboard);
 
         session.onOutOfEnergy += onOutOfEnergy;
+        session.OnEndGame += onEndGame;
 
         setupBoard();
         applyResearches();
@@ -203,10 +207,17 @@ public class BoardViewController : MonoBehaviour {
         moveCardToGrid(cardSelectionGrid, cardObject);
     }
 
+    public void onEndGame(float result) {
+        var tween = outOfMovesGO.GetComponent<UITweener>();
+        tween.ResetToBeginning();
+        tween.PlayForward();
+    }
+
     public void onShipPressed()
     {
         // TODO mb move to ~Dtor()
         session.onOutOfEnergy -= onOutOfEnergy;
+        session.OnEndGame -= onEndGame;
 
 
 

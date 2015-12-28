@@ -105,10 +105,10 @@ public class VictoryPanelController : MonoBehaviour {
         float perfectScore = (red + green + blue);
         float deltaScore = perfectScore - session.ResultScore();
 
-        Debug.Log("perfectScore");
+        /*Debug.Log("perfectScore");
         Debug.Log(perfectScore);
         Debug.Log("deltaScore");
-        Debug.Log(deltaScore);
+        Debug.Log(deltaScore);*/
 
         if (deltaScore > 0) {
             penaltyImbalanced.alpha = 1f;
