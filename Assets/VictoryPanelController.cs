@@ -95,14 +95,17 @@ public class VictoryPanelController : MonoBehaviour {
         int green = session.Board.Energy(CraftCore.EnergyType.Green);
         int blue = session.Board.Energy(CraftCore.EnergyType.Blue);
 
+		float zeroStatD = 0f;
+
         if (red == 0 ||
             green == 0 ||
             blue == 0)
         {
+			zeroStatD   = 5f;
             penaltyZeroStat.alpha = 1f;
         }
 
-        float perfectScore = (red + green + blue);
+		float perfectScore = (red + green + blue) - zeroStatD;
         float deltaScore = perfectScore - session.ResultScore();
 
         /*Debug.Log("perfectScore");
