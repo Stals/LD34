@@ -55,7 +55,8 @@ public class StatUpgrade : IComparable
 
 public class Player {
 
-    int money;
+	public int motherboardNumber = 0;
+    int money = 0;
     List<StatUpgrade> statUpgrades;
 
     public List<StatUpgrade> getStatUpgrades()
@@ -65,8 +66,7 @@ public class Player {
 
     // Use this for initialization
     public Player() {
-        money = 0;
-        // TODO sort by cost?
+
         statUpgrades = new List<StatUpgrade>();
 
         statUpgrades.Add(new StatUpgrade(EnergyType.Red, 1, "Integrated audio", 25));
@@ -90,6 +90,7 @@ public class Player {
         statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "Boards Layouts", 75));
         statUpgrades.Add(new StatUpgrade(EnergyType.Empty, 1, "Boards Layouts", 75));
 
+		// sort by cost
         statUpgrades.Sort();
     }
 

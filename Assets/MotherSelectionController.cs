@@ -14,6 +14,9 @@ public class MotherSelectionController : MonoBehaviour {
     [SerializeField]
     UIButton contructButton;
 
+	[SerializeField]
+	UILabel serialNumberLabel;
+
     MotherViewController currentSelected;
 
     MotherBoardsCombiner boardCombiner;
@@ -76,6 +79,9 @@ public class MotherSelectionController : MonoBehaviour {
 
     public void setup()
     {
+		Game.Instance.getPlayer ().motherboardNumber += 1;
+		serialNumberLabel.text = "#" + Game.Instance.getPlayer ().motherboardNumber.ToString ();
+
         foreach (var m in selectableMothers)
         {
             m.setup(getRandomMotherboard());
