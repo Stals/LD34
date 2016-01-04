@@ -4845,7 +4845,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
       propertyPath: aspectRatio
-      value: 8
+      value: 7.11111116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
@@ -5338,7 +5338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
       propertyPath: aspectRatio
-      value: 8
+      value: 7.11111116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
@@ -7456,10 +7456,6 @@ Prefab:
       propertyPath: onClick.Array.data[0].mTarget
       value: 
       objectReference: {fileID: 1760553676}
-    - target: {fileID: 11449550, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
-      propertyPath: aspectRatio
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3aaeab3053beaa44ab863e93fd7a341, type: 2}
   m_IsPrefabParent: 0

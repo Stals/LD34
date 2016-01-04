@@ -339,23 +339,7 @@ MonoBehaviour:
     Modificated:
     - Object: {fileID: 11449550}
       ObjeckLink: 529667391
-      PropertyPath: mWidth
-      Mode: 0
-    - Object: {fileID: 11449550}
-      ObjeckLink: 529667391
-      PropertyPath: mHeight
-      Mode: 0
-    - Object: {fileID: 11449550}
-      ObjeckLink: 529667391
-      PropertyPath: aspectRatio
-      Mode: 0
-    - Object: {fileID: 11449550}
-      ObjeckLink: 529667391
-      PropertyPath: mFontSize
-      Mode: 0
-    - Object: {fileID: 11449550}
-      ObjeckLink: 529667391
-      PropertyPath: mOverflow
+      PropertyPath: mFontStyle
       Mode: 0
     - Object: {fileID: 11414462}
       ObjeckLink: 1292626414
@@ -448,17 +432,17 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 128
-  mHeight: 16
+  mHeight: 18
   mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 13
+  aspectRatio: 7.11111116
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f3b7bd3776135784ba2ff32a2e58e007, type: 3}
   mFont: {fileID: 0}
   mText: BROFORCE MEGA
-  mFontSize: 15
+  mFontSize: 18
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
