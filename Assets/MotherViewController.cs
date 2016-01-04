@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using CraftCore;
 using System;
 
@@ -20,7 +21,11 @@ public class MotherViewController : MonoBehaviour {
 	[SerializeField]
 	UISprite bg;
 
+	[SerializeField]
+	UILabel nameLabel;
+
     Motherboard motherboard;
+	List<string> names;
 
     public void setSelected(bool selected) {
         onSelect.alpha = selected ? 255f : 0f;
@@ -28,6 +33,15 @@ public class MotherViewController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+		names = new List<string>();
+		names.Add("PRO");
+		names.Add("PRO GAMING");
+		names.Add("ULTRA");
+		names.Add("DELUXE");
+		names.Add("HYPE EDITION");
+		names.Add("PORTABLE");
+		names.Add("COSTLY ED.");
+		names.Add("Bemtium");
 
     }
 
@@ -84,10 +98,33 @@ public class MotherViewController : MonoBehaviour {
 
 		bg.spriteName = "mbg" + UnityEngine.Random.Range(1, 4);
 		bg.MarkAsChanged ();
+
+		setupName ();
     }
 
     public Motherboard getMotherboard()
     {
         return motherboard;
     }
+
+	public char GetLetter()
+	{
+		// This method returns a random lowercase letter.
+		// ... Between 'a' and 'z' inclusize.
+		int num = UnityEngine.Random.Range (0, 26); // Zero to 25
+		char let = (char)('a' + num);
+		return let;
+	}
+
+	void setupName()
+	{
+		string resultName = "" + GetLetter () + GetLetter ();
+		resultName += "-";
+		resultName += UnityEngine.Random.Range (100, 999);
+		resultName += " ";
+		resultName += names [UnityEngine.Random.Range (0, names.Count)];
+
+		nameLabel.text = resultName;
+	}
+
 }
