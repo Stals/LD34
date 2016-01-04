@@ -10,6 +10,9 @@ public class FinalVictoryController : MonoBehaviour {
     [SerializeField]
     UILabel resultScoreLabel;
 
+	[SerializeField]
+	UILabel serialVictory;
+
 	GameSession session;
 
 	// Use this for initialization
@@ -27,6 +30,8 @@ public class FinalVictoryController : MonoBehaviour {
 		session = _session;
 
         resultScoreLabel.text = session.ResultScore().ToString("n2") + "!";
+
+		serialVictory.text = "It took you [b][c][7D7157]" + Game.Instance.getPlayer().motherboardNumber + "![-][/c][/b] motherboards to beat the game";
     }
 
 	public void onContinuePress()
